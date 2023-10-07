@@ -44,6 +44,6 @@ public class Movimiento : MonoBehaviour
 
         //Se mueve al personaje
         m_Controller.Move(m_CurrentMoveVelocity * Time.deltaTime);
-        //m_Controller.Move(m_CurrentForceVelocity * Time.deltaTime);
+        m_Controller.Move(m_CurrentForceVelocity * Time.deltaTime);
     }
 }
