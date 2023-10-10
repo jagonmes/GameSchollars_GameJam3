@@ -11,7 +11,8 @@ public class AccionDelJugador : MonoBehaviour
 
     private void Update()
     {
-        textoAccion.text = "";
+        //Nombre del usuario
+        //textoAccion.text = Environment.UserName;
         RaycastHit hit;
 
         //Comprueba si hay un objeto al que el jugador este mirando y dentro de la distancia de activación
@@ -23,14 +24,18 @@ public class AccionDelJugador : MonoBehaviour
             //Comprueba si el objeto es interactuable
             if (i != null)
             {
-                //Si es interactuable y se pulsaa la tecla de acción, interactua con el mismo
-                if (Input.GetKeyDown(teclaDeAccion))
+                //Se comprueba si esta activo
+                if (i.Activo)
                 {
-                    i.Interactuar();
-                }
+                    //Si es interactuable y se pulsa la tecla de acción, interactua con el mismo
+                    if (Input.GetKeyDown(teclaDeAccion))
+                    {
+                        i.Interactuar();
+                    }
 
-                //Se muestra el cambio visual
-                i.Visual();
+                    //Se muestra el cambio visual
+                    i.Visual();
+                }
             }
         }
     }
