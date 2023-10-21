@@ -1,12 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using TMPro;
 using UnityEngine;
-using Debug = UnityEngine.Debug;
-using Random = UnityEngine.Random;
+
 
 public class Ahorcado : MonoBehaviour
 {
@@ -15,14 +11,22 @@ public class Ahorcado : MonoBehaviour
     [SerializeField] private TextMeshProUGUI pregunta;
     [SerializeField] private TextMeshProUGUI aciertos;
     [SerializeField] private TextMeshProUGUI fallos;
+    
+    //Plano del Ahorcado
+    [SerializeField] private GameObject ahorcado;
+    private Material materialAhorcado;
+    
+    //EtapasDelAhorcado
+    [SerializeField] private Texture2D[] etapasAhorcado;
 
     //Palabras que saldrán en el juego
     [SerializeField] private String[] preguntas;
     [SerializeField] private String[] palabras;
     
-    //Colores de las preguntas y respuestas
+    //Colores de las preguntas, respuestas y del ahorcado
     [SerializeField] private Color[] coloresPreguntas;
     [SerializeField] private Color[] coloresRespuestas;
+    [SerializeField] private Color[] coloresAhorcado;
     
     //VARIABLES INTERNAS PARA EL JUEGO///////////
     private String palabraActiva;
@@ -151,6 +155,11 @@ public class Ahorcado : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        materialAhorcado = ahorcado.GetComponent<Renderer>(). material;
+    }
+
     // En update 
     void Update()
     {
@@ -215,6 +224,8 @@ public class Ahorcado : MonoBehaviour
         pintarPalabraActiva();
         //Pintamos la pregunta
         pintarPregunta();
+        //Se actualiza la figura del ahorcado
+        pintarAhorcado();
         
     }
 
@@ -260,6 +271,8 @@ public class Ahorcado : MonoBehaviour
         {
             fallos.text += c.ToString().ToUpper();
             contadorFallos++;
+            //Se actualiza la figura del ahorcado
+            pintarAhorcado();
             //si se alcanza el limite de fallos
             if (contadorFallos > limiteDeFallos)
             {
@@ -303,6 +316,16 @@ public class Ahorcado : MonoBehaviour
         pregunta.color = coloresPreguntas[contadorNumeroDePalabra];
         pregunta.text = preguntas[contadorNumeroDePalabra];
     }
+    
+    //Pinta la fase actual del Ahorcado
+    private void pintarAhorcado()
+    {
+        //Se actualiza la figura del ahorcado
+        if (materialAhorcado.HasProperty("_Fase"))
+            materialAhorcado.SetTexture("_Fase", etapasAhorcado[contadorFallos]);
+        if (materialAhorcado.HasProperty("_Color"))
+            materialAhorcado.SetColor("_Color", coloresAhorcado[contadorNumeroDePalabra]);
+    }
 
     //Función que controla lo que pasa al final de la partida
     private void finDePartida(){
@@ -330,9 +353,10 @@ public class Ahorcado : MonoBehaviour
         }
     }
     
-    //TODO
+    //Se ejecuta al finalizar el juego
     void devolverControlAlJugador()
     {
-        
+        juegoEnMarcha = habilitado = activo = juegoEnMarcha = false;
+        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
     }
 }

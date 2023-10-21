@@ -10,16 +10,22 @@ public class Camera3D : MonoBehaviour
 
     //Angulos de rotación para jugador y camara
     private Vector2 m_XYRotation;
+    
+    //Script de movimiento del jugador
+    private Movimiento movimientoJugador;
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
+        movimientoJugador = this.transform.GetComponent<Movimiento>();
     }
 
 
     void Update()
     {
+        if (movimientoJugador.JugadorActivo)
+        {
             //Leer X e Y del ratón
             Vector2 mouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
@@ -34,5 +40,6 @@ public class Camera3D : MonoBehaviour
             transform.eulerAngles = new Vector3(0f, m_XYRotation.y, 0f);
             //Giramos la camara (vertical)
             playerCamera.localEulerAngles = new Vector3(m_XYRotation.x, 0f, 0f);
+        }
     }
 }
