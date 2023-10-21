@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,23 +12,51 @@ public class Ahorcado : MonoBehaviour
 {
     //Campos de texto
     [SerializeField] private TextMeshProUGUI palabra;
+    [SerializeField] private TextMeshProUGUI pregunta;
     [SerializeField] private TextMeshProUGUI aciertos;
     [SerializeField] private TextMeshProUGUI fallos;
 
     //Palabras que saldrán en el juego
+    [SerializeField] private String[] preguntas;
     [SerializeField] private String[] palabras;
+    
+    //Colores de las preguntas y respuestas
+    [SerializeField] private Color[] coloresPreguntas;
+    [SerializeField] private Color[] coloresRespuestas;
+    
+    //VARIABLES INTERNAS PARA EL JUEGO///////////
     private String palabraActiva;
     private char[] letrasPalabraActiva;
     private List<char> letrasUsadas = new List<char>();
     private bool[] aciertosPalabraActiva;
     
-
+    //tiempo de refresco entre pulsaciones de teclas
     [SerializeField] private float TiempoDeRefresco = 2.0f;
-    private float CoolDown = 0.0f;
+    private float CoolDown = 2.0f;
+    
+    //indica que la entrada por teclado esta habilitada
     private bool habilitado = false;
+    
+    //indica que el script esta activo
     public bool activo = true;
 
+    //indica que empiece el juego
+    public bool iniciarJuego = false;
+    //indica que el juego esta en marcha
+    public bool juegoEnMarcha = false;
 
+    //Indica en que pregunta y palabra estamos
+    private int contadorNumeroDePalabra = 0;
+    
+    //Indica cuantos fallos se han dado en esta ronda
+    private int contadorFallos = 0;
+    
+    //Numero de fallos permitidos
+    [SerializeField]private int limiteDeFallos = 5;
+    
+
+
+    //Recoge los eventos de teclado
     void OnGUI()
     {
         Event e = Event.current;
@@ -122,32 +151,42 @@ public class Ahorcado : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        cargarPalabra();
-    }
-
-    // Update is called once per frame
+    // En update 
     void Update()
     {
         if (activo)
         {
-            if (!habilitado && CoolDown <= 0.0f)
+            //Si esta activo y se da la orden de iniciar el juego, se carga una palabra y una pregunta
+            if (iniciarJuego)
             {
-                habilitado = true;
+                cargarPalabra();
+                //ponemos la variable iniciar juego a false para no seguir reseteando los campos
+                iniciarJuego = false;
             }
-            else
+            //Si el juego esta en marcha se pone en marcha la lógica interna
+            if (juegoEnMarcha)
             {
-                CoolDown -= Time.deltaTime;
+                if (!habilitado && CoolDown <= 0.0f)
+                {
+                    habilitado = true;
+                }
+                else
+                {
+                    CoolDown -= Time.deltaTime;
+                }
             }
         }
     }
 
+    //Se carga una paralabra y una pregunta
     void cargarPalabra()
     {
-        int i = Random.Range(0, palabras.Length);
-        palabraActiva = palabras[i];
+        //ponemos el contador de fallos a 0
+        contadorFallos = 0;
+        aciertos.text = "";
+        fallos.text = "";
+        //cargamos la palabra
+        palabraActiva = palabras[contadorNumeroDePalabra];
         String aux = palabraActiva.ToLower();
         //reemplazar acentos y dieresis
         aux = aux.Replace('á', 'a');
@@ -164,7 +203,7 @@ public class Ahorcado : MonoBehaviour
         letrasPalabraActiva = aux.ToCharArray();
         //se inicializan los aciertos (todos a falso)
         aciertosPalabraActiva = new bool[letrasPalabraActiva.Length];
-        for (i = 0; i < aciertosPalabraActiva.Length; i++)
+        for (int i = 0; i < aciertosPalabraActiva.Length; i++)
             aciertosPalabraActiva[i] = false;
         //se borran las letras usadas
         letrasUsadas.Clear();
@@ -174,6 +213,9 @@ public class Ahorcado : MonoBehaviour
         fallos.text = "";
         //Pintamos la palabra activa
         pintarPalabraActiva();
+        //Pintamos la pregunta
+        pintarPregunta();
+        
     }
 
     void comprobarLetra(char c)
@@ -191,25 +233,55 @@ public class Ahorcado : MonoBehaviour
             }
 
             letrasUsadas.Add(c);
+        }
+        if (acierto)
+        {
+            aciertos.text += c.ToString().ToUpper();
+            pintarPalabraActiva();
+            //compruebo si la palabra esta completa
+            bool palabraCompletada = true;
+            foreach (bool a in aciertosPalabraActiva)
+            {
+                if (!a)
+                    palabraCompletada = false;
+            }
+
+            if (palabraCompletada)
+            {
+                //paramos los inputs del jugador
+                juegoEnMarcha = false;
+                //Invocamos a la función tiempo finDePartida con un tiempo de espera para que el cambio no sea instantaneo
+                Invoke("finDePartida", 2f);
+            }
 
 
-            if (acierto)
+        }
+        else
+        {
+            fallos.text += c.ToString().ToUpper();
+            contadorFallos++;
+            //si se alcanza el limite de fallos
+            if (contadorFallos > limiteDeFallos)
             {
-                aciertos.text += c.ToString().ToUpper();
-                pintarPalabraActiva();
+                //paramos los inputs del jugador
+                juegoEnMarcha = false;
+                //Invocamos a la función tiempo finDePartida con un tiempo de espera para que el cambio no sea instantaneo
+                Invoke("finDePartida", 2f);
             }
-            else
-            {
-                fallos.text += c.ToString().ToUpper();
-            }
+
+            
+
+                
         }
         
         habilitado = false;
         CoolDown = TiempoDeRefresco;
     }
 
+    //pinta por la palabra actual por pantalla con el color correspondiente
     void pintarPalabraActiva()
     {
+        palabra.color = coloresRespuestas[contadorNumeroDePalabra];
         palabra.text = "\" ";
         for (int i = 0; i < aciertosPalabraActiva.Length; i++)
         {
@@ -223,5 +295,44 @@ public class Ahorcado : MonoBehaviour
             }
         }
         palabra.text += "\"";
+    }
+    
+    //pinta por pantalla la pregunta
+    void pintarPregunta()
+    {
+        pregunta.color = coloresPreguntas[contadorNumeroDePalabra];
+        pregunta.text = preguntas[contadorNumeroDePalabra];
+    }
+
+    //Función que controla lo que pasa al final de la partida
+    private void finDePartida(){
+        //Si el jugador pierde
+        if (contadorFallos > limiteDeFallos)
+        {
+            palabra.text = "HAS PERDIDO";
+            Invoke("devolverControlAlJugador", 2f);
+        }
+        else
+        {
+            //Si el jugador gana y no quedan más palabras
+            if (contadorNumeroDePalabra == palabras.Length - 1)
+            {
+                palabra.text = "HAS GANADO";
+                Invoke("devolverControlAlJugador", 2f);
+            }
+            //Si el jugador gana y quedan más palabras
+            else
+            {
+                contadorNumeroDePalabra++;
+                cargarPalabra();
+                juegoEnMarcha = true;
+            }
+        }
+    }
+    
+    //TODO
+    void devolverControlAlJugador()
+    {
+        
     }
 }
