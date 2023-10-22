@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.Events;
 
 //Autor del codigo: Brackeys https://www.youtube.com/@Brackeys
-//Editado por Jesús Bastante López
 public class CharacterController2D : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
@@ -20,8 +19,9 @@ public class CharacterController2D : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+    private Animator animator;
 
-	[Header("Events")]
+    [Header("Events")]
 	[Space]
 
 	public UnityEvent OnLandEvent;
@@ -35,8 +35,9 @@ public class CharacterController2D : MonoBehaviour
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
-		if (OnLandEvent == null)
+        if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 
 		if (OnCrouchEvent == null)
@@ -56,9 +57,11 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
-				if (!wasGrounded)
+                if (!wasGrounded) { 
+					animator.SetBool("IsJumping", false);
 					OnLandEvent.Invoke();
-			}
+            }
+        }
 		}
 	}
 
@@ -74,7 +77,6 @@ public class CharacterController2D : MonoBehaviour
 				crouch = true;
 			}
 		}
-
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
@@ -128,8 +130,9 @@ public class CharacterController2D : MonoBehaviour
 		// If the player should jump...
 		if (m_Grounded && jump)
 		{
-			// Add a vertical force to the player.
-			m_Grounded = false;
+            // Add a vertical force to the player.
+            animator.SetBool("IsJumping", true);
+            m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * 3));
 		}
 	}

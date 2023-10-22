@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Autor del codigo: Brackeys https://www.youtube.com/@Brackeys
+//Editor : Jesús Bastante López
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
@@ -11,10 +12,23 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
 
+    private Animator animator;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        animator.SetInteger("State", 2);
+    }
     void Update(){
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if(horizontalMove == 0f)
+        {
+            animator.SetBool("IsMoving", false);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", true);
+        }
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
@@ -22,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void FixedUpdate(){
-        //Move character
+        //Mover personaje
         controller.Move(horizontalMove* Time.fixedDeltaTime, false,jump);
         jump = false;
 
