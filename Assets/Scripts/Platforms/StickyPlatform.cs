@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StickyPlatform : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("Character Collision");
         if (collision.gameObject.CompareTag("Player"))
