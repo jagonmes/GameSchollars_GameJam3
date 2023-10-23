@@ -6,10 +6,9 @@ public class StickyPlatform : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Character Collision");
+
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player Collision");
             collision.gameObject.transform.SetParent(transform);
         }
     }

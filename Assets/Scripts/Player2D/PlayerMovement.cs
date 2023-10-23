@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //Autor del codigo: Brackeys https://www.youtube.com/@Brackeys
@@ -13,31 +14,41 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
 
     private Animator animator;
-
+    public int active = 1;
     private void Start()
     {
         animator = GetComponent<Animator>();
-        animator.SetInteger("State", 2);
     }
     void Update(){
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        if(horizontalMove == 0f)
+        if (active != 0)
         {
-            animator.SetBool("IsMoving", false);
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+            if (horizontalMove == 0f)
+            {
+                animator.SetBool("IsMoving", false);
+            }
+            else
+            {
+                animator.SetBool("IsMoving", true);
+            }
+            if (Input.GetButtonDown("Jump"))
+            {
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
         }
         else
         {
-            animator.SetBool("IsMoving", true);
+            animator.SetBool("IsMoving", false);
         }
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-        }
+    }
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
     }
 
     void FixedUpdate(){
-        //Mover personaje
-        controller.Move(horizontalMove* Time.fixedDeltaTime, false,jump);
+        controller.Move(horizontalMove* Time.fixedDeltaTime*active, false,jump);
         jump = false;
 
     }
