@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class deathline : MonoBehaviour
 {
+    //punto de respawn
     public GameObject respawn;
-    // Start is called before the first frame update
+    //contador de vidas
+    private int lifesCounter;
 
 
     // Update is called once per frame
@@ -14,7 +16,7 @@ public class deathline : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.transform.position = respawn.transform.position;
-            //collision.gameObject.transform.rotation = respawn.transform.rotation;
+            
         }
     }
 }
