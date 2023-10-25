@@ -6,7 +6,7 @@ public class deathline : MonoBehaviour
 {
     //punto de respawn
     public GameObject respawn;
-    public PlayerMovement movement;
+    public LifesAdministrator lifesScript;
     private bool canTrigger = true;
 
 
@@ -19,8 +19,8 @@ public class deathline : MonoBehaviour
             if (collision.gameObject.CompareTag("Player"))
             {
                 collision.gameObject.transform.position = respawn.transform.position;
-                movement.LessLifes();
-                Debug.Log(movement.lifes);
+                collision.gameObject.transform.rotation = respawn.transform.rotation;
+                lifesScript.LessLifes();
                 Invoke("ResetTrigger", 1f);
             }
         }
