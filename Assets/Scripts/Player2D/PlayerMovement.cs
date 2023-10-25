@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -9,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
 
+    public int lifes;
+    public GameObject[] lifeSprites;
+    public GameObject derrota;
     public float runSpeed = 60f;
     float horizontalMove = 0f;
     bool jump = false;
@@ -41,6 +45,13 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
+        if(lifes <= 0)
+        {
+            active = 0;
+            this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            derrota.SetActive(true);
+            Invoke("devolverControlAlJugador",1f);
+        }
     }
     public void OnLanding()
     {
@@ -53,5 +64,14 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void LessLifes()
+    {
+        lifes--;
+        lifeSprites[lifes].SetActive(false);
+    }
 
+    void devolverControlAlJugador()
+    {
+        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
+    }
 }
