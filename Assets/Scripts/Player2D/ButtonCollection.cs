@@ -14,6 +14,8 @@ public class ButtonCollection : MonoBehaviour
     //array de monedas en la escena, 
     //soluciona errores con sumar numMonedas con OnTriggerEnter2D
     private GameObject[] monedas;
+    //array de sprites de vida, cambia los sprites dependiendo del estado
+    public GameObject[] lifeSprites;
     //animator del player
     private Animator playerAnimator;
     //gameobject knife y su animador
@@ -38,6 +40,8 @@ public class ButtonCollection : MonoBehaviour
 
     private void Update()
     {
+        //actualiza el numero de monedas
+        //hecho asi por el bug de collider2D
         monedas = GameObject.FindGameObjectsWithTag("Coin");
         numMonedas = monedasTotales - monedas.Length;
     }
@@ -54,7 +58,7 @@ public class ButtonCollection : MonoBehaviour
     public void AddCoin()
     {
         Debug.Log("coins" + numMonedas);
-        //actualiza el animator
+        //actualiza el animator del player
         playerAnimator.SetInteger("State", numMonedas);
         Debug.Log("coins" + numMonedas);
         //actualiza la situacion de la escena(colores)
@@ -92,19 +96,29 @@ public class ButtonCollection : MonoBehaviour
         Invoke("Transform", 8f);
 
     }
+
+    //activa la animacion Knife killing
     private void Kill()
     {
         knifeAnimator.SetBool("iskilling", true);
     }
+    //activa la animacion Knife transforming
+    // y el mensaje felicidades
     private void Transform()
     {
         knifeAnimator.SetBool("isTransforming", true);
         feliz.gameObject.SetActive(true);
+        Invoke("devolverControlAlJugador", 7f);
     }
-
+    //actuva la aniamcion de player death
     private void Death()
     {
         playerAnimator.SetInteger("State", numMonedas +1);
 
+    }
+
+    void devolverControlAlJugador()
+    {
+        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
     }
 }
