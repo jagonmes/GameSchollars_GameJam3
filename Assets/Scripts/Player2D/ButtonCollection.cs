@@ -8,18 +8,19 @@ using UnityEngine;
 //y activa la animación final
 public class ButtonCollection : MonoBehaviour
 {
-    public int numMonedas = 0;
+    private int numMonedas;
+    private int monedasTotales = 3;
+    
     //array de monedas en la escena, 
     //soluciona errores con sumar numMonedas con OnTriggerEnter2D
     private GameObject[] monedas;
-    //Booleano que permite sumar monedas
-    //(arregla error de colliders que hace que sume +1 dos veces)
-    private bool canIncrement = true;
     //animator del player
     private Animator playerAnimator;
     //gameobject knife y su animador
     public GameObject knife;
     private Animator knifeAnimator;
+    //gameObject texto "Felicidades"
+    public GameObject feliz;
 
     //obtiene el codigo PlayerMovement
     [SerializeField] private PlayerMovement controller;
@@ -30,25 +31,21 @@ public class ButtonCollection : MonoBehaviour
     {
         //consigue animator del player
         playerAnimator = GetComponent<Animator>();
-        //consigue knife y su animator.
+        //consigue el animator de knife
         knifeAnimator = knife.GetComponent<Animator>();
+        //consigue el animator de felicidades
     }
 
     private void Update()
     {
         monedas = GameObject.FindGameObjectsWithTag("Coin");
-        numMonedas = 3 - monedas.Length;
+        numMonedas = monedasTotales - monedas.Length;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            // Evita colisiones duplicadas.
-            if (!canIncrement)
-            {
-                return; 
-            }
             Invoke("AddCoin",0.5f);
             Destroy(other.gameObject);
         }
@@ -90,7 +87,8 @@ public class ButtonCollection : MonoBehaviour
         //activa cuchillo y regula tiempos de animacion
         knife.gameObject.SetActive(true);
         Debug.Log("1");
-        Invoke("Kill", 1f);
+        Invoke("Kill", 2f);
+        Invoke("Death", 2.5f);
         Invoke("Transform", 8f);
 
     }
@@ -101,5 +99,12 @@ public class ButtonCollection : MonoBehaviour
     private void Transform()
     {
         knifeAnimator.SetBool("isTransforming", true);
+        feliz.gameObject.SetActive(true);
+    }
+
+    private void Death()
+    {
+        playerAnimator.SetInteger("State", numMonedas +1);
+
     }
 }
