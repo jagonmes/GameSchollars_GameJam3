@@ -5,68 +5,90 @@ using UnityEngine;
 
 //Autor: Jesús Bastante López
 //Script que administra la colección de monedas
-//y activa la an9imación final
+//y activa la animación final
 public class ButtonCollection : MonoBehaviour
 {
-    public int numMonedas = 0;
-    //Booleano que permite sumar monedas
-    //(arregla error de colliders que hace que sume +1 dos veces)
-    private bool canIncrement = true;
+    private int numMonedas;
+    private int monedasTotales = 3;
+    
+    //array de monedas en la escena, 
+    //soluciona errores con sumar numMonedas con OnTriggerEnter2D
+    private GameObject[] monedas;
     //animator del player
     private Animator playerAnimator;
     //gameobject knife y su animador
     public GameObject knife;
     private Animator knifeAnimator;
+    //gameObject texto "Felicidades"
+    public GameObject feliz;
 
+    //obtiene el codigo PlayerMovement
     [SerializeField] private PlayerMovement controller;
+    //obtiene el codigo PltColorAdmin para cambiar colores del mapa
+    [SerializeField] private GroundColorAdmin colorAdm;
 
     private void Start()
     {
         //consigue animator del player
         playerAnimator = GetComponent<Animator>();
-        //consigue knife y su animator.
+        //consigue el animator de knife
         knifeAnimator = knife.GetComponent<Animator>();
+        //consigue el animator de felicidades
+    }
+
+    private void Update()
+    {
+        monedas = GameObject.FindGameObjectsWithTag("Coin");
+        numMonedas = monedasTotales - monedas.Length;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Coin") && other.isTrigger)
+        if (other.gameObject.CompareTag("Coin"))
         {
+            Invoke("AddCoin",0.5f);
             Destroy(other.gameObject);
-            if (canIncrement)
-            {
-                addCoin();
-                //bloquea sumar de más monedas
-                canIncrement = false;
-                //resetea el booleano de poder incrementar al cabo de un segundo.
-                Invoke("ResetCanIncrement", 1f);
-            }
         }
     }
     //añade moneda, y si son 3 llama a la animacion final
-    private void addCoin()
+    public void AddCoin()
     {
-        numMonedas++;
+        Debug.Log("coins" + numMonedas);
+        //actualiza el animator
         playerAnimator.SetInteger("State", numMonedas);
-        if (numMonedas == 3)
+        Debug.Log("coins" + numMonedas);
+        //actualiza la situacion de la escena(colores)
+        if (numMonedas == 1)
+        {
+            Debug.Log("1");
+            colorAdm.orangeColor();
+        }
+        else if (numMonedas == 2)
+        {
+            Debug.Log("2");
+            colorAdm.redColor();
+        }
+        else if(numMonedas == 3)
         {
             Debug.Log("Final");
             endAnimation();
         }
+        else 
+        {
+            Debug.Log("Error en numero de monedas");
+        }
     }
-    //resetea el booleano de incremento
-    private void ResetCanIncrement()
-    {
-        canIncrement = true;
-    }
+
     //activa animacionFinal
     public void endAnimation()
     {
         //impide movimiento de jugador
         controller.active = 0;
+        //activa cuchillo y regula tiempos de animacion
         knife.gameObject.SetActive(true);
         Debug.Log("1");
-        Invoke("Kill", 1f);
+        Invoke("Kill", 2f);
+        Invoke("Death", 2.5f);
         Invoke("Transform", 8f);
 
     }
@@ -77,5 +99,12 @@ public class ButtonCollection : MonoBehaviour
     private void Transform()
     {
         knifeAnimator.SetBool("isTransforming", true);
+        feliz.gameObject.SetActive(true);
+    }
+
+    private void Death()
+    {
+        playerAnimator.SetInteger("State", numMonedas +1);
+
     }
 }
