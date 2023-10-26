@@ -16,8 +16,6 @@ public class Movimiento : MonoBehaviour
     private CharacterController m_Controller;
 
     public bool JugadorActivo = true;
-    
-    public bool Pausa = false;
 
 
     void Start()
@@ -29,7 +27,7 @@ public class Movimiento : MonoBehaviour
     void Update()
     {
         //Si el jugador esta activo
-        if (JugadorActivo)
+        if (JugadorActivo && !Pausa.juegoPausado)
         {
             //Leemos y normalizamos la entrada 
             Vector3 playerInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
@@ -55,7 +53,7 @@ public class Movimiento : MonoBehaviour
             m_Controller.Move(m_CurrentForceVelocity * Time.deltaTime);
         }
 
-        if (!JugadorActivo && !Pausa)
+        if (!JugadorActivo && !Pausa.juegoPausado)
         {
             m_CurrentMoveVelocity = new Vector3(0,0,0);
             m_CurrentForceVelocity = new Vector3(0,0,0);

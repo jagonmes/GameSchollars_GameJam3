@@ -12,7 +12,8 @@ public class UtilidadesSubtitulos : MonoBehaviour
 
     public void GuardarSubtitulos(Subtitulos sub, String filename)
     {
-        string d = AssetDatabase.GetAssetPath(this);
+        //string d = AssetDatabase.GetAssetPath(this);
+        string d = "";
         if (filename == "")
         {
             filename = d + "/subtitulos sin nombre.txt";

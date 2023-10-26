@@ -65,7 +65,7 @@ public class Ahorcado : MonoBehaviour
     void OnGUI()
     {
         Event e = Event.current;
-        if (habilitado && e.isKey)
+        if (habilitado && e.isKey && !Pausa.juegoPausado)
         {
             switch (e.keyCode)
             {

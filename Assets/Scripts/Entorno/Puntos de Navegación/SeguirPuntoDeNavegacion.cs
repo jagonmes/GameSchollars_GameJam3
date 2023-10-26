@@ -22,7 +22,7 @@ public class SeguirPuntoDeNavegacion : MonoBehaviour
 
     private void Update()
     {
-        if (!finDelCamino && activo)
+        if (!finDelCamino && activo && !Pausa.juegoPausado)
         {
             if (PuntosDeNavegacion != null && PuntosDeNavegacion.Length > indice)
             {

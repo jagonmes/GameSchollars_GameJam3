@@ -10,10 +10,13 @@ public class MoverCamaraAPC : MonoBehaviour
     
     public void moverCamaraAPC()
     {
-        cCamara.activo = false;
-        camara.PuntosDeNavegacion = new PuntoDeNavegación[1];
-        camara.PuntosDeNavegacion[0] = destino;
-        camara.activo = true;
-        camara.reiniciarCamino();
+        if (destino != null && cCamara != null && camara != null)
+        {
+            cCamara.activo = false;
+            camara.PuntosDeNavegacion = new PuntoDeNavegación[1];
+            camara.PuntosDeNavegacion[0] = destino;
+            camara.activo = true;
+            camara.reiniciarCamino();
+        }
     }
 }

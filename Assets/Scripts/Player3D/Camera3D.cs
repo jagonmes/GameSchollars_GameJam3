@@ -24,7 +24,7 @@ public class Camera3D : MonoBehaviour
 
     void Update()
     {
-        if (movimientoJugador.JugadorActivo)
+        if (movimientoJugador.JugadorActivo && !Pausa.juegoPausado)
         {
             //Leer X e Y del ratón
             Vector2 mouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
