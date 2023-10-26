@@ -10,7 +10,7 @@ public class Interactuable : MonoBehaviour
     [SerializeField] private UnityEvent Interaccion;
 
     //Indica si la interacción puede pasar solo una o varias veces
-    [SerializeField] private bool Reutilizable = true;
+    [SerializeField] public bool Reutilizable = true;
 
     //Indica si la interacción puede pasar solo una o varias veces
     [SerializeField] public bool Activo = true;

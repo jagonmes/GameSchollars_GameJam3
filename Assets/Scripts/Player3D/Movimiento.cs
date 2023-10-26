@@ -16,6 +16,8 @@ public class Movimiento : MonoBehaviour
     private CharacterController m_Controller;
 
     public bool JugadorActivo = true;
+    
+    public bool Pausa = false;
 
 
     void Start()
@@ -45,12 +47,18 @@ public class Movimiento : MonoBehaviour
                 ref m_MoveDampVelocity, moveSmoothTime);
 
             //Se asigna -2 a la velocidad horizontal para que se mantenga pegado al suelo
-            m_CurrentForceVelocity.y = -2f;
+            m_CurrentForceVelocity.y = -20f;
 
             //Se mueve al personaje
 
             m_Controller.Move(m_CurrentMoveVelocity * Time.deltaTime);
             m_Controller.Move(m_CurrentForceVelocity * Time.deltaTime);
+        }
+
+        if (!JugadorActivo && !Pausa)
+        {
+            m_CurrentMoveVelocity = new Vector3(0,0,0);
+            m_CurrentForceVelocity = new Vector3(0,0,0);
         }
     }
 }
