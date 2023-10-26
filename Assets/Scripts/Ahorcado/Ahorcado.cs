@@ -359,6 +359,6 @@ public class Ahorcado : MonoBehaviour
     {
         juegoEnMarcha = habilitado = activo = juegoEnMarcha = false;
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
-        this.transform.GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
+        GameObject.Find("Player").GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
     }
 }

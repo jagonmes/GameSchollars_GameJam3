@@ -1085,7 +1085,6 @@ GameObject:
   - component: {fileID: 6027410178904889608}
   - component: {fileID: 7053336133791127216}
   - component: {fileID: 1016600200744866797}
-  - component: {fileID: 2084566631068602558}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Minijuego
@@ -1241,21 +1240,6 @@ MonoBehaviour:
   iniciarJuego: 0
   juegoEnMarcha: 0
   limiteDeFallos: 5
---- !u!114 &2084566631068602558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8719503141461537251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98b06c203e0be5443b0ad8c19aa7053d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destino: {fileID: 0}
-  cCamara: {fileID: 0}
-  camara: {fileID: 0}
 --- !u!1 &9047240710590355725
 GameObject:
   m_ObjectHideFlags: 0

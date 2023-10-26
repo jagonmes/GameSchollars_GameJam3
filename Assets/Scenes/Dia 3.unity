@@ -254,6 +254,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Escenario
       objectReference: {fileID: 0}
+    - target: {fileID: 4714452901781974520, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: camara
+      value: 
+      objectReference: {fileID: 1466496827}
+    - target: {fileID: 4714452901781974520, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: cCamara
+      value: 
+      objectReference: {fileID: 1065199824}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Activo
@@ -341,7 +351,7 @@ PrefabInstance:
     - target: {fileID: 111718120497143979, guid: 8c28638de34ac1b4f8293c949778aef4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111718120497143979, guid: 8c28638de34ac1b4f8293c949778aef4,
         type: 3}
@@ -351,7 +361,7 @@ PrefabInstance:
     - target: {fileID: 111718120497143979, guid: 8c28638de34ac1b4f8293c949778aef4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 111718120497143979, guid: 8c28638de34ac1b4f8293c949778aef4,
         type: 3}
@@ -366,7 +376,7 @@ PrefabInstance:
     - target: {fileID: 111718120497143979, guid: 8c28638de34ac1b4f8293c949778aef4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 111718120497143979, guid: 8c28638de34ac1b4f8293c949778aef4,
         type: 3}
@@ -383,6 +393,30 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c28638de34ac1b4f8293c949778aef4, type: 3}
+--- !u!114 &1065199824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1391474443122193539, guid: 8c28638de34ac1b4f8293c949778aef4,
+    type: 3}
+  m_PrefabInstance: {fileID: 662275571}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53aafd2498a80b44f89d0fb9bfce9eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1466496827 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6624102159368031421, guid: 8c28638de34ac1b4f8293c949778aef4,
+    type: 3}
+  m_PrefabInstance: {fileID: 662275571}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d7ef5892771ef429a82d9b1e0417ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1587355720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 13405590762308463, guid: af12a653645f4704da4088b09ccea6f5,
@@ -402,6 +436,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ahorcado: {fileID: 525171854}
+  instrucciones: {fileID: 1677430392}
+--- !u!1 &1677430392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8578701099824560152, guid: 247dee3dc32c46645bb3d682caea11b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 212783859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
