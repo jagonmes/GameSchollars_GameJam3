@@ -29,7 +29,7 @@ public class LifesAdministrator : MonoBehaviour
         }
     }
     //devuelve el control al jugador 3D
-    private void  devolverControlAlJugador()
+    public void  devolverControlAlJugador()
     {
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
     }
