@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 
@@ -358,5 +359,6 @@ public class Ahorcado : MonoBehaviour
     {
         juegoEnMarcha = habilitado = activo = juegoEnMarcha = false;
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
+        this.transform.GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
     }
 }

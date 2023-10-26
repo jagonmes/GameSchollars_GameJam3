@@ -24,33 +24,40 @@ public class SeguirPuntoDeNavegacion : MonoBehaviour
     {
         if (!finDelCamino && activo)
         {
-            
-            //Comprobamos si hemos llegado al destino
-            if ((PuntosDeNavegacion[indice].posicionActiva && !PuntosDeNavegacion[indice].rotacionActiva && comprobarDistancia())||!PuntosDeNavegacion[indice].posicionActiva && PuntosDeNavegacion[indice].rotacionActiva && comprobarRotacion()||(PuntosDeNavegacion[indice].posicionActiva && PuntosDeNavegacion[indice].rotacionActiva && comprobarDistancia() && comprobarRotacion()))
+            if (PuntosDeNavegacion != null && PuntosDeNavegacion.Length > indice)
             {
-                indice++;
-                if (indice >= PuntosDeNavegacion.Length) 
+                //Comprobamos si hemos llegado al destino
+                if ((PuntosDeNavegacion[indice].posicionActiva && !PuntosDeNavegacion[indice].rotacionActiva &&
+                     comprobarDistancia()) ||
+                    !PuntosDeNavegacion[indice].posicionActiva && PuntosDeNavegacion[indice].rotacionActiva &&
+                    comprobarRotacion() || (PuntosDeNavegacion[indice].posicionActiva &&
+                                            PuntosDeNavegacion[indice].rotacionActiva && comprobarDistancia() &&
+                                            comprobarRotacion()))
                 {
-                    finDelCamino = true;
-                    if(continuo)
-                        reiniciarCamino();
+                    indice++;
+                    if (indice >= PuntosDeNavegacion.Length)
+                    {
+                        finDelCamino = true;
+                        if (continuo)
+                            reiniciarCamino();
+                    }
+                }
+                else
+                {
+                    //Si no hemos llegado a la posición deseada, nos movemos
+                    if (PuntosDeNavegacion[indice].posicionActiva && !comprobarDistancia())
+                    {
+                        transform.position = Vector3.MoveTowards(transform.position,
+                            PuntosDeNavegacion[indice].transform.position, velocidad * Time.deltaTime);
+                    }
+
+                    if (PuntosDeNavegacion[indice].rotacionActiva && !comprobarRotacion())
+                    {
+                        transform.rotation = Quaternion.RotateTowards(transform.rotation,
+                            PuntosDeNavegacion[indice].rotacion, velocidadDeRotacion * Time.deltaTime);
+                    }
                 }
             }
-            else
-            {
-                //Si no hemos llegado a la posición deseada, nos movemos
-                if (PuntosDeNavegacion[indice].posicionActiva && !comprobarDistancia())
-                {
-                    transform.position = Vector3.MoveTowards(transform.position, PuntosDeNavegacion[indice].transform.position, velocidad * Time.deltaTime);
-                }
-
-                if (PuntosDeNavegacion[indice].rotacionActiva && !comprobarRotacion())
-                {
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, PuntosDeNavegacion[indice].rotacion, velocidadDeRotacion* Time.deltaTime);
-                }
-
-            }
-            
         }
     }
 
