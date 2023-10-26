@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 1183334090176059905}
   - component: {fileID: 8021046683449096495}
   - component: {fileID: 7328010974217031746}
+  - component: {fileID: 5447327520948388244}
   m_Layer: 0
   m_Name: MinijuegoAhorcado
   m_TagString: MainCamera
@@ -210,7 +211,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: a6cdde14dab5ef74a96d84a96f52d571, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -272,6 +273,19 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &5447327520948388244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717994153937068771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313c93a32c8a0574a91e6bdd0b6102a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camara: {fileID: 1183334090176059905}
 --- !u!1 &781408431181059817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,9 +1136,9 @@ MonoBehaviour:
   - {r: 0, g: 1, b: 0.044155598, a: 1}
   - {r: 1, g: 0.9660375, b: 0, a: 1}
   TiempoDeRefresco: 0.2
-  activo: 1
-  iniciarJuego: 1
-  juegoEnMarcha: 1
+  activo: 0
+  iniciarJuego: 0
+  juegoEnMarcha: 0
   limiteDeFallos: 5
 --- !u!1 &9047240710590355725
 GameObject:
