@@ -165,6 +165,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6dcb04dcab35654e94c2db5023fc661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &248057666 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1898603336028108952, guid: 436522cf0b46b684688bee66654d5378,
+    type: 3}
+  m_PrefabInstance: {fileID: 9110695688025845843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &370826034 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 462691601575415056, guid: 436522cf0b46b684688bee66654d5378,
@@ -183,6 +189,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 9110695688025845843}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1088585586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1303184888183805346, guid: 436522cf0b46b684688bee66654d5378,
+    type: 3}
+  m_PrefabInstance: {fileID: 9110695688025845843}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57463e6a9cae5a42a429ace9c56abef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1098822303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6482733211662344281, guid: 436522cf0b46b684688bee66654d5378,
@@ -241,9 +259,24 @@ PrefabInstance:
       objectReference: {fileID: 1087079944}
     - target: {fileID: 943985256966942211, guid: 436522cf0b46b684688bee66654d5378,
         type: 3}
+      propertyPath: buttonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d82554ce6ca47f04db36e7a3bd4ac6b6, type: 3}
+    - target: {fileID: 943985256966942211, guid: 436522cf0b46b684688bee66654d5378,
+        type: 3}
+      propertyPath: soundsSource
+      value: 
+      objectReference: {fileID: 248057666}
+    - target: {fileID: 943985256966942211, guid: 436522cf0b46b684688bee66654d5378,
+        type: 3}
       propertyPath: playerAnimations
       value: 
       objectReference: {fileID: 174820895}
+    - target: {fileID: 1303184888183805346, guid: 436522cf0b46b684688bee66654d5378,
+        type: 3}
+      propertyPath: platforms.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1937928866173086056, guid: 436522cf0b46b684688bee66654d5378,
         type: 3}
       propertyPath: m_Name
@@ -319,11 +352,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5228378163898966676, guid: 436522cf0b46b684688bee66654d5378,
-        type: 3}
-      propertyPath: m_Name
-      value: Buttons
-      objectReference: {fileID: 0}
     - target: {fileID: 5609790800837293946, guid: 436522cf0b46b684688bee66654d5378,
         type: 3}
       propertyPath: animationsScript
@@ -339,11 +367,6 @@ PrefabInstance:
       propertyPath: knife
       value: 
       objectReference: {fileID: 1674753109}
-    - target: {fileID: 5818933166963891762, guid: 436522cf0b46b684688bee66654d5378,
-        type: 3}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: 174820885}
     - target: {fileID: 5818933166963891762, guid: 436522cf0b46b684688bee66654d5378,
         type: 3}
       propertyPath: lifesScript
@@ -369,6 +392,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7774741637572845416, guid: 436522cf0b46b684688bee66654d5378,
+        type: 3}
+      propertyPath: PltColors
+      value: 
+      objectReference: {fileID: 1088585586}
     - target: {fileID: 9075020343587191451, guid: 436522cf0b46b684688bee66654d5378,
         type: 3}
       propertyPath: m_LocalPosition.x

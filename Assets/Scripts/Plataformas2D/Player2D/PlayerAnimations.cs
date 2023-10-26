@@ -82,7 +82,7 @@ public class PlayerAnimations : MonoBehaviour
 
         }
     }
-    //script que controla la aniamcion final
+    //script que controla la animacion final
     public void endAnimation()
     {
         //impide movimiento de jugador
@@ -113,5 +113,10 @@ public class PlayerAnimations : MonoBehaviour
         Debug.Log("Death");
         lifesScript.dissolveLifes();
         playerAnimator.SetInteger("State", actualButtons + 1);
+    }
+
+    private void devolverControlAlJugador()
+    {
+        lifesScript.devolverControlAlJugador();
     }
 }

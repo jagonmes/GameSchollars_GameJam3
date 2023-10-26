@@ -19,6 +19,7 @@ public class GroundColorAdmin : MonoBehaviour
         purpleTilemap.SetActive(false);
         orangeTilemap.SetActive(true);
         redTilemap.SetActive(false);
+        Debug.Log(PltColors);
         PltColors.Orange();
     }
     public void redColor()
