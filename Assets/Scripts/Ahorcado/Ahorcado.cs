@@ -334,7 +334,7 @@ public class Ahorcado : MonoBehaviour
         if (contadorFallos > limiteDeFallos)
         {
             palabra.text = "HAS PERDIDO";
-            SelectorFinales.minijuegosSuperados.Add(false);
+            SelectorFinales.añadirALaLista(false);
             Invoke("devolverControlAlJugador", 2f);
         }
         else
@@ -343,7 +343,7 @@ public class Ahorcado : MonoBehaviour
             if (contadorNumeroDePalabra == palabras.Length - 1)
             {
                 palabra.text = "HAS GANADO";
-                SelectorFinales.minijuegosSuperados.Add(true);
+                SelectorFinales.añadirALaLista(true);
                 Invoke("devolverControlAlJugador", 2f);
             }
             //Si el jugador gana y quedan más palabras

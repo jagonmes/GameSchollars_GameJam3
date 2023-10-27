@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using UnityEngine;
 
-public class SelectorFinales
+public class SelectorFinales : MonoBehaviour
 {
     public static List<bool> minijuegosSuperados;
     
@@ -14,5 +15,25 @@ public class SelectorFinales
         }
 
         return activo;
+    }
+
+    public static void añadirALaLista(bool resultado)
+    {
+        if (minijuegosSuperados == null)
+        {
+            minijuegosSuperados = new List<bool>();
+            Debug.Log("Creando nueva lista de minijuegos superados");
+        }
+        minijuegosSuperados.Add(resultado);
+    }
+    
+    public static void vaciarLista()
+    { 
+        if (minijuegosSuperados == null)
+        {
+            minijuegosSuperados = new List<bool>();
+            Debug.Log("Creando nueva lista de minijuegos superados");
+        }
+        minijuegosSuperados.Clear();   
     }
 }
