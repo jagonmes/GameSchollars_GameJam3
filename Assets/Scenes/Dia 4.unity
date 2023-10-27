@@ -214,6 +214,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1037564724155844643, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037564724155844643, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 900006690}
+    - target: {fileID: 1037564724155844643, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037564724155844643, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: invocarCambiarDeEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037564724155844643, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CambioDeEscena, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1318233933554052073, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,6 +294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Escenario
       objectReference: {fileID: 0}
+    - target: {fileID: 3891834255624508673, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: subtitulos
+      value: 
+      objectReference: {fileID: 4900000, guid: 2f4aaa4fba3525548ac8c628b35496a1, type: 3}
     - target: {fileID: 4714452901781974520, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: camara
@@ -279,6 +309,11 @@ PrefabInstance:
       propertyPath: cCamara
       value: 
       objectReference: {fileID: 640733790}
+    - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: tiempo
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5960358970312142445, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_Size.y
@@ -319,6 +354,31 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 240709201}
+    - target: {fileID: 6519458091262700236, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.0030305868
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519458091262700236, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.0006100765
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519458091262700236, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.00000005841255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519458091262700236, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 2.1387582e-22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319092135316824110, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Activo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Activo
@@ -362,7 +422,7 @@ PrefabInstance:
     - target: {fileID: 8394279725473142882, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -372,6 +432,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1587355722}
+    - targetCorrespondingSourceObject: {fileID: 932957785716300419, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 573957086}
+    - targetCorrespondingSourceObject: {fileID: 932957785716300419, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 573957085}
   m_SourcePrefab: {fileID: 100100000, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
 --- !u!114 &240709201 stripped
 MonoBehaviour:
@@ -397,6 +465,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5eee91a56db4b438c7fb6707a0806b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &573957080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 932957785716300419, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &573957085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573957080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c8ffeebf9680745bd9ea0190a633e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cAudio: {fileID: 8300000, guid: b7cacd3eea45ee94490626677b27c13e, type: 3}
+  volume: 0.2
+  subtitulos: {fileID: 0}
+--- !u!114 &573957086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573957080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 573957085}
+        m_TargetAssemblyTypeName: Contestacion, Assembly-CSharp
+        m_MethodName: contestacion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 1
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: Puerta Rosa
 --- !u!114 &640733790 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1391474443122193539, guid: 8c28638de34ac1b4f8293c949778aef4,
@@ -494,6 +616,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c28638de34ac1b4f8293c949778aef4, type: 3}
+--- !u!114 &900006690 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6faaeb8ed59ce6742b76416f57c0859c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1587355720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 13405590762308463, guid: af12a653645f4704da4088b09ccea6f5,

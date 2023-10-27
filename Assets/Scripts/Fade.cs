@@ -1,6 +1,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 using Image = UnityEngine.UI.Image;
 
@@ -23,13 +24,13 @@ public class Fade : MonoBehaviour
     {
         if (fin)
         {
-            if (mJugador != null && mJugador.JugadorActivo)
-                mJugador.JugadorActivo = false;
             if (panel.color.a < 1)
             {
                 Color aux = panel.color;
                 aux.a += ratio * Time.deltaTime;
                 panel.color = aux;
+                if (mJugador != null && mJugador.JugadorActivo)
+                    mJugador.JugadorActivo = false;
             }
             else
             {
@@ -38,13 +39,13 @@ public class Fade : MonoBehaviour
         }
         if (fout)
         {
-            if (mJugador != null && mJugador.JugadorActivo)
-                mJugador.JugadorActivo = false;
             if (panel.color.a > 0)
             {
                 Color aux = panel.color;
                 aux.a -= ratio * Time.deltaTime;
                 panel.color = aux;
+                if (mJugador != null && mJugador.JugadorActivo)
+                    mJugador.JugadorActivo = false;
             }
             else
             {
@@ -56,6 +57,7 @@ public class Fade : MonoBehaviour
 
    public void activar()
     {
+        Debug.Log("activando fade");
         if (panel.color.a < 1)
             fin = true;
         else

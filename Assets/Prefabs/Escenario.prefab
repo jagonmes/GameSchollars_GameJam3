@@ -7166,6 +7166,7 @@ GameObject:
   - component: {fileID: 5960358970312142445}
   - component: {fileID: 1037564724155844643}
   - component: {fileID: 6391165686041632071}
+  - component: {fileID: 5918139003596131471}
   m_Layer: 0
   m_Name: Colchon
   m_TagString: Untagged
@@ -7286,6 +7287,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5918139003596131471}
+        m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
+        m_MethodName: invocarCambiarDeEscena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Reutilizable: 0
   Activo: 1
   InformacionVisual: 1
@@ -7308,6 +7321,20 @@ MonoBehaviour:
   fin: 0
   fout: 1
   ratio: 3
+--- !u!114 &5918139003596131471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347910555885656596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6faaeb8ed59ce6742b76416f57c0859c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indice: -1
+  tiempo: 3
 --- !u!1 &4465992723242251012
 GameObject:
   m_ObjectHideFlags: 0
@@ -7962,8 +7989,11 @@ GameObject:
   - component: {fileID: 1488470048246264769}
   - component: {fileID: 2350139140807273917}
   - component: {fileID: 332103430589690737}
-  - component: {fileID: 1166940341138980994}
   - component: {fileID: 7319092135316824110}
+  - component: {fileID: 1166940341138980994}
+  - component: {fileID: 614449134754579995}
+  - component: {fileID: 8402729935011507212}
+  - component: {fileID: 3891834255624508673}
   m_Layer: 0
   m_Name: PhoneBase
   m_TagString: Untagged
@@ -8057,6 +8087,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00065, y: 0.0026456364, z: 0.0046133464}
   m_Center: {x: -0.0001, y: -0.000074182404, z: 4.370129e-12}
+--- !u!114 &7319092135316824110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031391825592147183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6837ccc1969e0ab4391c6e80ad053396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Automatico: 1
+  Temporizador: 0
+  Disparador: 0
+  Activo: 0
+  Reutilizable: 0
+  TiempoDeReutilizacion: 1
+  Accion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8402729935011507212}
+        m_TargetAssemblyTypeName: Llamada, Assembly-CSharp
+        m_MethodName: LlamadaDeTelefono
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1166940341138980994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8071,14 +8134,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Interaccion:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3891834255624508673}
+        m_TargetAssemblyTypeName: Contestacion, Assembly-CSharp
+        m_MethodName: contestacion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Reutilizable: 0
   Activo: 0
   InformacionVisual: 1
   TiempoDeReutilizacion: 1
   materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
   textoAMostrar: "Tel\xE9fono"
---- !u!114 &7319092135316824110
+--- !u!114 &614449134754579995
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8087,18 +8162,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 5031391825592147183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6837ccc1969e0ab4391c6e80ad053396, type: 3}
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Automatico: 0
-  Temporizador: 0
-  Disparador: 0
-  Activo: 0
-  Reutilizable: 0
-  TiempoDeReutilizacion: 1
-  Accion:
+  Interaccion:
     m_PersistentCalls:
       m_Calls: []
+  Reutilizable: 1
+  Activo: 0
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 1
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: "Tel\xE9fono"
+--- !u!114 &8402729935011507212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031391825592147183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cd5ece31acb8a4296745288747f34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ringtone: {fileID: 8300000, guid: b7cacd3eea45ee94490626677b27c13e, type: 3}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 1
+--- !u!114 &3891834255624508673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031391825592147183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c8ffeebf9680745bd9ea0190a633e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cAudio: {fileID: 8300000, guid: 31de2a0c5834ab542abb896c539ae002, type: 3}
+  volume: 0.2
+  subtitulos: {fileID: 4900000, guid: 7278be5e483e62f4ea5420e16aa2f164, type: 3}
 --- !u!1 &5035330629199142383
 GameObject:
   m_ObjectHideFlags: 0

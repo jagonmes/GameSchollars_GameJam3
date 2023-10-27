@@ -1,6 +1,6 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 
 public class Contestacion : MonoBehaviour
@@ -8,6 +8,7 @@ public class Contestacion : MonoBehaviour
     [SerializeField] private AudioClip cAudio;
     [SerializeField] private float volume;
     [SerializeField] private TextAsset subtitulos;
+    
     private TextMeshProUGUI TextoSubtitulos;
     private bool ActivarSubtitulos = false;
     private Subtitulos sub = new Subtitulos();
@@ -15,7 +16,8 @@ public class Contestacion : MonoBehaviour
 
     private void Start()
     {
-        sub.CargarSubtitulos(subtitulos);
+        if(subtitulos != null)
+            sub.CargarSubtitulos(subtitulos);
         TextoSubtitulos = GameObject.Find("TextoSubtitulos").GetComponent<TextMeshProUGUI>();
     }
 
@@ -23,18 +25,23 @@ public class Contestacion : MonoBehaviour
     {
         if (ActivarSubtitulos)
         {
-            sub.imprimirPorPantalla(TextoSubtitulos);
+            ActivarSubtitulos = sub.imprimirPorPantalla(TextoSubtitulos);
         }
     }
 
-    public void Rick()
+    public void contestacion()
     { 
+        if (this.GetComponent<AudioSource>() == null)
+        {
+            this.AddComponent<AudioSource>();
+        }
         aSource = this.GetComponent<AudioSource>();
         aSource.Stop();
         aSource.loop = false;
         aSource.volume = volume;
         aSource.clip = cAudio;
         aSource.Play();
-        ActivarSubtitulos = true;
+        if(subtitulos != null)
+            ActivarSubtitulos = true;
     }
 }

@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Dia 1.unity
+    guid: ff970a9a96670c943aa39526ab5d0730
+  - enabled: 1
+    path: Assets/Scenes/Dia 2.unity
+    guid: 1760fbb21f0aa934ca13a9627ba002ff
+  - enabled: 1
+    path: Assets/Scenes/Dia 3.unity
+    guid: fae8fe43836bc0a45968ec591b2c310d
+  - enabled: 1
     path: Assets/Scenes/Dia 4.unity
     guid: fb4129a62c23bc54d818820020a48039
+  - enabled: 1
+    path: Assets/Scenes/Dia 5.unity
+    guid: cedc6a5cce5dbe141861a67a71c321bb
   m_configObjects: {}
