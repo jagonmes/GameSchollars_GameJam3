@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
 
     //private Animator animator;
-    public int active = 1;
+    public int active = 0;
 
     //boolean para regular la activacion de
     // la animacion de salto

@@ -312,7 +312,69 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1587355722}
+    - targetCorrespondingSourceObject: {fileID: 2691294922156548034, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 215066994}
+    - targetCorrespondingSourceObject: {fileID: 2691294922156548034, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 215066993}
   m_SourcePrefab: {fileID: 100100000, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+--- !u!1 &215066992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2691294922156548034, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &215066993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215066992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c8ffeebf9680745bd9ea0190a633e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cAudio: {fileID: 8300000, guid: c73071579e5f59546aa6285db2080c8d, type: 3}
+  volume: 0.2
+  subtitulos: {fileID: 0}
+--- !u!114 &215066994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215066992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 215066993}
+        m_TargetAssemblyTypeName: Contestacion, Assembly-CSharp
+        m_MethodName: contestacion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 1
+  materialResaltar: {fileID: 0}
+  textoAMostrar: Llamar a la puerta
 --- !u!1 &313154224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8578701099824560152, guid: 247dee3dc32c46645bb3d682caea11b3,
