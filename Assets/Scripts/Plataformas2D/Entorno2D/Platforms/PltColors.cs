@@ -13,7 +13,6 @@ public class PltColors : MonoBehaviour
         Debug.Log("Orange");
         for (int i = 0;i < platforms.Length;i++)
         {
-            Debug.Log(platforms[i]);
             platforms[i].GetComponent<Animator>().SetInteger("State", 1);          
         }
     }

@@ -11,6 +11,8 @@ public class LifesAdministrator : MonoBehaviour
 
     [SerializeField] private PlayerMovement playerMovement;
 
+    [SerializeField] private Resultado resultado;
+
     //Resta vidas y aplica los cambios necesarios
     public void LessLifes()
     {
@@ -25,6 +27,7 @@ public class LifesAdministrator : MonoBehaviour
             playerMovement.active = 0;
             this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             cartelDerrota.SetActive(true);
+            resultado.Derrota();
             Invoke("devolverControlAlJugador", 2f);
         }
     }
