@@ -8,6 +8,8 @@ TagManager:
   - Coin
   - Minijuego
   - MaquinaExp
+  - Obstacle
+  - Pato
   layers:
   - Default
   - TransparentFX

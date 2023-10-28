@@ -221,6 +221,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3891834255624508673, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: pintadas
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4269267759683194049, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_IsActive
@@ -549,6 +554,7 @@ MonoBehaviour:
   volume: 0.2
   spatialBlend: 1
   loop: 0
+  pintadas: {fileID: 1811269470}
 --- !u!114 &455773079
 MonoBehaviour:
   m_ObjectHideFlags: 0
