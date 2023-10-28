@@ -9,7 +9,7 @@ public class CambiarEscena : MonoBehaviour
 
     public void changeScene()
     {
-        Debug.Log("AA");
+        //Debug.Log("AA");
         if(TargetScene == -1)
         {
             Application.Quit();

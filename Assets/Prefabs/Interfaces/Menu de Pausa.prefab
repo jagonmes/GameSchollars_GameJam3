@@ -165,7 +165,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2170005104149247516}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3435382107177099198}
+        m_TargetAssemblyTypeName: Pausa, Assembly-CSharp
+        m_MethodName: Reanudar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6019398877082851843
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +294,7 @@ GameObject:
   - component: {fileID: 8318762942058245374}
   - component: {fileID: 2291505252097415325}
   - component: {fileID: 3050058411398251807}
+  - component: {fileID: 6389848829370568197}
   m_Layer: 0
   m_Name: Si
   m_TagString: Untagged
@@ -389,7 +402,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2291505252097415325}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6389848829370568197}
+        m_TargetAssemblyTypeName: CambiarEscena, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6389848829370568197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6659581111648051579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39d9c8fbe26e6b45881459515588e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetScene: 0
 --- !u!1 &9168038871863206076
 GameObject:
   m_ObjectHideFlags: 0
