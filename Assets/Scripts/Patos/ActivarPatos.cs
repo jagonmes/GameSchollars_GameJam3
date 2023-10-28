@@ -9,7 +9,7 @@ public class ActivarPatos : MonoBehaviour
 
     public void activarPatos()
     {
-      
+        patos.GetComponent<GameManager>().ShowInstructions();
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = false;
         this.transform.GetComponent<MoverCamaraAPC>().moverCamaraAPC();
         patos.active = true;

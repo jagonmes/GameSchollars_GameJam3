@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
 
     private int minScore = (50*20 + 200*4 + 500) / 2;
 
-    private float timeShowingInstructions = 5.0f;
     private float nextDuckSpawn = 0.0f;
 
     private float tiempoUltimoSpawn = 0;
@@ -24,12 +23,11 @@ public class GameManager : MonoBehaviour
     private List<int> duckScores = new List<int>();
 
     public Text scoreGUI;
+    public Text resultGUI;
 
 
     void Start()
     {
-        ShowInstructions();
-        Invoke("HideInstructions", timeShowingInstructions);
         LoadLists();
     }
 
@@ -60,16 +58,21 @@ public class GameManager : MonoBehaviour
             player.GetComponent<Movimiento_Mira>().active = false;
         }
         
+        if(instructions.active == true && Input.GetKeyDown("x"))
+        {
+            HideInstructions();
+        } 
+
     }
 
-    void ShowInstructions()
+    public void ShowInstructions()
     {
         playing = false;
         player.GetComponent<Movimiento_Mira>().active = false;
         instructions.SetActive(true);
     }
 
-    void HideInstructions()
+    public void HideInstructions()
     {
         playing = true;
         player.GetComponent<Movimiento_Mira>().active = true;
@@ -100,18 +103,7 @@ public class GameManager : MonoBehaviour
         {
             if (spawnedDucks == 25)
             {
-                if (player.GetComponent<Movimiento_Mira>().score > minScore)
-                {
-                    Debug.Log("Ganaste");
-                    SelectorFinales.añadirALaLista(true);
-                }
-                else
-                {
-                    Debug.Log("No has conseguido la puntuaci�n necesaria");
-                    SelectorFinales.añadirALaLista(false);
-                }
                 playing = false;
-                devolverControlAlJugador();
             }
 
             if (Time.time - tiempoUltimoSpawn >= nextDuckSpawn)
@@ -140,6 +132,23 @@ public class GameManager : MonoBehaviour
                 GetComponent<Spawn_Patos>().Spawn(ducks[nextDuckType], rails[Random.Range(0, rails.Count)], duckSpeeds[nextDuckType], duckScores[nextDuckType]);
                 tiempoUltimoSpawn = Time.time;
                 nextDuckSpawn = Random.Range(25, 51) / 10;
+            }
+        }
+        else
+        {
+            if(spawnedDucks == 25 && GameObject.FindGameObjectsWithTag("Pato").Length == 0)
+            {
+                if (player.GetComponent<Movimiento_Mira>().score > minScore)
+                {
+                    resultGUI.text = "¡Ganaste!";
+                    SelectorFinales.añadirALaLista(true);
+                }
+                else
+                {
+                    resultGUI.text = "Perdiste";
+                    SelectorFinales.añadirALaLista(false);
+                }
+                Invoke("devolverControlAlJugador", 3);
             }
         }
     }
