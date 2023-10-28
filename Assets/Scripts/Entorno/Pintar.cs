@@ -12,12 +12,4 @@ public class Pintar : MonoBehaviour
         controladorPintadas.activaPintada(indicePintada);
     }
 
-    public void pintadaMinijuego(int indicePintada)
-    {
-        if (controladorPintadas.mirarPintada(indicePintada))
-        {
-            controladorPintadas.activaPintada(indicePintada);
-        }
-    }
-
 }

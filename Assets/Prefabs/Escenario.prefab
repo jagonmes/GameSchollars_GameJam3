@@ -4129,7 +4129,6 @@ MonoBehaviour:
   - {fileID: 4269267759683194049}
   - {fileID: 7769706882693325312}
   - {fileID: 4487272503330087321}
-  activadoresPintadas: 
   finalesScript: {fileID: 1113936734605001997}
 --- !u!1 &2314444060463470898
 GameObject:
@@ -14762,8 +14761,8 @@ Transform:
   m_GameObject: {fileID: 7769706882693325312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.775, y: 1.592, z: 0.867}
-  m_LocalScale: {x: 0.0649015, y: 0.0649015, z: 0.0649015}
+  m_LocalPosition: {x: -0.973, y: 1.975, z: 0.89}
+  m_LocalScale: {x: 0.10274883, y: 0.10274883, z: 0.10274883}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7519422229277552389}
