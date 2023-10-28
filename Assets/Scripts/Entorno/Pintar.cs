@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class Pintar : MonoBehaviour
 {
-    [SerializeField] int indicePintada;
     [SerializeField] private ControladorPintadas controladorPintadas;
-    public void activaPintada()
+    public void activaPintada(int indicePintada)
     {
+        Debug.Log(indicePintada);
         controladorPintadas.activaPintada(indicePintada);
+    }
+
+    public void pintadaMinijuego(int indicePintada)
+    {
+        if (controladorPintadas.mirarPintada(indicePintada))
+        {
+            controladorPintadas.activaPintada(indicePintada);
+        }
     }
 
 }

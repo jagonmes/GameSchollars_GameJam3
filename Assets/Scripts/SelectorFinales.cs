@@ -5,7 +5,7 @@ public class SelectorFinales : MonoBehaviour
 {
     public static List<bool> minijuegosSuperados;
 
-    static bool[] decallsActivados;
+    static bool[] decallsActivados = new bool[5];
     public static bool finalActivado()
     {
         bool activo = true;
@@ -38,7 +38,7 @@ public class SelectorFinales : MonoBehaviour
         minijuegosSuperados.Clear();   
     }
 
-    public bool[] ConseguirMinijuegos()
+    public bool[] ConseguirPintadas()
     {
         return decallsActivados;
     }
