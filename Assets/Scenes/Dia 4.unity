@@ -469,6 +469,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.002582801
       objectReference: {fileID: 0}
+    - target: {fileID: 6180134080258973646, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: jugador
+      value: 
+      objectReference: {fileID: 662275572}
     - target: {fileID: 6391165686041632071, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: fin
@@ -799,6 +804,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c28638de34ac1b4f8293c949778aef4, type: 3}
+--- !u!1 &662275572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4587600192675525931, guid: 8c28638de34ac1b4f8293c949778aef4,
+    type: 3}
+  m_PrefabInstance: {fileID: 662275571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &845341640 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5031391825592147183, guid: af12a653645f4704da4088b09ccea6f5,

@@ -264,6 +264,11 @@ PrefabInstance:
       propertyPath: cCamara
       value: 
       objectReference: {fileID: 1751157155}
+    - target: {fileID: 6180134080258973646, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: jugador
+      value: 
+      objectReference: {fileID: 662275572}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Activo
@@ -625,6 +630,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c28638de34ac1b4f8293c949778aef4, type: 3}
+--- !u!1 &662275572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4587600192675525931, guid: 8c28638de34ac1b4f8293c949778aef4,
+    type: 3}
+  m_PrefabInstance: {fileID: 662275571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1130712780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1318233933554052073, guid: af12a653645f4704da4088b09ccea6f5,

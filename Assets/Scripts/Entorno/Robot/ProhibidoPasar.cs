@@ -21,7 +21,7 @@ public class ProhibidoPasar : MonoBehaviour
         jugadorM = jugador.GetComponent<Movimiento>();
         jugadorParent = jugador.transform.parent;
     }
-/*
+
     private void Update()
     {
         if (enMovimiento)
@@ -57,11 +57,12 @@ public class ProhibidoPasar : MonoBehaviour
             }
         }
     }
-*/
+
     private void OnTriggerEnter(Collider other)
     {
         jugadorM.JugadorActivo = false;
         robotSPDN.PuntosDeNavegacion = new PuntoDeNavegación[2];
+        puntosDeNavegacion[0].transform.position = new Vector3(puntosDeNavegacion[0].transform.position.x, puntosDeNavegacion[0].transform.position.y,jugadorM.transform.position.z);
         robotSPDN.PuntosDeNavegacion[0] = puntosDeNavegacion[0];
         robotSPDN.PuntosDeNavegacion[1] = puntosDeNavegacion[1];
         robotSPDN.reiniciarCamino();

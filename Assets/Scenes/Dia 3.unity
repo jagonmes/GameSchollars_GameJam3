@@ -474,6 +474,11 @@ PrefabInstance:
       propertyPath: textoAMostrar3
       value: Debes jugar y comer antes de dormir
       objectReference: {fileID: 0}
+    - target: {fileID: 6180134080258973646, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: jugador
+      value: 
+      objectReference: {fileID: 662275572}
     - target: {fileID: 6225623635723357112, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_IsActive
@@ -667,6 +672,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c28638de34ac1b4f8293c949778aef4, type: 3}
+--- !u!1 &662275572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4587600192675525931, guid: 8c28638de34ac1b4f8293c949778aef4,
+    type: 3}
+  m_PrefabInstance: {fileID: 662275571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &845688106 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,

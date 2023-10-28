@@ -108,6 +108,14 @@ public class Movimiento : MonoBehaviour
 
 
         }
+        else
+        {
+            if (cAudio != null)
+            {
+                aSource.Pause();
+                aSource2.Pause();
+            }
+        }
 
         if (!JugadorActivo && !Pausa.juegoPausado)
         {
