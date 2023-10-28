@@ -1,8 +1,5 @@
 
-using System;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.Serialization;
 using Image = UnityEngine.UI.Image;
 
 public class Fade : MonoBehaviour
@@ -17,7 +14,8 @@ public class Fade : MonoBehaviour
 
     private void Start()
     {
-        mJugador = GameObject.Find("Player").GetComponent<Movimiento>();
+        if(GameObject.Find("Player"))
+            mJugador = GameObject.Find("Player").GetComponent<Movimiento>();
     }
 
     void Update()
@@ -49,7 +47,8 @@ public class Fade : MonoBehaviour
             }
             else
             {
-                mJugador.JugadorActivo = true;
+                if (mJugador != null)
+                    mJugador.JugadorActivo = true;
                 fout = false;
             }
         }
