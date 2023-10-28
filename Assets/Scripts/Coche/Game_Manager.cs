@@ -33,7 +33,7 @@ public class Game_Manager : MonoBehaviour
 
     void Start()
     {
-        InicioPartida();
+        //InicioPartida();
 
         carretera1 = GameObject.Find("SpriteCarretera1");
         carretera2 = GameObject.Find("SpriteCarretera2");
@@ -84,6 +84,8 @@ public class Game_Manager : MonoBehaviour
 
     public void InicioPartida()
     {
+        this.active = true;
+        music.Play();
         spawner.spawnActivo = false;
         car.GetComponent<Car_Movement>().canMove = false;
         tiempoRestante = tiempoDeCuentaAtras;
@@ -100,7 +102,7 @@ public class Game_Manager : MonoBehaviour
         Vector3 posicionCarril = new Vector3(car.GetComponent<Car_Movement>().carriles[car.GetComponent<Car_Movement>().carrilActual].position.x, 3, 0);
         GameObject victima = Instantiate(victimaPrefab, posicionCarril, Quaternion.identity);
 
-        textoCentralGUI.text = "¡Lo lograste!";
+        textoCentralGUI.text = "ï¿½Lo lograste!";
         music.Stop();
         winSound.Play();
     }

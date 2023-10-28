@@ -14,7 +14,7 @@ public class Spawn_Obstacle : MonoBehaviour
     public void SpawnObstacle(int carril)
     {
         spawnedObstacles++;
-        Vector3 posicionCarril = new Vector3(carriles[carril].position.x, 6, 0);
+        Vector3 posicionCarril = new Vector3(carriles[carril].position.x, 6, carriles[carril].position.z);
         GameObject obstaculo = Instantiate(obstaculoPrefab, posicionCarril, Quaternion.identity);
         obstaculo.transform.localScale = obstaculoPrefab.transform.localScale;
     }
