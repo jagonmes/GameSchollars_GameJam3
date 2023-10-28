@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class ActivaPlt2D : MonoBehaviour
 {
-    /*
-    [SerializeField] private Muñeca2D plataformas;
+    [SerializeField] private GameObject instrucciones;
 
     public void activarAhorcado()
     {
-        ahorcado.activo = ahorcado.iniciarJuego = ahorcado.juegoEnMarcha = true;
-        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = false;
+        
     }
-    ^*/
+    
 }

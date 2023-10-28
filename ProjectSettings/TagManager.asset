@@ -7,6 +7,7 @@ TagManager:
   - Plataforma
   - Coin
   - Minijuego
+  - MaquinaExp
   layers:
   - Default
   - TransparentFX

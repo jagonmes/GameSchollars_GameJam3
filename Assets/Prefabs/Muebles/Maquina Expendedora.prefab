@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 9013426381379253501}
   - component: {fileID: 3097367540994894404}
   - component: {fileID: 1599298903870426787}
+  - component: {fileID: 2097952123477497747}
   m_Layer: 0
   m_Name: Maquina Expendedora
-  m_TagString: Untagged
+  m_TagString: MaquinaExp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4196796825785682749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5, y: 0.49999997, z: 0.5, w: -0.5}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 4.6871634, y: 1.1033906, z: 1.647032}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!33 &3684360993203929591
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -120,10 +121,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Interaccion:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097952123477497747}
+        m_TargetAssemblyTypeName: Comida, Assembly-CSharp
+        m_MethodName: comer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Reutilizable: 0
-  Activo: 0
+  Activo: 1
   InformacionVisual: 1
   TiempoDeReutilizacion: 2
   materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
   textoAMostrar: Maquina Expendedora
+--- !u!114 &2097952123477497747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196796825785682749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6825f267721aaef499aa14b54a508359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cambiaEscena: {fileID: 0}
+  maquinasExp:
+  - {fileID: 4196796825785682749}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
