@@ -99,10 +99,11 @@ public class Game_Manager : MonoBehaviour
         //Debug.Log("ACABASTE");
         car.GetComponent<Car_Movement>().canMove = false;
 
-        Vector3 posicionCarril = new Vector3(car.GetComponent<Car_Movement>().carriles[car.GetComponent<Car_Movement>().carrilActual].position.x, 3, 0);
+        Vector3 posicionCarril = new Vector3(car.GetComponent<Car_Movement>().carriles[car.GetComponent<Car_Movement>().carrilActual].position.x, 
+                                             3, car.GetComponent<Car_Movement>().carriles[car.GetComponent<Car_Movement>().carrilActual].position.z);
         GameObject victima = Instantiate(victimaPrefab, posicionCarril, Quaternion.identity);
 
-        textoCentralGUI.text = "�Lo lograste!";
+        textoCentralGUI.text = "¡Lo lograste!";
         music.Stop();
         winSound.Play();
     }
@@ -182,10 +183,28 @@ public class Game_Manager : MonoBehaviour
         {
             car.transform.Translate(new Vector3(0, 7, 0) * Time.deltaTime, Space.World);
 
+            if(car.transform.position.y > 10)
+            {
+                SelectorFinales.añadirALaLista(true);
+                devolverControlAlJugador();
+            }
         }
         else
         {
             ManageGameSpeed();
         }
+    }
+
+    public void devolverControlAlJugador()
+    {
+        active = false;
+        AudioSource musica = this.GetComponent<AudioSource>();
+        if (musica != null)
+        {
+            musica.Stop();
+        }
+        car.GetComponent<Car_HP_Manager>().crushSound.Stop();
+        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
+        GameObject.Find("Player").GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
     }
 }

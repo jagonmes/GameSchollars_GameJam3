@@ -10,6 +10,7 @@ public class Car_HP_Manager : MonoBehaviour
     public UI_Manager manager;
     public GameObject bloodMark;
     public AudioSource crushSound;
+    public Game_Manager gameManager;
 
     // Update is called once per frame
     void Update()
@@ -18,7 +19,10 @@ public class Car_HP_Manager : MonoBehaviour
 
         if(hp <= 0)
         {
-            Application.Quit();
+            Destroy(this);
+            SelectorFinales.añadirALaLista(false);
+            gameManager.devolverControlAlJugador();
+            gameManager.textoCentralGUI.text = "Perdiste";
         }
     }
 

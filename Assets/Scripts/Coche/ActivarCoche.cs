@@ -9,16 +9,18 @@ public class ActivarCoche : MonoBehaviour
     [SerializeField] private Game_Manager coches;
     
     private bool activo = false;
+    private bool usado = false;
     void OnGUI()
     {
         Event e = Event.current;
-        if (activo && e.isKey)
+        if (activo && e.isKey && !usado)
         {
             switch (e.keyCode)
             {
                 case KeyCode.X:
                     coches.InicioPartida();
                     instrucciones?.SetActive(false);
+                    usado = true;
                     break;
                 default:
                     break;
