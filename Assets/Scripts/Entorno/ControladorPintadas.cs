@@ -5,7 +5,7 @@ using UnityEngine;
 public class ControladorPintadas : MonoBehaviour
 {
     [SerializeField] private GameObject[] pintadas;
-    public bool[] activadoresPintadas;
+    private bool[] activadoresPintadas;
 
     [SerializeField] private SelectorFinales finalesScript;
 
@@ -14,9 +14,16 @@ public class ControladorPintadas : MonoBehaviour
         activadoresPintadas = finalesScript.ConseguirPintadas();
         for (int i = 0; i < pintadas.Length; i++)
         {
+            Debug.Log(i);
             if (activadoresPintadas[i])
             {
+                Debug.Log(i);
+                Debug.Log(activadoresPintadas[i]);
                 pintadas[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                pintadas[i].gameObject.SetActive(false);
             }
         }
     }

@@ -3,9 +3,16 @@ using UnityEngine;
 
 public class SelectorFinales : MonoBehaviour
 {
-    public static List<bool> minijuegosSuperados;
+    public static List<bool> minijuegosSuperados = new List<bool>();
+    static bool[] decallsActivados = new bool[7];
 
-    static bool[] decallsActivados = new bool[6];
+    private void Start()
+    {
+        if(minijuegosSuperados.Count== 0)
+        {
+            reiniciar();
+        }
+    }
     public static bool finalActivado()
     {
         bool activo = true;

@@ -123,6 +123,196 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71295627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5162663443721968053, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &71295634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71295627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723fc621eb055054bb11c266ddcbeaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1801972077}
+  fin: 1
+  fout: 0
+  ratio: 3
+--- !u!114 &71295635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71295627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38ab98f84dc7d7469a01bed59483df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controladorPintadasScript: {fileID: 215066996}
+  puntoDepertar: {fileID: 565389211}
+  fade: {fileID: 1961946343}
+  texto1: {fileID: 0}
+--- !u!114 &71295636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71295627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1961946345}
+        m_TargetAssemblyTypeName: Comida, Assembly-CSharp
+        m_MethodName: comer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Pintar, Assembly-CSharp
+        m_MethodName: activaPintada
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1961946342}
+        m_TargetAssemblyTypeName: Dia3Fade, Assembly-CSharp
+        m_MethodName: fadeMaquina
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 2
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: Maquina Expendedora
+--- !u!1 &124198812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5907640667960152530, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &124198819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124198812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723fc621eb055054bb11c266ddcbeaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1801972077}
+  fin: 1
+  fout: 0
+  ratio: 3
+--- !u!114 &124198820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124198812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38ab98f84dc7d7469a01bed59483df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controladorPintadasScript: {fileID: 215066996}
+  puntoDepertar: {fileID: 565389211}
+  fade: {fileID: 1961946343}
+  texto1: {fileID: 0}
+--- !u!114 &124198821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124198812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1961946345}
+        m_TargetAssemblyTypeName: Comida, Assembly-CSharp
+        m_MethodName: comer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Pintar, Assembly-CSharp
+        m_MethodName: activaPintada
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1961946342}
+        m_TargetAssemblyTypeName: Dia3Fade, Assembly-CSharp
+        m_MethodName: fadeMaquina
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 2
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: Maquina Expendedora
 --- !u!1001 &189026549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -500,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -509,12 +699,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1961946341}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1961946342}
     - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
@@ -524,8 +729,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: fadeMaquina
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: Pintar, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Dia3Fade, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -534,7 +749,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947758206579386568, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7769706882693325312, guid: af12a653645f4704da4088b09ccea6f5,
@@ -637,7 +862,12 @@ PrefabInstance:
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4283178407596635727, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+    - {fileID: 1251866628574615922, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+    - {fileID: 9075873068051960908, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+    - {fileID: 4338709199994296400, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+    - {fileID: 7758200875836660779, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4269267759683194049, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
     m_AddedGameObjects:
@@ -645,6 +875,10 @@ PrefabInstance:
         type: 3}
       insertIndex: 3
       addedObject: {fileID: 189026550}
+    - targetCorrespondingSourceObject: {fileID: 7057668513461320904, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 565389212}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 13405590762308463, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -662,10 +896,74 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1095280905}
+    - targetCorrespondingSourceObject: {fileID: 1693130854215496657, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 219551099}
+    - targetCorrespondingSourceObject: {fileID: 1693130854215496657, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 219551098}
+    - targetCorrespondingSourceObject: {fileID: 1693130854215496657, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 219551100}
+    - targetCorrespondingSourceObject: {fileID: 4418131891101900012, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 850552654}
+    - targetCorrespondingSourceObject: {fileID: 4418131891101900012, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 850552653}
+    - targetCorrespondingSourceObject: {fileID: 4418131891101900012, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 850552655}
+    - targetCorrespondingSourceObject: {fileID: 5162663443721968053, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71295635}
+    - targetCorrespondingSourceObject: {fileID: 5162663443721968053, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71295634}
+    - targetCorrespondingSourceObject: {fileID: 5162663443721968053, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71295636}
     - targetCorrespondingSourceObject: {fileID: 5504727900220763478, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1961946341}
+      addedObject: {fileID: 1961946342}
+    - targetCorrespondingSourceObject: {fileID: 5504727900220763478, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1961946343}
+    - targetCorrespondingSourceObject: {fileID: 1169225736206032334, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2038088624}
+    - targetCorrespondingSourceObject: {fileID: 1169225736206032334, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2038088623}
+    - targetCorrespondingSourceObject: {fileID: 1169225736206032334, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2038088625}
+    - targetCorrespondingSourceObject: {fileID: 5907640667960152530, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 124198820}
+    - targetCorrespondingSourceObject: {fileID: 5907640667960152530, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 124198819}
+    - targetCorrespondingSourceObject: {fileID: 5907640667960152530, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 124198821}
   m_SourcePrefab: {fileID: 100100000, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
 --- !u!4 &215066992 stripped
 Transform:
@@ -685,6 +983,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 215066991}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &215066995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7057668513461320904, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &215066996 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 789628030625468083, guid: af12a653645f4704da4088b09ccea6f5,
@@ -697,12 +1001,138 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8beb3d934d3199347b9411efad5fc2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &219551091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1693130854215496657, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &219551098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219551091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723fc621eb055054bb11c266ddcbeaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1801972077}
+  fin: 1
+  fout: 0
+  ratio: 3
+--- !u!114 &219551099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219551091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38ab98f84dc7d7469a01bed59483df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controladorPintadasScript: {fileID: 215066996}
+  puntoDepertar: {fileID: 565389211}
+  fade: {fileID: 1961946343}
+  texto1: {fileID: 0}
+--- !u!114 &219551100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219551091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1961946345}
+        m_TargetAssemblyTypeName: Comida, Assembly-CSharp
+        m_MethodName: comer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Pintar, Assembly-CSharp
+        m_MethodName: activaPintada
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1961946342}
+        m_TargetAssemblyTypeName: Dia3Fade, Assembly-CSharp
+        m_MethodName: fadeMaquina
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 2
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: Maquina Expendedora
 --- !u!1 &561997583 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2326993112483476245, guid: af12a653645f4704da4088b09ccea6f5,
     type: 3}
   m_PrefabInstance: {fileID: 215066991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &565389211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565389212}
+  m_Layer: 0
+  m_Name: FadePuntoDespertar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565389212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565389211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -2.61, y: 1.166, z: 1.748}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 215066995}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &662275571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -796,6 +1226,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6faaeb8ed59ce6742b76416f57c0859c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &850552646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4418131891101900012, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &850552653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850552646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723fc621eb055054bb11c266ddcbeaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1801972077}
+  fin: 1
+  fout: 0
+  ratio: 3
+--- !u!114 &850552654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850552646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38ab98f84dc7d7469a01bed59483df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controladorPintadasScript: {fileID: 215066996}
+  puntoDepertar: {fileID: 565389211}
+  fade: {fileID: 1961946343}
+  texto1: {fileID: 0}
+--- !u!114 &850552655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850552646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1961946345}
+        m_TargetAssemblyTypeName: Comida, Assembly-CSharp
+        m_MethodName: comer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Pintar, Assembly-CSharp
+        m_MethodName: activaPintada
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1961946342}
+        m_TargetAssemblyTypeName: Dia3Fade, Assembly-CSharp
+        m_MethodName: fadeMaquina
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 2
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: Maquina Expendedora
 --- !u!1 &930244009 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3154963861605265050, guid: 436522cf0b46b684688bee66654d5378,
@@ -1069,13 +1594,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorPintadas: {fileID: 215066996}
+--- !u!114 &1801972077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7764268576486650751, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1961946334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5504727900220763478, guid: af12a653645f4704da4088b09ccea6f5,
     type: 3}
   m_PrefabInstance: {fileID: 215066991}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1961946341
+--- !u!114 &1961946342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1084,10 +1621,136 @@ MonoBehaviour:
   m_GameObject: {fileID: 1961946334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fbd7b72f990adc45af611d5c56260d3, type: 3}
+  m_Script: {fileID: 11500000, guid: d38ab98f84dc7d7469a01bed59483df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controladorPintadas: {fileID: 215066996}
+  controladorPintadasScript: {fileID: 215066996}
+  puntoDepertar: {fileID: 565389211}
+  fade: {fileID: 1961946343}
+  texto1: {fileID: 0}
+--- !u!114 &1961946343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961946334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723fc621eb055054bb11c266ddcbeaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1801972077}
+  fin: 1
+  fout: 0
+  ratio: 3
+--- !u!114 &1961946345 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7730377020470817272, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961946334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6825f267721aaef499aa14b54a508359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2038088616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1169225736206032334, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2038088623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038088616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723fc621eb055054bb11c266ddcbeaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1801972077}
+  fin: 1
+  fout: 0
+  ratio: 3
+--- !u!114 &2038088624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038088616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38ab98f84dc7d7469a01bed59483df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controladorPintadasScript: {fileID: 215066996}
+  puntoDepertar: {fileID: 565389211}
+  fade: {fileID: 1961946343}
+  texto1: {fileID: 0}
+--- !u!114 &2038088625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038088616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1961946345}
+        m_TargetAssemblyTypeName: Comida, Assembly-CSharp
+        m_MethodName: comer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Pintar, Assembly-CSharp
+        m_MethodName: activaPintada
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1961946342}
+        m_TargetAssemblyTypeName: Dia3Fade, Assembly-CSharp
+        m_MethodName: fadeMaquina
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 2
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: Maquina Expendedora
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
