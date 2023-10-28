@@ -204,7 +204,7 @@ PrefabInstance:
     - target: {fileID: 9001933021441507269, guid: 247dee3dc32c46645bb3d682caea11b3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -558,8 +558,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cAudio: {fileID: 8300000, guid: aa9319c641eac7b47bedbf1401c324cc, type: 3}
-  volume: 0.2
   subtitulos: {fileID: 0}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 0
 --- !u!114 &573957086
 MonoBehaviour:
   m_ObjectHideFlags: 0

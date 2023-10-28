@@ -203,6 +203,10 @@ MonoBehaviour:
   destino: {fileID: 1154305997979230671}
   cCamara: {fileID: 0}
   camara: {fileID: 0}
+  cAudio: {fileID: 8300000, guid: cc6ea68684e9ab84b9c38d98de4c4add, type: 3}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 0
 --- !u!1 &38833947753245991
 GameObject:
   m_ObjectHideFlags: 0
@@ -5372,6 +5376,10 @@ MonoBehaviour:
   Abrir: {fileID: 2573560951047589526}
   Cerrar: {fileID: 6990903324673595689}
   tiempoAbierta: 5
+  cAudio: {fileID: 8300000, guid: 5674de8a225a49041a77fa7f36a3613a, type: 3}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 0
 --- !u!114 &5803429311721381844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8960,8 +8968,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cAudio: {fileID: 8300000, guid: 31de2a0c5834ab542abb896c539ae002, type: 3}
-  volume: 0.2
   subtitulos: {fileID: 4900000, guid: 7278be5e483e62f4ea5420e16aa2f164, type: 3}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 0
 --- !u!1 &5035330629199142383
 GameObject:
   m_ObjectHideFlags: 0
@@ -13609,6 +13619,10 @@ MonoBehaviour:
   Abrir: {fileID: 3352181715111850735}
   Cerrar: {fileID: 6356666635837674100}
   tiempoAbierta: 5
+  cAudio: {fileID: 8300000, guid: 5674de8a225a49041a77fa7f36a3613a, type: 3}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 0
 --- !u!114 &2238509010137645374
 MonoBehaviour:
   m_ObjectHideFlags: 0
