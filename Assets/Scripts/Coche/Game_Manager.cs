@@ -186,6 +186,8 @@ public class Game_Manager : MonoBehaviour
             if(car.transform.position.y > 10)
             {
                 SelectorFinales.añadirALaLista(true);
+                Pintar pintar = this.GetComponent<Pintar>();
+                pintar.activaPintada(0);
                 devolverControlAlJugador();
             }
         }
