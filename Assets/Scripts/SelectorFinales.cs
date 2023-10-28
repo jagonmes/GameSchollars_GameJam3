@@ -4,7 +4,8 @@ using UnityEngine;
 public class SelectorFinales : MonoBehaviour
 {
     public static List<bool> minijuegosSuperados;
-    
+
+    static bool[] decallsActivados;
     public static bool finalActivado()
     {
         bool activo = true;
@@ -35,5 +36,15 @@ public class SelectorFinales : MonoBehaviour
             Debug.Log("Creando nueva lista de minijuegos superados");
         }
         minijuegosSuperados.Clear();   
+    }
+
+    public bool[] ConseguirMinijuegos()
+    {
+        return decallsActivados;
+    }
+
+    public void activarPintada(int indice)
+    {
+        decallsActivados[indice] = true;
     }
 }
