@@ -255,10 +255,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2090747610380802626, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2283182306555873958, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_Name
       value: Escenario
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326993112483476245, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665628164803764749, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920807157165934267, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067356344979400867, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182276294168059196, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627245461877998356, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269267759683194049, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487272503330087321, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4714452901781974520, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -270,6 +315,41 @@ PrefabInstance:
       propertyPath: cCamara
       value: 
       objectReference: {fileID: 662275573}
+    - target: {fileID: 5120966261675120184, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225623635723357112, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261204754857938764, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402145277898106571, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424933103864592380, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903012769964669974, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319092135316824110, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Activo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Activo
@@ -310,6 +390,11 @@ PrefabInstance:
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8985891786448948988, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -318,7 +403,69 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1587355722}
+    - targetCorrespondingSourceObject: {fileID: 2691294922156548034, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 455773079}
+    - targetCorrespondingSourceObject: {fileID: 2691294922156548034, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 455773078}
   m_SourcePrefab: {fileID: 100100000, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+--- !u!1 &455773073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2691294922156548034, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &455773078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455773073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c8ffeebf9680745bd9ea0190a633e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cAudio: {fileID: 8300000, guid: ebc5074d2461ede489e6b312eac6b6bb, type: 3}
+  volume: 0.2
+  subtitulos: {fileID: 0}
+--- !u!114 &455773079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455773073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 455773078}
+        m_TargetAssemblyTypeName: Contestacion, Assembly-CSharp
+        m_MethodName: contestacion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 1
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: Llamar a la puerta
 --- !u!114 &525171854 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1016600200744866797, guid: 247dee3dc32c46645bb3d682caea11b3,

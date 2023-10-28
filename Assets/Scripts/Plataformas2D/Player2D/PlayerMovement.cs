@@ -11,15 +11,14 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public PlayerAnimations animationsScript;
 
-    //public int lifes;
-    //public GameObject[] lifeSprites;
-    //public GameObject cartelDerrota;
+    [SerializeField] private AudioController soundController;
+
     public float runSpeed = 60f;
     float horizontalMove = 0f;
     bool jump = false;
 
     //private Animator animator;
-    public int active = 1;
+    public int active = 0;
 
     //boolean para regular la activacion de
     // la animacion de salto
@@ -81,7 +80,6 @@ public class PlayerMovement : MonoBehaviour
     //aplica el movimiento al jugador
     void FixedUpdate(){
         controller.Move(horizontalMove* Time.fixedDeltaTime*active, false,jump);
-
     }
 
     //pone el bool de salto a true

@@ -12,8 +12,6 @@ public class ButtonCollection : MonoBehaviour
     private int monedasTotales = 3;
     private GameObject[] monedas;
 
-
-
     //obtiene el codigo PlayerMovement
     [SerializeField] private PlayerMovement controller;
     //obtiene el codigo PltColorAdmin para cambiar colores del mapa
@@ -21,10 +19,9 @@ public class ButtonCollection : MonoBehaviour
 
     [SerializeField] private PlayerAnimations playerAnimations;
 
-    [SerializeField] private AudioClip buttonSound;
-    [SerializeField] private AudioSource soundsSource;
+    [SerializeField] private AudioController soundController;
 
-
+    [SerializeField] private Resultado resultado;
 
     private void Update()
     {
@@ -38,7 +35,7 @@ public class ButtonCollection : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            soundsSource.PlayOneShot(buttonSound);
+            
             Invoke("AddButton",0.5f);
             Destroy(other.gameObject);
         }
@@ -47,30 +44,30 @@ public class ButtonCollection : MonoBehaviour
     public void AddButton()
     {
         Debug.Log("Btonoes" + numMonedas);
-
+        //soundController.coinSound();
         //actualiza el animator del player
         //actualiza la situacion de la escena(colores)
         if (numMonedas == 1)
         {
+            soundController.scream1Sound();
+            Invoke("wonderSound", 1.5f);
             playerAnimations.controlAnimations(4);
             colorAdm.orangeColor();
         }
         else if (numMonedas == 2)
         {
+            soundController.scream2Sound();
             playerAnimations.controlAnimations(5);
             colorAdm.redColor();
         }
         else if(numMonedas == 3)
         {
             playerAnimations.controlAnimations(6);
+            resultado.Victoria();
         }
         else 
         {
             Debug.Log("Error en numero de monedas");
         }
-    }
-    public void DevolverControlAlJugador()
-    {
-        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
     }
 }

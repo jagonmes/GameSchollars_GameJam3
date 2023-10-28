@@ -199,6 +199,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Reutilizable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: InformacionVisual
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1318233933554052073, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -254,6 +264,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Escenario
       objectReference: {fileID: 0}
+    - target: {fileID: 3182276294168059196, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487272503330087321, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4714452901781974520, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: camara
@@ -264,6 +284,11 @@ PrefabInstance:
       propertyPath: cCamara
       value: 
       objectReference: {fileID: 1065199824}
+    - target: {fileID: 6225623635723357112, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Activo
@@ -311,7 +336,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 13405590762308463, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1587355730}
+    - targetCorrespondingSourceObject: {fileID: 13405590762308463, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1587355722}
+    - targetCorrespondingSourceObject: {fileID: 908091779345292548, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1095280906}
+    - targetCorrespondingSourceObject: {fileID: 908091779345292548, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1095280905}
   m_SourcePrefab: {fileID: 100100000, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
 --- !u!114 &525171854 stripped
 MonoBehaviour:
@@ -405,6 +442,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aafd2498a80b44f89d0fb9bfce9eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1095280900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 908091779345292548, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1095280905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095280900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e82c3283ea4f4b91c40945825e05e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1095280906}
+        m_TargetAssemblyTypeName: Contestacion, Assembly-CSharp
+        m_MethodName: contestacion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Reutilizable: 0
+  Activo: 1
+  InformacionVisual: 1
+  TiempoDeReutilizacion: 1
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
+  textoAMostrar: Llamar a la puerta
+--- !u!114 &1095280906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095280900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c8ffeebf9680745bd9ea0190a633e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cAudio: {fileID: 8300000, guid: 25fbdacdd3b25b04092990efb68e2fa5, type: 3}
+  volume: 60
+  subtitulos: {fileID: 4900000, guid: 385a3d31207cf4747b81c528755efbd2, type: 3}
 --- !u!114 &1466496827 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6624102159368031421, guid: 8c28638de34ac1b4f8293c949778aef4,
@@ -437,6 +528,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ahorcado: {fileID: 525171854}
   instrucciones: {fileID: 1677430392}
+--- !u!114 &1587355730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587355720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adaa00b8462f07c49995e1e5b97d27f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1677430392 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8578701099824560152, guid: 247dee3dc32c46645bb3d682caea11b3,

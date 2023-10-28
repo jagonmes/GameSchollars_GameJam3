@@ -199,6 +199,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Reutilizable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 215066993}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: contestacion
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Contestacion, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1318233933554052073, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -249,10 +269,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1885663235595540042, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2283182306555873958, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_Name
       value: Escenario
+      objectReference: {fileID: 0}
+    - target: {fileID: 2290389049214041012, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326993112483476245, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920807157165934267, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182276294168059196, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627245461877998356, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269267759683194049, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487272503330087321, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4714452901781974520, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -264,6 +324,31 @@ PrefabInstance:
       propertyPath: cCamara
       value: 
       objectReference: {fileID: 749745104}
+    - target: {fileID: 5803429311721381844, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225623635723357112, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261204754857938764, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424933103864592380, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903012769964669974, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Activo
@@ -304,15 +389,48 @@ PrefabInstance:
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    - target: {fileID: 8985891786448948988, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2290389049214041012, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+    - {fileID: 5803429311721381844, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4269267759683194049, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 13405590762308463, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1587355722}
+    - targetCorrespondingSourceObject: {fileID: 3012486262999769602, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 215066993}
   m_SourcePrefab: {fileID: 100100000, guid: af12a653645f4704da4088b09ccea6f5, type: 3}
+--- !u!1 &215066992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3012486262999769602, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &215066993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215066992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c8ffeebf9680745bd9ea0190a633e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cAudio: {fileID: 0}
+  volume: 0.2
+  subtitulos: {fileID: 0}
 --- !u!114 &525171854 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1016600200744866797, guid: 247dee3dc32c46645bb3d682caea11b3,

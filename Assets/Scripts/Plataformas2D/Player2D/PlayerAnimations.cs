@@ -19,6 +19,7 @@ public class PlayerAnimations : MonoBehaviour
     //obtiene el codigo PlayerMovement
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private LifesAdministrator lifesScript;
+    [SerializeField] private AudioController soundController;
     void Start()
     {
         knifeAnimator = knife.GetComponent<Animator>();
@@ -83,6 +84,7 @@ public class PlayerAnimations : MonoBehaviour
         }
     }
     //script que controla la animacion final
+    //la cual se divide en 3 partes
     public void endAnimation()
     {
         //impide movimiento de jugador
@@ -103,6 +105,7 @@ public class PlayerAnimations : MonoBehaviour
     // y el mensaje "felicidades"
     private void Transform()
     {
+        soundController.monsterSound();
         knifeAnimator.SetBool("isTransforming", true);
         feliz.gameObject.SetActive(true);
         Invoke("devolverControlAlJugador", 7f);
@@ -110,7 +113,7 @@ public class PlayerAnimations : MonoBehaviour
     //activa la aniamcion de player "death"
     private void Death()
     {
-        Debug.Log("Death");
+        soundController.knifeSound();
         lifesScript.dissolveLifes();
         playerAnimator.SetInteger("State", actualButtons + 1);
     }
