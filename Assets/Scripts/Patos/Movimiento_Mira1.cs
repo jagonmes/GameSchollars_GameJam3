@@ -28,8 +28,8 @@ public class Movimiento_Mira : MonoBehaviour
 
             transform.Translate(new Vector3(desplazamientoX, desplazamientoY, 0f));
 
-            float limiteX = Mathf.Clamp(transform.position.x, -9f, 9f); // Límites en el eje X
-            float limiteY = Mathf.Clamp(transform.position.y, -9f, 9f); // Límites en el eje Y
+            float limiteX = Mathf.Clamp(transform.position.x, -9f, 9f); // Lï¿½mites en el eje X
+            float limiteY = Mathf.Clamp(transform.position.y, -5f, 5f); // Lï¿½mites en el eje Y
 
             transform.position = new Vector3(limiteX, limiteY, transform.position.z);
 

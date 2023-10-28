@@ -15,7 +15,7 @@ public class Spawn_Patos : MonoBehaviour
         }
         else
         {
-            GameObject pato_spawneado = GameObject.Instantiate(duck, new Vector3(rail.transform.position.x * -1, rail.transform.position.y, 0), Quaternion.identity);
+            GameObject pato_spawneado = GameObject.Instantiate(duck, new Vector3(rail.transform.position.x * -1, rail.transform.position.y, rail.transform.position.z), Quaternion.identity);
             pato_spawneado.GetComponent<Comportamiento_Patos>().posY = rail.transform.position.y;
             pato_spawneado.GetComponent<Comportamiento_Patos>().speedX = speedX * -1;
             pato_spawneado.GetComponent<Comportamiento_Patos>().score = score;

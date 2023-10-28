@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -10,7 +7,7 @@ public class GameManager : MonoBehaviour
     public GameObject instructions;
     public GameObject player;
     public bool playing = false;
-    public bool active = true;
+    public bool active = false;
 
     private int minScore = (50*20 + 200*4 + 500) / 2;
 
@@ -106,12 +103,15 @@ public class GameManager : MonoBehaviour
                 if (player.GetComponent<Movimiento_Mira>().score > minScore)
                 {
                     Debug.Log("Ganaste");
+                    SelectorFinales.añadirALaLista(true);
                 }
                 else
                 {
-                    Debug.Log("No has conseguido la puntuaci�n necesaria");
+                    Debug.Log("No has conseguido la puntuaci�n necesaria");
+                    SelectorFinales.añadirALaLista(false);
                 }
                 playing = false;
+                devolverControlAlJugador();
             }
 
             if (Time.time - tiempoUltimoSpawn >= nextDuckSpawn)
@@ -142,5 +142,17 @@ public class GameManager : MonoBehaviour
                 nextDuckSpawn = Random.Range(25, 51) / 10;
             }
         }
+    }
+    
+    void devolverControlAlJugador()
+    {
+        active = false;
+        AudioSource musica = this.GetComponent<AudioSource>();
+        if (musica != null)
+        {
+            musica.Stop();
+        }
+        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
+        GameObject.Find("Player").GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
     }
 }
