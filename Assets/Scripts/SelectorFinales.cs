@@ -30,8 +30,8 @@ public class SelectorFinales : MonoBehaviour
         if (minijuegosSuperados == null)
         {
             minijuegosSuperados = new List<bool>();
-            Debug.Log("Creando nueva lista de minijuegos superados");
         }
+        Debug.Log("Resultado añadido");
         minijuegosSuperados.Add(resultado);
     }
     
@@ -40,7 +40,6 @@ public class SelectorFinales : MonoBehaviour
         if (minijuegosSuperados == null)
         {
             minijuegosSuperados = new List<bool>();
-            Debug.Log("Creando nueva lista de minijuegos superados");
         }
         minijuegosSuperados.Clear();
         for (int i = 0; i < 6; i++)
