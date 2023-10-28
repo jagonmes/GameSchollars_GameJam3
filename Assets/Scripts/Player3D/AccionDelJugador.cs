@@ -27,7 +27,6 @@ public class AccionDelJugador : MonoBehaviour
                 //Se comprueba si esta activo
                 if (i.Activo)
                 {
-                    Debug.Log("Objeto interactuable activo");
                     //Si es interactuable y se pulsa la tecla de acción, interactua con el mismo
                     if (Input.GetKeyDown(teclaDeAccion))
                     {
