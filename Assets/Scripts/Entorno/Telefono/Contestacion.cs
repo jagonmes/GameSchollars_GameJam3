@@ -10,7 +10,8 @@ public class Contestacion : MonoBehaviour
     [SerializeField] private float volume = 0.2f;
     [SerializeField] private float spatialBlend = 1.0f;
     [SerializeField] private bool loop = false;
-    
+    [SerializeField] private ControladorPintadas pintadas;
+
     private TextMeshProUGUI TextoSubtitulos;
     private bool ActivarSubtitulos = false;
     private Subtitulos sub = new Subtitulos();
@@ -32,7 +33,8 @@ public class Contestacion : MonoBehaviour
     }
 
     public void contestacion()
-    { 
+    {
+        pintadas.activaPintada(1);
         if (this.GetComponent<AudioSource>() == null)
         {
             this.AddComponent<AudioSource>();

@@ -30,7 +30,7 @@ public class ControladorPintadas : MonoBehaviour
 
     public void activaPintada(int indicePintada)
     {
-        Debug.Log("AAAAAAAAAAAA" +  indicePintada);
+        //Debug.Log("AAAAAAAAAAAA" +  indicePintada);
         finalesScript.activarPintada(indicePintada);
         if(indicePintada == 4)
         {
