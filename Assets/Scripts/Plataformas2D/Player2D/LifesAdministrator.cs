@@ -31,6 +31,12 @@ public class LifesAdministrator : MonoBehaviour
             Invoke("devolverControlAlJugador", 2f);
         }
     }
+
+    public void cambioSPritesVida(int estado)
+    {
+        for (int i = 0; i < lifeSprites.Length; i++)
+            lifeSprites[i].GetComponent<Animator>().SetInteger("State",estado);
+    }
     //devuelve el control al jugador 3D
     public void  devolverControlAlJugador()
     {

@@ -62,6 +62,7 @@ public class PlayerAnimations : MonoBehaviour
             //y aplica la animacion "idle2"
             case 4:
                 actualButtons = 1;
+                lifesScript.cambioSPritesVida(1);
                 playerAnimator.SetInteger("State", actualButtons);
                 break;
 
@@ -70,6 +71,7 @@ public class PlayerAnimations : MonoBehaviour
             //y aplica la animacion "idle3"
             case 5:
                 actualButtons = 2;
+                lifesScript.cambioSPritesVida(2);
                 playerAnimator.SetInteger("State", actualButtons);
                 break;
 
