@@ -45,7 +45,15 @@ public class SelectorFinales : MonoBehaviour
 
     public void activarPintada(int indice)
     {
-        decallsActivados[indice] = true;
+        if(indice == 4)
+        {
+            decallsActivados[4] = true;
+            decallsActivados[3] = false;
+        }
+        else
+        {
+            decallsActivados[indice] = true;
+        }
     }
     public void rellenarDecalls()
     {

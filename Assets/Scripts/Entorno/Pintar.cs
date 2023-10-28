@@ -8,6 +8,7 @@ public class Pintar : MonoBehaviour
     public void activaPintada(int indicePintada)
     {
         Debug.Log(indicePintada);
+
         controladorPintadas.activaPintada(indicePintada);
     }
 

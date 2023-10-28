@@ -25,7 +25,15 @@ public class ControladorPintadas : MonoBehaviour
     {
         Debug.Log("AAAAAAAAAAAA" +  indicePintada);
         finalesScript.activarPintada(indicePintada);
-        pintadas[indicePintada].SetActive(true);
+        if(indicePintada == 4)
+        {
+            pintadas[indicePintada].SetActive(true);
+            pintadas[3].SetActive(false);
+        }
+        else
+        {
+            pintadas[indicePintada].SetActive(true);
+        }
     }
 
     public bool mirarPintada(int indicePintada)
