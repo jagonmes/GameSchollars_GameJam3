@@ -236,6 +236,11 @@ MonoBehaviour:
   walkSpeed: 2
   runSpeed: 5
   JugadorActivo: 1
+  cAudio: {fileID: 8300000, guid: 7d08365b353efdf4baa3833c5d73fc75, type: 3}
+  cAudioRunning: {fileID: 8300000, guid: 6ac688aee74f0bd41bfd770f31bfa7f9, type: 3}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 1
 --- !u!114 &1971281339886410346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +272,10 @@ MonoBehaviour:
   destino: {fileID: 4446789232114849207}
   cCamara: {fileID: 1391474443122193539}
   camara: {fileID: 6624102159368031421}
+  cAudio: {fileID: 8300000, guid: 94d9d498a25a11b4c8a95580ddf145e1, type: 3}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 0
 --- !u!1 &9166149764916240656
 GameObject:
   m_ObjectHideFlags: 0

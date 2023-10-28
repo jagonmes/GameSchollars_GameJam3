@@ -6,8 +6,10 @@ using UnityEngine;
 public class Contestacion : MonoBehaviour
 {
     [SerializeField] private AudioClip cAudio;
-    [SerializeField] private float volume;
     [SerializeField] private TextAsset subtitulos;
+    [SerializeField] private float volume = 0.2f;
+    [SerializeField] private float spatialBlend = 1.0f;
+    [SerializeField] private bool loop = false;
     
     private TextMeshProUGUI TextoSubtitulos;
     private bool ActivarSubtitulos = false;
@@ -37,7 +39,8 @@ public class Contestacion : MonoBehaviour
         }
         aSource = this.GetComponent<AudioSource>();
         aSource.Stop();
-        aSource.loop = false;
+        aSource.loop = loop;
+        aSource.spatialBlend = spatialBlend;
         aSource.volume = volume;
         aSource.clip = cAudio;
         aSource.Play();

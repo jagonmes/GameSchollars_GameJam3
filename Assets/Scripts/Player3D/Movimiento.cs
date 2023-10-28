@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movimiento : MonoBehaviour
@@ -16,12 +17,40 @@ public class Movimiento : MonoBehaviour
     private CharacterController m_Controller;
 
     public bool JugadorActivo = true;
+    
+    //Audio
+    [SerializeField] private AudioClip cAudio;
+    [SerializeField] private AudioClip cAudioRunning;
+    [SerializeField] private float volume = 0.2f;
+    [SerializeField] private float spatialBlend = 1.0f;
+    [SerializeField] private bool loop = true;
+    
+    private AudioSource aSource;
+    private AudioSource aSource2;
 
 
     void Start()
     {
         //Asignamos el controlador
         m_Controller = GetComponent<CharacterController>();
+        if (cAudio != null)
+        {
+            aSource = this.AddComponent<AudioSource>();
+            aSource.loop = loop;
+            aSource.spatialBlend = spatialBlend;
+            aSource.volume = volume;
+            aSource.clip = cAudio;
+            aSource.Play();
+        }
+        if (cAudio != null)
+        {
+            aSource2 = this.AddComponent<AudioSource>();
+            aSource2.loop = loop;
+            aSource2.spatialBlend = spatialBlend;
+            aSource2.volume = volume;
+            aSource2.clip = cAudioRunning;
+            aSource2.Play();
+        }
     }
 
     void Update()
@@ -51,6 +80,33 @@ public class Movimiento : MonoBehaviour
 
             m_Controller.Move(m_CurrentMoveVelocity * Time.deltaTime);
             m_Controller.Move(m_CurrentForceVelocity * Time.deltaTime);
+
+            Debug.Log(m_CurrentMoveVelocity.magnitude);
+            if (m_CurrentMoveVelocity.magnitude > 0.5f)
+            {
+                if (cAudio != null && !Input.GetKey(KeyCode.LeftShift))
+                {
+                    aSource2.Pause();
+                    aSource.UnPause();
+                }
+
+                if (cAudioRunning != null && Input.GetKey(KeyCode.LeftShift))
+                {
+                    aSource2.UnPause();
+                    aSource.Pause();
+                }
+
+            }
+            else
+            {
+                if (cAudio != null)
+                {
+                    aSource.Pause();
+                    aSource2.Pause();
+                }
+            }
+
+
         }
 
         if (!JugadorActivo && !Pausa.juegoPausado)

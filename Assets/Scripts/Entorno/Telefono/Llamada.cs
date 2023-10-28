@@ -6,13 +6,16 @@ using UnityEngine;
 public class Llamada : MonoBehaviour
 {
     [SerializeField] private AudioClip ringtone;
-    [SerializeField] private float volume;
-    [SerializeField] private float spatialBlend;
-    [SerializeField] private bool loop;
+    [SerializeField] private float volume = 0.2f;
+    [SerializeField] private float spatialBlend = 1.0f;
+    [SerializeField] private bool loop = true;
 
     public void LlamadaDeTelefono()
     {
-        this.AddComponent<AudioSource>();
+        if (this.GetComponent<AudioSource>() == null)
+        {
+            this.AddComponent<AudioSource>();
+        }
         AudioSource aSource = this.GetComponent<AudioSource>();
         aSource.clip = ringtone;
         aSource.loop = loop;

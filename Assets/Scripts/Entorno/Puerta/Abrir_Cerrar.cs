@@ -10,7 +10,15 @@ public class Abrir_Cerrar : MonoBehaviour
     [SerializeField] private PuntoDeNavegación Abrir;
     [SerializeField] private PuntoDeNavegación Cerrar;
     [SerializeField] private float tiempoAbierta = 5;
+    
+    
+    [SerializeField] private AudioClip cAudio;
+    [SerializeField] private float volume = 0.2f;
+    [SerializeField] private float spatialBlend = 1.0f;
+    [SerializeField] private bool loop = false;
+    
     private bool abierto = false;
+    private AudioSource aSource;
     
     void Start()
     {
@@ -21,6 +29,21 @@ public class Abrir_Cerrar : MonoBehaviour
     
     public void AbrirCerrar()
     {
+        if (this.GetComponent<AudioSource>() == null)
+        {
+            this.AddComponent<AudioSource>();
+        }
+        if (cAudio != null)
+        {
+            aSource = this.GetComponent<AudioSource>();
+            aSource.Stop();
+            aSource.loop = loop;
+            aSource.spatialBlend = spatialBlend;
+            aSource.volume = volume;
+            aSource.clip = cAudio;
+            aSource.Play();
+        }
+
         if (!abierto)
         {
             Puerta.PuntosDeNavegacion[0] = Abrir;
