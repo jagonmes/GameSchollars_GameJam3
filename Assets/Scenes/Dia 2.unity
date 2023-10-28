@@ -151,6 +151,11 @@ PrefabInstance:
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Contestacion, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 789628030625468083, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: pintadas.Array.data[4]
+      value: 
+      objectReference: {fileID: 215066995}
     - target: {fileID: 1318233933554052073, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -261,6 +266,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: haComido
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6180134080258973646, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: jugador
@@ -282,6 +292,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6903012769964669974, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7769706882693325312, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -411,6 +426,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6faaeb8ed59ce6742b76416f57c0859c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &215066995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2326993112483476245, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &382260048
 PrefabInstance:
   m_ObjectHideFlags: 0

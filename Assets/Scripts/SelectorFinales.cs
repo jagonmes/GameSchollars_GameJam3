@@ -5,7 +5,7 @@ public class SelectorFinales : MonoBehaviour
 {
     public static List<bool> minijuegosSuperados;
 
-    static bool[] decallsActivados = new bool[5];
+    static bool[] decallsActivados = new bool[6];
     public static bool finalActivado()
     {
         bool activo = true;
@@ -46,5 +46,12 @@ public class SelectorFinales : MonoBehaviour
     public void activarPintada(int indice)
     {
         decallsActivados[indice] = true;
+    }
+    public void rellenarDecalls()
+    {
+        for(int i = 0;i <6;i++)
+        {
+            decallsActivados[(int)i] = false;
+        }
     }
 }
