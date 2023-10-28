@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ActivarPlataformas : MonoBehaviour
-{/*
-    [//SerializeField] private Plataf ahorcado;
+{
     [SerializeField] private GameObject instrucciones;
     private bool activo = false;
     void OnGUI()
@@ -29,7 +28,7 @@ public class ActivarPlataformas : MonoBehaviour
 
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = false;
         this.transform.GetComponent<MoverCamaraAPC>().moverCamaraAPC();
-        
-    }*/
+
+    }
 }
 
