@@ -80,8 +80,7 @@ public class Movimiento : MonoBehaviour
 
             m_Controller.Move(m_CurrentMoveVelocity * Time.deltaTime);
             m_Controller.Move(m_CurrentForceVelocity * Time.deltaTime);
-
-            Debug.Log(m_CurrentMoveVelocity.magnitude);
+            
             if (m_CurrentMoveVelocity.magnitude > 0.5f)
             {
                 if (cAudio != null && !Input.GetKey(KeyCode.LeftShift))
