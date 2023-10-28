@@ -803,6 +803,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1399751985938341986, guid: 7194e36d0f880a64c9b270b9caeff006,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1708160620}
+    - target: {fileID: 1702558740586883112, guid: 7194e36d0f880a64c9b270b9caeff006,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3286147885037948215, guid: 7194e36d0f880a64c9b270b9caeff006,
         type: 3}
       propertyPath: active
@@ -813,6 +823,11 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: a6cdde14dab5ef74a96d84a96f52d571, type: 2}
+    - target: {fileID: 5327063997986789026, guid: 7194e36d0f880a64c9b270b9caeff006,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5299988
+      objectReference: {fileID: 0}
     - target: {fileID: 5506741364917795633, guid: 7194e36d0f880a64c9b270b9caeff006,
         type: 3}
       propertyPath: m_PlayOnAwake
