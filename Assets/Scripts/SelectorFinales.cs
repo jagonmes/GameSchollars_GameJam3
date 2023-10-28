@@ -28,14 +28,18 @@ public class SelectorFinales : MonoBehaviour
         minijuegosSuperados.Add(resultado);
     }
     
-    public static void vaciarLista()
+    public static void reiniciar()
     { 
         if (minijuegosSuperados == null)
         {
             minijuegosSuperados = new List<bool>();
             Debug.Log("Creando nueva lista de minijuegos superados");
         }
-        minijuegosSuperados.Clear();   
+        minijuegosSuperados.Clear();
+        for (int i = 0; i < 6; i++)
+        {
+            decallsActivados[(int)i] = false;
+        }
     }
 
     public bool[] ConseguirPintadas()
@@ -53,13 +57,6 @@ public class SelectorFinales : MonoBehaviour
         else
         {
             decallsActivados[indice] = true;
-        }
-    }
-    public void rellenarDecalls()
-    {
-        for(int i = 0;i <6;i++)
-        {
-            decallsActivados[(int)i] = false;
         }
     }
 }

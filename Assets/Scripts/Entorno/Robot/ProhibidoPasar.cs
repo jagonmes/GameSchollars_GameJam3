@@ -8,7 +8,7 @@ public class ProhibidoPasar : MonoBehaviour
     [SerializeField] private PuntoDeNavegación[] puntosDeNavegacion;
     [SerializeField] private GameObject jugador;
     [SerializeField] private GameObject robot;
-
+    [SerializeField] private Contestacion contestacion;
     private SeguirPuntoDeNavegacion robotSPDN;
     private Movimiento jugadorM;
     private Transform jugadorParent;
@@ -68,5 +68,6 @@ public class ProhibidoPasar : MonoBehaviour
         robotSPDN.reiniciarCamino();
         robotSPDN.activo = true;
         enMovimiento = true;
+        contestacion.contestacion();
     }
 }

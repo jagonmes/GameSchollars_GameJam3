@@ -11,7 +11,7 @@ public class ControladorPintadas : MonoBehaviour
 
     private void Start()
     {
-        //activadoresPintadas = finalesScript.ConseguirPintadas();
+        activadoresPintadas = finalesScript.ConseguirPintadas();
         for (int i = 0; i < pintadas.Length; i++)
         {
             if (activadoresPintadas[i])

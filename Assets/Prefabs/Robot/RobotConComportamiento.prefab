@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 6711755598357596606}
   - component: {fileID: 8288309103962010866}
   - component: {fileID: 37643025099477110}
+  - component: {fileID: 9157274012705295489}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -271,6 +272,24 @@ MonoBehaviour:
   - {fileID: 6285700438624162528}
   jugador: {fileID: 0}
   robot: {fileID: 231173429295074828}
+  contestacion: {fileID: 9157274012705295489}
+--- !u!114 &9157274012705295489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5774741976457617828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c8ffeebf9680745bd9ea0190a633e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cAudio: {fileID: 8300000, guid: bbebac1a6e41660479f1d02702b5ae0b, type: 3}
+  subtitulos: {fileID: 0}
+  volume: 0.2
+  spatialBlend: 1
+  loop: 0
 --- !u!1 &7406245254853583066
 GameObject:
   m_ObjectHideFlags: 0
