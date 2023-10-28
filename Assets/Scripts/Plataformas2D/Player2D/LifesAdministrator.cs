@@ -35,6 +35,7 @@ public class LifesAdministrator : MonoBehaviour
     public void  devolverControlAlJugador()
     {
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
+        GameObject.Find("Player").GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
     }
 
     public void dissolveLifes()

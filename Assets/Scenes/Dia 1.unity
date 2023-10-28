@@ -123,80 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &212783859
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 717994153937068771, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_Name
-      value: MinijuegoAhorcado
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -11.486275
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -21.88248
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 763183466307824600, guid: 247dee3dc32c46645bb3d682caea11b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 247dee3dc32c46645bb3d682caea11b3, type: 3}
---- !u!1 &212783860 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8578701099824560152, guid: 247dee3dc32c46645bb3d682caea11b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 212783859}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &215066991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -533,18 +459,6 @@ MonoBehaviour:
   TiempoDeReutilizacion: 1
   materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
   textoAMostrar: Llamar a la puerta
---- !u!114 &525171854 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1016600200744866797, guid: 247dee3dc32c46645bb3d682caea11b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 212783859}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5eee91a56db4b438c7fb6707a0806b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &662275571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -732,8 +646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a234b74aeccdb4d85120c870a6254b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ahorcado: {fileID: 525171854}
-  instrucciones: {fileID: 212783860}
+  ahorcado: {fileID: 0}
+  instrucciones: {fileID: 0}
 --- !u!4 &1811269469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1318233933554052073, guid: af12a653645f4704da4088b09ccea6f5,
@@ -849,5 +763,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 215066991}
-  - {fileID: 212783859}
   - {fileID: 662275571}

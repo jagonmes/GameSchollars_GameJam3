@@ -10,7 +10,7 @@ public class WayPointFollower : MonoBehaviour
     private int currentWaypointIndex = 0;
     private void Update()
     {
-        if (Vector2.Distance(wayPoints[currentWaypointIndex].transform.position,transform.position) < 0.1f)
+        if (Vector3.Distance(wayPoints[currentWaypointIndex].transform.position,transform.position) < 0.1f)
         {
             currentWaypointIndex++;
             if(currentWaypointIndex >= wayPoints.Length)
@@ -18,6 +18,6 @@ public class WayPointFollower : MonoBehaviour
                 currentWaypointIndex = 0;
             }
         }
-        transform.position = Vector2.MoveTowards(transform.position, wayPoints[currentWaypointIndex].transform.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, wayPoints[currentWaypointIndex].transform.position, speed * Time.deltaTime);
     }
 }
