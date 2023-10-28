@@ -211,6 +211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564724155844643, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Reutilizable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037564724155844643, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -321,8 +326,28 @@ PrefabInstance:
       objectReference: {fileID: 1065199824}
     - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: tiempo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: haComido
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: textoAMostrar1
+      value: Debes comer antes de dormir
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: textoAMostrar2
+      value: Debes jugar antes de dormir
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: textoAMostrar3
+      value: Debes jugar y comer antes de dormir
       objectReference: {fileID: 0}
     - target: {fileID: 6225623635723357112, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -336,8 +361,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Reutilizable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -346,9 +376,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1587355722}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 845688106}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -361,12 +401,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: activarJugado
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ActivarAhorcado, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CambioDeEscena, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -466,7 +521,8 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1149965310028654035, guid: 8c28638de34ac1b4f8293c949778aef4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c28638de34ac1b4f8293c949778aef4, type: 3}

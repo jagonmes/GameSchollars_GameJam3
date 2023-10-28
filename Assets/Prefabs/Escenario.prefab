@@ -145,11 +145,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Interaccion:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 6faaeb8ed59ce6742b76416f57c0859c, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: 6faaeb8ed59ce6742b76416f57c0859c, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5918139003596131471}
+        m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
+        m_MethodName: activarJugado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Reutilizable: 0
   Activo: 0
   InformacionVisual: 1
-  TiempoDeReutilizacion: 1
+  TiempoDeReutilizacion: 3
   materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
   textoAMostrar: PC
 --- !u!114 &4714452901781974520
@@ -7922,18 +7958,6 @@ MonoBehaviour:
   Interaccion:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6391165686041632071}
-        m_TargetAssemblyTypeName: Fade, Assembly-CSharp
-        m_MethodName: activar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 5918139003596131471}
         m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
         m_MethodName: invocarCambiarDeEscena
@@ -7946,10 +7970,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  Reutilizable: 0
+  Reutilizable: 1
   Activo: 1
   InformacionVisual: 1
-  TiempoDeReutilizacion: 1
+  TiempoDeReutilizacion: 3
   materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
   textoAMostrar: Cama
 --- !u!114 &6391165686041632071
@@ -7981,8 +8005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indice: -1
-  tiempo: 3
-  textoAMostrar: Debes comer
+  tiempo: 1
+  fade: {fileID: 6391165686041632071}
   haComido: 0
 --- !u!1 &4465992723242251012
 GameObject:

@@ -267,12 +267,12 @@ PrefabInstance:
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Activo
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -281,9 +281,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1587355722}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 215066995}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -296,12 +306,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: activarJugado
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ActivarAhorcado, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CambioDeEscena, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837608418212689337, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -375,6 +400,18 @@ MonoBehaviour:
   TiempoDeReutilizacion: 1
   materialResaltar: {fileID: 0}
   textoAMostrar: Llamar a la puerta
+--- !u!114 &215066995 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 215066991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6faaeb8ed59ce6742b76416f57c0859c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &313154224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8578701099824560152, guid: 247dee3dc32c46645bb3d682caea11b3,
