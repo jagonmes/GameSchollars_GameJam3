@@ -436,6 +436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3891834255624508673, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: cAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 31de2a0c5834ab542abb896c539ae002, type: 3}
+    - target: {fileID: 3891834255624508673, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: subtitulos
       value: 
       objectReference: {fileID: 4900000, guid: 2f4aaa4fba3525548ac8c628b35496a1, type: 3}
