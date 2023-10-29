@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
                     resultGUI.text = "¡Ganaste!";
                     SelectorFinales.añadirALaLista(true);
                     Pintar pintar = this.GetComponent<Pintar>();
-                    pintar.activaPintada(4);
+                    pintar.activaPintada(3);
                 }
                 else
                 {

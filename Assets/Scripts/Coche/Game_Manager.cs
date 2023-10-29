@@ -57,7 +57,7 @@ public class Game_Manager : MonoBehaviour
 
     private void Update()
     {
-        if(active && !car.GetComponent<Car_Movement>().canMove)
+        if(active && !GameObject.FindGameObjectsWithTag("Obstacle")[0].GetComponent<Obstacle_Behaviour>().active)
         {
             car.GetComponent<Car_Movement>().canMove = true;
             GameObject[] obstaculos = GameObject.FindGameObjectsWithTag("Obstacle");
@@ -67,7 +67,7 @@ public class Game_Manager : MonoBehaviour
             }
             ManageGame();
         }
-        else if (active)
+        if (active)
         {
             ManageGame();
         }
