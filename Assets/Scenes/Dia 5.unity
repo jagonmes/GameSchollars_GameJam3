@@ -721,6 +721,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: bb268719eddf5cd468a326c2009069ec, type: 3}
     - target: {fileID: 3891834255624508673, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891834255624508673, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: subtitulos
       value: 
       objectReference: {fileID: 4900000, guid: 2b82b463447a4d84d813d9f66a10695b, type: 3}
@@ -983,7 +988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cAudio: {fileID: 8300000, guid: c73071579e5f59546aa6285db2080c8d, type: 3}
   subtitulos: {fileID: 4900000, guid: 7b0be89f2fb9dff4e819a12f0608d51f, type: 3}
-  volume: 0.2
+  volume: 0.5
   spatialBlend: 1
   loop: 0
   pintadas: {fileID: 0}
