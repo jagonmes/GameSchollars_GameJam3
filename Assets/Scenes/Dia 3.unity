@@ -591,6 +591,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1885663235595540042, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2090747610380802626, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_IsActive
@@ -1537,6 +1542,7 @@ MonoBehaviour:
   volume: 60
   spatialBlend: 1
   loop: 0
+  pintadas: {fileID: 0}
 --- !u!114 &1229652575 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5609790800837293946, guid: 436522cf0b46b684688bee66654d5378,

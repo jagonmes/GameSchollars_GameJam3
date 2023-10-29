@@ -50,7 +50,6 @@ public class ButtonCollection : MonoBehaviour
         if (numMonedas == 1)
         {
             soundController.scream1Sound();
-            Invoke("wonderSound", 1.5f);
             playerAnimations.controlAnimations(4);
             colorAdm.orangeColor();
         }

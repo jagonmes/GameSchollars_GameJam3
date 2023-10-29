@@ -34,7 +34,7 @@ public class Contestacion : MonoBehaviour
 
     public void contestacion()
     {
-        pintadas.activaPintada(1);
+        pintadas?.activaPintada(1);
         if (this.GetComponent<AudioSource>() == null)
         {
             this.AddComponent<AudioSource>();

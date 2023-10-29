@@ -32,10 +32,10 @@ public class ControladorPintadas : MonoBehaviour
     {
         //Debug.Log("AAAAAAAAAAAA" +  indicePintada);
         finalesScript.activarPintada(indicePintada);
-        if(indicePintada == 4)
+        if(indicePintada == 3)
         {
             pintadas[indicePintada].SetActive(true);
-            pintadas[3].SetActive(false);
+            pintadas[2].SetActive(false);
         }
         else
         {

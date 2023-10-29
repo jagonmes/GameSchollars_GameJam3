@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Resultado : MonoBehaviour
 {
+    [SerializeField] private ControladorPintadas pintadaScript;
     public void Victoria()
     {
         SelectorFinales.añadirALaLista(true);
-        GameObject.Find("FueEl").GetComponent<Movimiento>().JugadorActivo = true;
+        pintadaScript.activaPintada(4);
+        pintadaScript.activaPintada(6);
     }
 
     public void Derrota()

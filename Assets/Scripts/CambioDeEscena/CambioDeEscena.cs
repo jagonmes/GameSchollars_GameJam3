@@ -18,7 +18,7 @@ public class CambioDeEscena : MonoBehaviour
     [SerializeField] private Fade fade;
 
     public bool haComido = false;
-    private bool haJugado = true;
+    private bool haJugado = false;
 
     //Campo de texto donde se mostrara el texto del objeto
     private TextMeshProUGUI Text;

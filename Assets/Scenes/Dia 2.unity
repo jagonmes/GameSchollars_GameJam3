@@ -138,9 +138,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 215066993}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 215066998}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -148,8 +168,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: comer
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Contestacion, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Comida, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 789628030625468083, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -274,7 +309,7 @@ PrefabInstance:
     - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: haComido
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6180134080258973646, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -395,6 +430,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 215066993}
+    - targetCorrespondingSourceObject: {fileID: 3012486262999769602, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 215066998}
     - targetCorrespondingSourceObject: {fileID: 388860056869236252, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       insertIndex: -1
@@ -438,7 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1 &215066995 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2326993112483476245, guid: af12a653645f4704da4088b09ccea6f5,
+  m_CorrespondingSourceObject: {fileID: 6225623635723357112, guid: af12a653645f4704da4088b09ccea6f5,
     type: 3}
   m_PrefabInstance: {fileID: 215066991}
   m_PrefabAsset: {fileID: 0}
@@ -466,6 +505,19 @@ MonoBehaviour:
   spatialBlend: 1
   loop: 0
   pintadas: {fileID: 0}
+--- !u!114 &215066998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215066992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6825f267721aaef499aa14b54a508359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cambiaEscena: {fileID: 215066994}
 --- !u!1001 &382260048
 PrefabInstance:
   m_ObjectHideFlags: 0
