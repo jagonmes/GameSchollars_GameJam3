@@ -95,7 +95,7 @@ public class PlayerAnimations : MonoBehaviour
         knife.gameObject.SetActive(true);
         Invoke("Kill", 2f);
         Invoke("Death", 3f);
-        Invoke("Llanto", 3f);
+        Invoke("Llanto", 3.3f);
         Invoke("Transform", 8f);
 
     }
