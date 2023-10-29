@@ -5,7 +5,8 @@ public class ActivarAhorcado : MonoBehaviour
 {
    [SerializeField] private Ahorcado ahorcado;
    [SerializeField] private GameObject instrucciones;
-   private bool activo = false;
+   [SerializeField] private AudioSource mAhorcado;
+    private bool activo = false;
    void OnGUI()
    {
       Event e = Event.current;
@@ -29,5 +30,6 @@ public class ActivarAhorcado : MonoBehaviour
       GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = false;
       this.transform.GetComponent<MoverCamaraAPC>().moverCamaraAPC();
       activo = true;
+      mAhorcado.Play();
    }
 }

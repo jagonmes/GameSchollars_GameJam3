@@ -12,7 +12,7 @@ public class Ahorcado : MonoBehaviour
     [SerializeField] private TextMeshProUGUI pregunta;
     [SerializeField] private TextMeshProUGUI aciertos;
     [SerializeField] private TextMeshProUGUI fallos;
-    
+
     //Plano del Ahorcado
     [SerializeField] private GameObject ahorcado;
     private Material materialAhorcado;
@@ -58,8 +58,9 @@ public class Ahorcado : MonoBehaviour
     
     //Numero de fallos permitidos
     [SerializeField]private int limiteDeFallos = 5;
-    
 
+    //Música
+    [SerializeField] private AudioSource mAhorcado;
 
     //Recoge los eventos de teclado
     void OnGUI()
@@ -362,5 +363,6 @@ public class Ahorcado : MonoBehaviour
         juegoEnMarcha = habilitado = activo = juegoEnMarcha = false;
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
         GameObject.Find("Player").GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
+        mAhorcado.Stop();
     }
 }
