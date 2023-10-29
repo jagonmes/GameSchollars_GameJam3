@@ -740,7 +740,7 @@ MonoBehaviour:
   volume: 0.2
   spatialBlend: 1
   loop: 0
-  pintadas: {fileID: 1811269470}
+  pintadas: {fileID: 0}
 --- !u!114 &455773079
 MonoBehaviour:
   m_ObjectHideFlags: 0
