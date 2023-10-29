@@ -22,7 +22,7 @@ public class Fade : MonoBehaviour
     {
         if (fin)
         {
-            if (panel.color.a < 1)
+            if (panel.color.a <= 1)
             {
                 Color aux = panel.color;
                 aux.a += ratio * Time.deltaTime;
@@ -37,7 +37,7 @@ public class Fade : MonoBehaviour
         }
         if (fout)
         {
-            if (panel.color.a > 0)
+            if (panel.color.a >= 0)
             {
                 Color aux = panel.color;
                 aux.a -= ratio * Time.deltaTime;
