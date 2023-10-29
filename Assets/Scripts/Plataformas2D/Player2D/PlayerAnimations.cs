@@ -95,6 +95,7 @@ public class PlayerAnimations : MonoBehaviour
         knife.gameObject.SetActive(true);
         Invoke("Kill", 2f);
         Invoke("Death", 3f);
+        Invoke("Llanto", 3f);
         Invoke("Transform", 8f);
 
     }
@@ -107,10 +108,9 @@ public class PlayerAnimations : MonoBehaviour
     // y el mensaje "felicidades"
     private void Transform()
     {
-        soundController.monsterSound();
         knifeAnimator.SetBool("isTransforming", true);
         feliz.gameObject.SetActive(true);
-        Invoke("devolverControlAlJugador", 7f);
+        Invoke("devolverControlAlJugador", 10f);
     }
     //activa la aniamcion de player "death"
     private void Death()
@@ -123,5 +123,10 @@ public class PlayerAnimations : MonoBehaviour
     private void devolverControlAlJugador()
     {
         lifesScript.devolverControlAlJugador();
+    }
+
+    private void Llanto()
+    {
+        soundController.monsterSound();
     }
 }
