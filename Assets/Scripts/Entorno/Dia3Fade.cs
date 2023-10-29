@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -15,13 +13,13 @@ public class Dia3Fade : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
-        texto1 = GameObject.Find("TextoAcción");
+        texto1 = GameObject.Find("TextoAcciÃ³n");
         texto1Text = texto1.GetComponent<TextMeshProUGUI>();
     }
     public void fadeMaquina()
     {
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = false;
-        fade.activar();
+        fade.active = true;
         controladorPintadasScript.activaPintada(5);
         texto1Text.text = "";
         Invoke("Teleportacion", 3f);

@@ -9,6 +9,7 @@ public class Fade : MonoBehaviour
     public bool fin = false;
     public bool fout = false;
     public float ratio = 3.0f;
+    public bool active = true;
 
     private Movimiento mJugador;
 
@@ -20,36 +21,39 @@ public class Fade : MonoBehaviour
 
     void Update()
     {
-        if (fin)
+        if (active)
         {
-            if (panel.color.a <= 1)
+            if (fin)
             {
-                Color aux = panel.color;
-                aux.a += ratio * Time.deltaTime;
-                panel.color = aux;
-                if (mJugador != null && mJugador.JugadorActivo)
-                    mJugador.JugadorActivo = false;
+                if (panel.color.a <= 1)
+                {
+                    Color aux = panel.color;
+                    aux.a += ratio * Time.deltaTime;
+                    panel.color = aux;
+                    if (mJugador != null && mJugador.JugadorActivo)
+                        mJugador.JugadorActivo = false;
+                }
+                else
+                {
+                    fin = false;
+                }
             }
-            else
+            if (fout)
             {
-                fin = false;
-            }
-        }
-        if (fout)
-        {
-            if (panel.color.a >= 0)
-            {
-                Color aux = panel.color;
-                aux.a -= ratio * Time.deltaTime;
-                panel.color = aux;
-                if (mJugador != null && mJugador.JugadorActivo)
-                    mJugador.JugadorActivo = false;
-            }
-            else
-            {
-                if (mJugador != null)
-                    mJugador.JugadorActivo = true;
-                fout = false;
+                if (panel.color.a >= 0)
+                {
+                    Color aux = panel.color;
+                    aux.a -= ratio * Time.deltaTime;
+                    panel.color = aux;
+                    if (mJugador != null && mJugador.JugadorActivo)
+                        mJugador.JugadorActivo = false;
+                }
+                else
+                {
+                    if (mJugador != null)
+                        mJugador.JugadorActivo = true;
+                    fout = false;
+                }
             }
         }
     }
