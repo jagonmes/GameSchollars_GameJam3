@@ -17,6 +17,7 @@ public class ActivarAhorcado : MonoBehaviour
             case KeyCode.X:
                ahorcado.activo = ahorcado.iniciarJuego = ahorcado.juegoEnMarcha = true;
                instrucciones?.SetActive(false);
+               activo = false;
                break;
             default:
                break;
