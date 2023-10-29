@@ -146,7 +146,7 @@ MonoBehaviour:
   fin: 1
   fout: 0
   ratio: 3
-  active: 1
+  active: 0
 --- !u!114 &71295635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
   fin: 1
   fout: 0
   ratio: 3
-  active: 1
+  active: 0
 --- !u!114 &124198820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,7 +708,7 @@ PrefabInstance:
     - target: {fileID: 6391165686041632071, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: active
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6903012769964669974, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -793,7 +793,7 @@ PrefabInstance:
     - target: {fileID: 7764268576486650751, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769706882693325312, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   fin: 1
   fout: 0
   ratio: 3
-  active: 1
+  active: 0
 --- !u!114 &219551099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1282,7 +1282,7 @@ MonoBehaviour:
   fin: 1
   fout: 0
   ratio: 3
-  active: 1
+  active: 0
 --- !u!114 &850552654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,7 +1885,7 @@ MonoBehaviour:
   fin: 1
   fout: 0
   ratio: 3
-  active: 1
+  active: 0
 --- !u!114 &1961946345 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7730377020470817272, guid: af12a653645f4704da4088b09ccea6f5,
@@ -1920,7 +1920,7 @@ MonoBehaviour:
   fin: 1
   fout: 0
   ratio: 3
-  active: 1
+  active: 0
 --- !u!114 &2038088624
 MonoBehaviour:
   m_ObjectHideFlags: 0
