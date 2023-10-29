@@ -534,6 +534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 564805362681618538, guid: e171ee5ad7dc09f4ca3212bb329ae65c,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 564805362681618538, guid: e171ee5ad7dc09f4ca3212bb329ae65c,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -567,6 +572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 56.129997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407433505312122241, guid: e171ee5ad7dc09f4ca3212bb329ae65c,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.162
       objectReference: {fileID: 0}
     - target: {fileID: 5795586118794131700, guid: e171ee5ad7dc09f4ca3212bb329ae65c,
         type: 3}
@@ -612,6 +622,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206488869763233030, guid: e171ee5ad7dc09f4ca3212bb329ae65c,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.162
       objectReference: {fileID: 0}
     - target: {fileID: 7346295979166142150, guid: e171ee5ad7dc09f4ca3212bb329ae65c,
         type: 3}
