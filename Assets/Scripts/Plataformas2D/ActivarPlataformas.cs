@@ -4,6 +4,7 @@ public class ActivarPlataformas : MonoBehaviour
 {
     [SerializeField] private GameObject instrucciones;
     [SerializeField] private PlayerMovement plataformas;
+    [SerializeField] private AudioSource mPlataformas;
     private bool activo = false;
     void OnGUI()
     {
@@ -15,6 +16,7 @@ public class ActivarPlataformas : MonoBehaviour
                 case KeyCode.X:
                     //ahorcado.activo = ahorcado.iniciarJuego = ahorcado.juegoEnMarcha = true;
                     instrucciones?.SetActive(false);
+                    plataformas.active = 1;
                     break;
                 default:
                     break;
@@ -24,11 +26,10 @@ public class ActivarPlataformas : MonoBehaviour
 
     public void activarPlataformas()
     {
-
         GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = false;
         this.transform.GetComponent<MoverCamaraAPC>().moverCamaraAPC();
-        plataformas.active = 1;
-        //activo = true;
+        mPlataformas.Play();
+        activo = true;
     }
 }
 
