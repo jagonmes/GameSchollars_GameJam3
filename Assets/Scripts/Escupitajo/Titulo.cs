@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Titulo : MonoBehaviour
 {
-    private static bool intro = true;
+    public static bool intro = true;
     void Awake()
     {
         if (intro)
         {
             intro = false;
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(11);
         }
     }
 
