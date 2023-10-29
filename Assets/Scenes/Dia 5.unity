@@ -717,7 +717,7 @@ PrefabInstance:
         type: 3}
       propertyPath: subtitulos
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4900000, guid: 2b82b463447a4d84d813d9f66a10695b, type: 3}
     - target: {fileID: 4714452901781974520, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: camara

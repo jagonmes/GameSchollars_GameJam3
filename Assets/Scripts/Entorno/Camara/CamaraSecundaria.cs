@@ -12,24 +12,24 @@ public class Camarasecundaria : MonoBehaviour
     
     void Start()
     {
-        /*
+        
         rt = camara.targetTexture;
         UltimoAltoDePantalla = Screen.height;
         UltimoAnchoDePantalla = Screen.width;
         CambiarTamañoRT(rt, UltimoAnchoDePantalla, UltimoAltoDePantalla);
-        */
+        
     }
 
     void Update()
     {
-        /*
+        
         if (Screen.height != UltimoAltoDePantalla || Screen.width != UltimoAnchoDePantalla)
         {
             UltimoAltoDePantalla = Screen.height;
             UltimoAnchoDePantalla = Screen.width;
             CambiarTamañoRT(rt, UltimoAnchoDePantalla, UltimoAltoDePantalla);
         }
-        */
+        
     }
 
     void CambiarTamañoRT(RenderTexture rt, int ancho, int alto)
