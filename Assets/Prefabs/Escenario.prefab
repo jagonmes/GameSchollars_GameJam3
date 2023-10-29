@@ -4070,6 +4070,7 @@ GameObject:
   - component: {fileID: 1318233933554052073}
   - component: {fileID: 1113936734605001997}
   - component: {fileID: 789628030625468083}
+  - component: {fileID: 9170255722267181862}
   m_Layer: 0
   m_Name: Escenario
   m_TagString: Untagged
@@ -4129,6 +4130,18 @@ MonoBehaviour:
   - {fileID: 7769706882693325312}
   - {fileID: 4487272503330087321}
   finalesScript: {fileID: 1113936734605001997}
+--- !u!114 &9170255722267181862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2283182306555873958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360dcfe683ccfdb488eed584f174fbf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2314444060463470898
 GameObject:
   m_ObjectHideFlags: 0

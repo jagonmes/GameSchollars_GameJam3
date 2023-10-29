@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 public class Interactuable : MonoBehaviour
 {
     //Evento que indica que se quiere realizar la interacción
-    [SerializeField] private UnityEvent Interaccion;
+    [SerializeField] public UnityEvent Interaccion;
 
     //Indica si la interacción puede pasar solo una o varias veces
     [SerializeField] public bool Reutilizable = true;
