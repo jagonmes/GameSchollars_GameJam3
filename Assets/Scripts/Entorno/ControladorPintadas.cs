@@ -15,7 +15,7 @@ public class ControladorPintadas : MonoBehaviour
         activadoresPintadas = finalesScript.ConseguirPintadas();
         for (int i = 0; i < pintadas.Length; i++)
         {
-            Debug.Log(i);
+            //Debug.Log(i);
             if (activadoresPintadas[i])
             {
                 Debug.Log(i);

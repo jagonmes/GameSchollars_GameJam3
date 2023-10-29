@@ -13,6 +13,7 @@ public class SelectorFinales : MonoBehaviour
         {
             reiniciar();
         }
+        Debug.Log(minijuegosSuperados.Count);
     }
     public static bool finalActivado()
     {
