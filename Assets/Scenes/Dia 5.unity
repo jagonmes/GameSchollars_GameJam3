@@ -988,7 +988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cAudio: {fileID: 8300000, guid: c73071579e5f59546aa6285db2080c8d, type: 3}
   subtitulos: {fileID: 4900000, guid: 7b0be89f2fb9dff4e819a12f0608d51f, type: 3}
-  volume: 0.5
+  volume: 0.75
   spatialBlend: 1
   loop: 0
   pintadas: {fileID: 0}
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   Activo: 1
   InformacionVisual: 1
   TiempoDeReutilizacion: 1
-  materialResaltar: {fileID: 0}
+  materialResaltar: {fileID: 2100000, guid: 73bb02edf2422d2468a235fd33b14b7a, type: 2}
   textoAMostrar: Llamar a la puerta
 --- !u!114 &215066995 stripped
 MonoBehaviour:

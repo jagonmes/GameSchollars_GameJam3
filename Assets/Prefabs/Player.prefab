@@ -537,7 +537,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -5744028393098629301, guid: 5ac02313b9920914b8f8e8a5ef86edcb,
+      objectReference: {fileID: 2226215586493920070, guid: 5ac02313b9920914b8f8e8a5ef86edcb,
         type: 2}
     - target: {fileID: 2393204228022190040, guid: 5a0a421cd38a35f409a8555796552095,
         type: 3}
@@ -654,7 +654,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -5744028393098629301, guid: 5ac02313b9920914b8f8e8a5ef86edcb,
+      objectReference: {fileID: 2226215586493920070, guid: 5ac02313b9920914b8f8e8a5ef86edcb,
         type: 2}
     - target: {fileID: 3849010013471122916, guid: 5a0a421cd38a35f409a8555796552095,
         type: 3}
@@ -676,7 +676,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -5744028393098629301, guid: 5ac02313b9920914b8f8e8a5ef86edcb,
+      objectReference: {fileID: 2226215586493920070, guid: 5ac02313b9920914b8f8e8a5ef86edcb,
         type: 2}
     - target: {fileID: 8426366408559693364, guid: 5a0a421cd38a35f409a8555796552095,
         type: 3}
