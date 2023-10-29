@@ -8,7 +8,7 @@ public class Destruir : MonoBehaviour
     [SerializeField] private GameObject yo;
     void Start()
     {
-        if (SelectorFinales.minijuegosSuperados.Count != 4 || !SelectorFinales.finalActivado())
+        if (SelectorFinales.minijuegosSuperados.Count < 4 || !SelectorFinales.finalActivado())
         {
             Debug.Log("Numero de minijuegos: " + SelectorFinales.minijuegosSuperados.Count);
             Debug.Log("Superados: " + SelectorFinales.finalActivado());
