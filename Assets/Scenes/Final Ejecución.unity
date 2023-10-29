@@ -231,6 +231,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6974992861739757281, guid: 219244d7f3b7fc64aaf7c35aa954d7e1,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.9882353
+      objectReference: {fileID: 0}
     - target: {fileID: 9183515565766198780, guid: 219244d7f3b7fc64aaf7c35aa954d7e1,
         type: 3}
       propertyPath: m_Name
@@ -463,6 +468,7 @@ GameObject:
   - component: {fileID: 774251609}
   - component: {fileID: 774251608}
   - component: {fileID: 774251607}
+  - component: {fileID: 774251610}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -634,6 +640,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetScene: 0
+--- !u!114 &774251610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774251602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360dcfe683ccfdb488eed584f174fbf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980228432
 GameObject:
   m_ObjectHideFlags: 0

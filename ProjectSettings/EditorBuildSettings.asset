@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuCreditos.unity
     guid: a2244ca1c4fc2da4aae18cd0139555ac
+  - enabled: 1
+    path: "Assets/Scenes/Final Ejecuci\xF3n.unity"
+    guid: f24a87d028dc17b43a0dd598d4d14270
+  - enabled: 1
+    path: Assets/Scenes/Final Periodico.unity
+    guid: acc07985e5d8fc44aa6dbbf421737894
+  - enabled: 1
+    path: Assets/Scenes/Final Psiquiatrico.unity
+    guid: f98759172c9894d4d86a9c5ff7fce865
   m_configObjects: {}
