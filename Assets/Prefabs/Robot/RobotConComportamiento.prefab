@@ -286,10 +286,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cAudio: {fileID: 8300000, guid: bbebac1a6e41660479f1d02702b5ae0b, type: 3}
-  subtitulos: {fileID: 0}
+  subtitulos: {fileID: 4900000, guid: f383fc9ffc085c54cb72085283e41a05, type: 3}
   volume: 0.2
   spatialBlend: 1
   loop: 0
+  pintadas: {fileID: 0}
 --- !u!1 &7406245254853583066
 GameObject:
   m_ObjectHideFlags: 0
