@@ -538,6 +538,11 @@ PrefabInstance:
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1037564724155844643, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: Activo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1055772361864192113, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_Size.x
@@ -2605,6 +2610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ahorcado: {fileID: 525171854}
   instrucciones: {fileID: 313154224}
+  mAhorcado: {fileID: 0}
 --- !u!4 &1667660469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4611231771809646994, guid: 3252d91be5cb23b4db0b6c674827bb46,
