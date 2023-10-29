@@ -138,6 +138,7 @@ public class GameManager : MonoBehaviour
         {
             if(spawnedDucks == 25 && GameObject.FindGameObjectsWithTag("Pato").Length == 0)
             {
+                active = false;
                 if (player.GetComponent<Movimiento_Mira>().score > minScore)
                 {
                     resultGUI.text = "¡Ganaste!";
@@ -157,7 +158,6 @@ public class GameManager : MonoBehaviour
     
     void devolverControlAlJugador()
     {
-        active = false;
         AudioSource musica = this.GetComponent<AudioSource>();
         if (musica != null)
         {
