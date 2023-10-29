@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cAudio: {fileID: 8300000, guid: 639e054940df29d48adf3cfa9f07f24d, type: 3}
-  subtitulos: {fileID: 0}
+  subtitulos: {fileID: 4900000, guid: cb8123728cca544428149c0a46fb5c8b, type: 3}
   volume: 0.2
   spatialBlend: 1
   loop: 0

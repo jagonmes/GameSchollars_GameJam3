@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControladorPintadas : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class ControladorPintadas : MonoBehaviour
             else
             {
                 pintadas[i].gameObject.SetActive(false);
+            }
+            if(SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                pintadas[2].SetActive(true);
             }
         }
     }
