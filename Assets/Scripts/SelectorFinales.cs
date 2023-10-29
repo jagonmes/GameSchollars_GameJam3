@@ -1,14 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelectorFinales : MonoBehaviour
 {
     public static List<bool> minijuegosSuperados = new List<bool>();
     static bool[] decallsActivados = new bool[7];
 
-    private void Start()
+    private void Awake()
     {
-        if(minijuegosSuperados.Count== 0)
+        if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             reiniciar();
         }
