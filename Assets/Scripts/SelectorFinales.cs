@@ -44,7 +44,7 @@ public class SelectorFinales : MonoBehaviour
             minijuegosSuperados = new List<bool>();
         }
         minijuegosSuperados.Clear();
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < decallsActivados.Length; i++)
         {
             decallsActivados[(int)i] = false;
         }
