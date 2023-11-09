@@ -412,6 +412,11 @@ PrefabInstance:
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8387065971450148769, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8985891786448948988, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_IsActive
@@ -1204,7 +1209,7 @@ PrefabInstance:
     - target: {fileID: 3459576033646621786, guid: 3252d91be5cb23b4db0b6c674827bb46,
         type: 3}
       propertyPath: m_Size.z
-      value: 0.00062943733
+      value: 0.0010509326
       objectReference: {fileID: 0}
     - target: {fileID: 3459576033646621786, guid: 3252d91be5cb23b4db0b6c674827bb46,
         type: 3}
@@ -1214,12 +1219,12 @@ PrefabInstance:
     - target: {fileID: 3459576033646621786, guid: 3252d91be5cb23b4db0b6c674827bb46,
         type: 3}
       propertyPath: m_Center.y
-      value: 0.00020954036
+      value: 0.00020954033
       objectReference: {fileID: 0}
     - target: {fileID: 3459576033646621786, guid: 3252d91be5cb23b4db0b6c674827bb46,
         type: 3}
       propertyPath: m_Center.z
-      value: -0.000009265446
+      value: 0.00020148246
       objectReference: {fileID: 0}
     - target: {fileID: 4611231771809646994, guid: 3252d91be5cb23b4db0b6c674827bb46,
         type: 3}
