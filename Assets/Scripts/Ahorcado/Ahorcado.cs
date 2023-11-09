@@ -246,47 +246,42 @@ public class Ahorcado : MonoBehaviour
             }
 
             letrasUsadas.Add(c);
-        }
-        if (acierto)
-        {
-            aciertos.text += c.ToString().ToUpper();
-            pintarPalabraActiva();
-            //compruebo si la palabra esta completa
-            bool palabraCompletada = true;
-            foreach (bool a in aciertosPalabraActiva)
+            if (acierto)
             {
-                if (!a)
-                    palabraCompletada = false;
+                aciertos.text += c.ToString().ToUpper();
+                pintarPalabraActiva();
+                //compruebo si la palabra esta completa
+                bool palabraCompletada = true;
+                foreach (bool a in aciertosPalabraActiva)
+                {
+                    if (!a)
+                        palabraCompletada = false;
+                }
+
+                if (palabraCompletada)
+                {
+                    //paramos los inputs del jugador
+                    juegoEnMarcha = false;
+                    //Invocamos a la función tiempo finDePartida con un tiempo de espera para que el cambio no sea instantaneo
+                    Invoke("finDePartida", 2f);
+                }
             }
 
-            if (palabraCompletada)
+            else
             {
-                //paramos los inputs del jugador
-                juegoEnMarcha = false;
-                //Invocamos a la función tiempo finDePartida con un tiempo de espera para que el cambio no sea instantaneo
-                Invoke("finDePartida", 2f);
+                fallos.text += c.ToString().ToUpper();
+                contadorFallos++;
+                //Se actualiza la figura del ahorcado
+                pintarAhorcado();
+                //si se alcanza el limite de fallos
+                if (contadorFallos > limiteDeFallos)
+                {
+                    //paramos los inputs del jugador
+                    juegoEnMarcha = false;
+                    //Invocamos a la función tiempo finDePartida con un tiempo de espera para que el cambio no sea instantaneo
+                    Invoke("finDePartida", 2f);
+                }
             }
-
-
-        }
-        else
-        {
-            fallos.text += c.ToString().ToUpper();
-            contadorFallos++;
-            //Se actualiza la figura del ahorcado
-            pintarAhorcado();
-            //si se alcanza el limite de fallos
-            if (contadorFallos > limiteDeFallos)
-            {
-                //paramos los inputs del jugador
-                juegoEnMarcha = false;
-                //Invocamos a la función tiempo finDePartida con un tiempo de espera para que el cambio no sea instantaneo
-                Invoke("finDePartida", 2f);
-            }
-
-            
-
-                
         }
         
         habilitado = false;
