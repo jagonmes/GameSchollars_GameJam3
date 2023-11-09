@@ -7,6 +7,7 @@ public class Comida : MonoBehaviour
 {
     [SerializeField] CambioDeEscena cambiaEscena;
     private GameObject[] maquinasExp;
+    public AudioSource ÑamÑam;
     
     private void Start()
     {
@@ -22,11 +23,12 @@ public class Comida : MonoBehaviour
     }
     public void comer()
     {
-        Debug.Log("a");
+        //Debug.Log("a");
         maquinasExp = GameObject.FindGameObjectsWithTag("MaquinaExp"); // Usamos FindGameObjectsWithTag, ya que es común etiquetar objetos con etiquetas.
         if (cambiaEscena.haComido == false)
         {
             cambiaEscena.haComido = true;
+            ÑamÑam.Play();
             apagaMaquinas();
         }
     }
