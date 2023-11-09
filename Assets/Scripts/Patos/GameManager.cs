@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     public Text scoreGUI;
     public Text resultGUI;
+    public Text patosLeftGUI;
 
 
     void Start()
@@ -99,6 +100,8 @@ public class GameManager : MonoBehaviour
     void ManageGame()
     {
         scoreGUI.text = "Score: " + player.GetComponent<Movimiento_Mira>().score + " / " + minScore;
+        patosLeftGUI.text = "Quedan " + (25-spawnedDucks);
+
         if (playing)
         {
             if (spawnedDucks == 25)

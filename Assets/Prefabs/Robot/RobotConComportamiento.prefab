@@ -498,7 +498,7 @@ MonoBehaviour:
   - {fileID: 5254265628441681871}
   - {fileID: 4268932915165823527}
   - {fileID: 6285700438624162528}
-  velocidad: 1
+  velocidad: 2.5
   velocidadDeRotacion: 180
   DistanciaMinima: 0.1
   DistanciaMinimaRotacion: 0.1
