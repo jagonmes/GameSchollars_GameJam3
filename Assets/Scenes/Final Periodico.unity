@@ -608,6 +608,7 @@ MonoBehaviour:
   fin: 0
   fout: 1
   ratio: 0.5
+  active: 1
 --- !u!114 &774251609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -812,7 +813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: fd27847126e6e94479e06abf12dec576, type: 3}
+  m_Texture: {fileID: 2800000, guid: 2bf32a9a3a0b97543b2188df3e351ac9, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0

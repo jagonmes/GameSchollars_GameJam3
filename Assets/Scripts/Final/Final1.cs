@@ -13,11 +13,11 @@ public class Final1 : MonoBehaviour
     [SerializeField] private GameObject imagen;
    void Start()
    {
-     Invoke("activarFade", 5);
-     Invoke("quitarImagen", 7);
-     Invoke("activarFade", 8);
-     Invoke("activarFade", 12);
-     Invoke("activarCambio", 15);
+     Invoke("activarFade", 15);
+     Invoke("quitarImagen", 17);
+     Invoke("activarFade", 18);
+     Invoke("activarFade", 22);
+     Invoke("activarCambio", 25);//+10
     }
 
    void activarFade()
