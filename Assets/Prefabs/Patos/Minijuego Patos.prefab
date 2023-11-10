@@ -159,7 +159,7 @@ Transform:
   m_GameObject: {fileID: 1087233067965423685}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0539, y: -0.0303, z: 10}
+  m_LocalPosition: {x: -0.0539, y: -0.0303, z: 10.47}
   m_LocalScale: {x: 0.9437486, y: 0.9437486, z: 0.9437486}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -275,6 +275,8 @@ MonoBehaviour:
   - {fileID: 8906868816210374140, guid: be5b3222d9e7fcb4989b3db8f60b9c05, type: 3}
   - {fileID: 5024248904686466501, guid: a29649eca6a361c40a20b47f5c0fde9d, type: 3}
   scoreGUI: {fileID: 4643030649876285696}
+  resultGUI: {fileID: 0}
+  patosLeftGUI: {fileID: 0}
 --- !u!114 &7861511113524798897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,6 +940,7 @@ MonoBehaviour:
   score: 0
   popSFX: {fileID: 5407433505312122241}
   pumSFX: {fileID: 7206488869763233030}
+  blood: {fileID: 2216115409473656034, guid: 082dd453190545548a7ecf9e9817c5df, type: 3}
 --- !u!58 &4448131194960749487
 CircleCollider2D:
   m_ObjectHideFlags: 0

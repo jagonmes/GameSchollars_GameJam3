@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movimiento_Mira : MonoBehaviour
@@ -16,6 +17,7 @@ public class Movimiento_Mira : MonoBehaviour
 
     public AudioSource popSFX;
     public AudioSource pumSFX;
+    public GameObject blood;
 
     void Update()
     {
@@ -39,7 +41,7 @@ public class Movimiento_Mira : MonoBehaviour
             }
             else if (disparando)
             {
-                Debug.Log("PIUM!");
+                //Debug.Log("PIUM!");
                 if(Time.time - tiempoDesdeInicioDisparo > tiempoDisparando)
                 {
                     disparando = false;
@@ -62,6 +64,8 @@ public class Movimiento_Mira : MonoBehaviour
             if(System.Math.Abs(collision.GetComponent<Comportamiento_Patos>().speedX) > 4)
             {
                 pumSFX.Play();
+                GameObject bloodInst = Instantiate(blood, new Vector3(collision.GetComponent<Transform>().position.x, 
+                    collision.GetComponent<Transform>().position.y - 0.1f, collision.GetComponent<Transform>().position.z), Quaternion.identity);
             }
             else
             {
@@ -70,10 +74,5 @@ public class Movimiento_Mira : MonoBehaviour
             score += collision.GetComponent<Comportamiento_Patos>().score;
             Destroy(collision.gameObject);
         }
-    }
-
-    void MegaShot()
-    {
-
     }
 }
