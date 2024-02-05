@@ -10,21 +10,28 @@ public class Dia3Fade : MonoBehaviour
     [SerializeField] private GameObject texto1;
     private TextMeshProUGUI texto1Text;
 
+    private static bool yaActicado = false;
+
     private void Start()
     {
         player = GameObject.Find("Player");
         texto1 = GameObject.Find("TextoAcción");
         texto1Text = texto1.GetComponent<TextMeshProUGUI>();
+        yaActicado = false;
     }
     public void fadeMaquina()
     {
-        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = false;
-        fade.active = true;
-        controladorPintadasScript.activaPintada(5);
-        texto1Text.text = "";
-        Invoke("Teleportacion", 3f);
-        Invoke("fadeVuelta", 5f);
-        Invoke("DevolverControl", 6f);
+        if (!yaActicado)
+        {
+            GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = false;
+            fade.active = true;
+            controladorPintadasScript.activaPintada(5);
+            texto1Text.text = "";
+            Invoke("Teleportacion", 3f);
+            Invoke("fadeVuelta", 5f);
+            Invoke("DevolverControl", 6f);
+            yaActicado = true;
+        }
     }
 
     private void Teleportacion()

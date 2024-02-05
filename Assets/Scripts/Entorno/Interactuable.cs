@@ -87,6 +87,22 @@ public class Interactuable : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            if (!OGMaterial)
+            {
+                if (!IVisual)
+                {
+                    mesh.materials = materialesOriginales;
+                    Text.text = "";
+                    OGMaterial = true;
+                }
+                else
+                {
+                    IVisual = false;
+                }
+            }   
+        }
     }
 
     //Metodo que se invoca para intentar interactuar
