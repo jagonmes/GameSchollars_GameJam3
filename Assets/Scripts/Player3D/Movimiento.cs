@@ -9,7 +9,7 @@ public class Movimiento : MonoBehaviour
     [SerializeField] private float runSpeed;
 
     //Para cálculos
-    private Vector3 m_CurrentMoveVelocity;
+    [SerializeField]private Vector3 m_CurrentMoveVelocity;
     private Vector3 m_MoveDampVelocity;
     private Vector3 m_CurrentForceVelocity;
 
@@ -78,8 +78,8 @@ public class Movimiento : MonoBehaviour
 
             //Se mueve al personaje
 
-            m_Controller.Move(m_CurrentMoveVelocity * Time.deltaTime);
-            m_Controller.Move(m_CurrentForceVelocity * Time.deltaTime);
+            //m_Controller.Move(m_CurrentMoveVelocity * Time.deltaTime);
+            //m_Controller.Move(m_CurrentForceVelocity * Time.deltaTime);
             
             if (m_CurrentMoveVelocity.magnitude > 0.5f)
             {
