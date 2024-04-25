@@ -8,42 +8,51 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 91ecc217a4b59524dab0ae8a2a147c00
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dia 1.unity
     guid: ff970a9a96670c943aa39526ab5d0730
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dia 2.unity
     guid: 1760fbb21f0aa934ca13a9627ba002ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dia 3.unity
     guid: fae8fe43836bc0a45968ec591b2c310d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dia 4.unity
     guid: fb4129a62c23bc54d818820020a48039
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dia 5.unity
     guid: cedc6a5cce5dbe141861a67a71c321bb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MenuControles.unity
     guid: 1cc920cc4acbae34e88a0e107af7290b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MenuCreditos.unity
     guid: a2244ca1c4fc2da4aae18cd0139555ac
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Final Ejecuci\xF3n.unity"
     guid: f24a87d028dc17b43a0dd598d4d14270
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Periodico.unity
     guid: acc07985e5d8fc44aa6dbbf421737894
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Psiquiatrico.unity
     guid: f98759172c9894d4d86a9c5ff7fce865
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PantallaTitulo.unity
     guid: a7a1823bc818f5e41ac0f999047f30fa
+  - enabled: 1
+    path: Assets/Scenes/VR/MenuPrincipal.unity
+    guid: d7b6dab0ef110b8408e2130ff773c892
+  - enabled: 1
+    path: Assets/Scenes/VR/MenuControles.unity
+    guid: 016dae013c1b1834fad3cac4b0c24ebb
+  - enabled: 1
+    path: Assets/Scenes/VR/MenuCreditos.unity
+    guid: 7ae746e7068de2343ad1e347621e6881
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ea7191ac97903a44ea8c0816886c8a70,
       type: 2}
