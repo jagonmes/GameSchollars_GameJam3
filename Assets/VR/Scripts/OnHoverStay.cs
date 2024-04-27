@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class OnHoverStay : MonoBehaviour
 {
@@ -11,13 +12,16 @@ public class OnHoverStay : MonoBehaviour
             Interaccion?.Invoke();
     }
 
-    public void Activar()
+    public void Activar(HoverEnterEventArgs args)
     {
+
+        if (args.interactorObject.ToString().Contains("SocketInteractor")) return;
         Active = true;
     }
 
-    public void Desactivar()
+    public void Desactivar(HoverExitEventArgs args)
     {
+        if (args.interactorObject.ToString().Contains("SocketInteractor")) return;
         Active = false;
     }
 }

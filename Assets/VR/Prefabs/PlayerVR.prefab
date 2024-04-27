@@ -53,7 +53,7 @@ MonoBehaviour:
     m_Bits: 55
   m_InteractionLayers:
     m_Bits: 2147483650
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 8823923368400916510}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_LineType: 1
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 10
-  m_RayOriginTransform: {fileID: 0}
+  m_RayOriginTransform: {fileID: 8539924522431987393}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 12
   m_Acceleration: 9.8
@@ -643,7 +643,7 @@ MonoBehaviour:
   m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 10
-  m_RayOriginTransform: {fileID: 0}
+  m_RayOriginTransform: {fileID: 8539924522431987393}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 12
   m_Acceleration: 9.8
@@ -1039,7 +1039,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 10
-  m_RayOriginTransform: {fileID: 0}
+  m_RayOriginTransform: {fileID: 4200275857531159222}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 12
   m_Acceleration: 9.8
@@ -1571,6 +1571,7 @@ Transform:
   - {fileID: 5795415571039748376}
   - {fileID: 2525381530160143658}
   - {fileID: 8539924522431987393}
+  - {fileID: 8823923368400916510}
   m_Father: {fileID: 820475284689922735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2060875835502201710
@@ -2119,7 +2120,7 @@ MonoBehaviour:
     m_Bits: 55
   m_InteractionLayers:
     m_Bits: 2
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 8823923368400916510}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -2151,7 +2152,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
@@ -2189,7 +2190,7 @@ MonoBehaviour:
   m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 10
-  m_RayOriginTransform: {fileID: 0}
+  m_RayOriginTransform: {fileID: 8539924522431987393}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 12
   m_Acceleration: 9.8
@@ -2887,6 +2888,7 @@ Transform:
   - {fileID: 6510501855402116052}
   - {fileID: 1312849892530960299}
   - {fileID: 4200275857531159222}
+  - {fileID: 5801346985637253224}
   m_Father: {fileID: 820475284689922735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2208265022625498199
@@ -3211,7 +3213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5353966185331729391}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 380533ee013ee93468bf813f7adb7559, type: 3}
   m_Name: 
@@ -3349,6 +3351,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_System: {fileID: 2766983205558669044}
   m_DelayTime: 0
+--- !u!1 &5579387668906789243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5801346985637253224}
+  m_Layer: 0
+  m_Name: ARayo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5801346985637253224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579387668906789243}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.050000004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2132857723058657626}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5959327119575022909
 GameObject:
   m_ObjectHideFlags: 0
@@ -3432,7 +3465,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
@@ -3579,7 +3612,7 @@ MonoBehaviour:
     m_Bits: 55
   m_InteractionLayers:
     m_Bits: 2147483650
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 5801346985637253224}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -3611,7 +3644,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
@@ -3649,7 +3682,7 @@ MonoBehaviour:
   m_LineType: 1
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 10
-  m_RayOriginTransform: {fileID: 0}
+  m_RayOriginTransform: {fileID: 4200275857531159222}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 12
   m_Acceleration: 9.8
@@ -4125,7 +4158,7 @@ MonoBehaviour:
     m_Bits: 55
   m_InteractionLayers:
     m_Bits: 2
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 5801346985637253224}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -4157,7 +4190,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
@@ -4195,7 +4228,7 @@ MonoBehaviour:
   m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 10
-  m_RayOriginTransform: {fileID: 0}
+  m_RayOriginTransform: {fileID: 4200275857531159222}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 12
   m_Acceleration: 9.8
@@ -4214,7 +4247,7 @@ MonoBehaviour:
     m_Bits: 2147483681
   m_RaycastTriggerInteraction: 1
   m_RaycastSnapVolumeInteraction: 1
-  m_HitClosestOnly: 0
+  m_HitClosestOnly: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_AutoDeselect: 0
@@ -4631,7 +4664,7 @@ MonoBehaviour:
   m_LineType: 1
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 10
-  m_RayOriginTransform: {fileID: 0}
+  m_RayOriginTransform: {fileID: 4200275857531159222}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 12
   m_Acceleration: 9.8
@@ -4944,6 +4977,37 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+--- !u!1 &7845382013085511314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8823923368400916510}
+  m_Layer: 0
+  m_Name: ARayo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8823923368400916510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845382013085511314}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8302823445733408034}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7911146836438532605
 GameObject:
   m_ObjectHideFlags: 0
@@ -5190,7 +5254,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 95
+    m_Bits: 479
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5507,7 +5571,7 @@ MonoBehaviour:
   m_LineType: 1
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 10
-  m_RayOriginTransform: {fileID: 0}
+  m_RayOriginTransform: {fileID: 8539924522431987393}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 12
   m_Acceleration: 9.8

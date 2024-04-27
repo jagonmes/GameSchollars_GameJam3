@@ -9,19 +9,32 @@ public class Llamada : MonoBehaviour
     [SerializeField] private float volume = 0.2f;
     [SerializeField] private float spatialBlend = 1.0f;
     [SerializeField] private bool loop = true;
+    private AudioSource aSource;
 
     public void LlamadaDeTelefono()
     {
-        if (this.GetComponent<AudioSource>() == null)
+        if (aSource == null)
         {
-            this.AddComponent<AudioSource>();
+            if (this.GetComponent<AudioSource>() == null)
+            {
+                aSource = this.AddComponent<AudioSource>();
+            }
+            else
+            {
+                aSource = this.GetComponent<AudioSource>();
+            }
         }
-        AudioSource aSource = this.GetComponent<AudioSource>();
         aSource.clip = ringtone;
         aSource.loop = loop;
         aSource.spatialBlend = spatialBlend;
         aSource.volume = volume;
         aSource.Play();
         this.GetComponent<Interactuable>().Activo = true;
+    }
+
+    public void desactivarLlamada()
+    {
+        if (aSource != null)
+            aSource.Stop();
     }
 }

@@ -115,6 +115,11 @@ public class Interactuable : MonoBehaviour
             //Se actualiza el tiempo de reutilización
             CoolDown = TiempoDeReutilizacion;
         }
+
+        if (!Reutilizable)
+        {
+            Activo = false;
+        }
     }
 
     //Método que se invoca para aplicar cambios visuales cuando el foco esta sobre el objeto interactuable
@@ -122,12 +127,17 @@ public class Interactuable : MonoBehaviour
     {
         //Si esta indicado que tiene información visual y el cooldown es menor o igual a cero
         //muestra dicha información visual
-        if (InformacionVisual && CoolDown <= 0.0f)
+        if (InformacionVisual && CoolDown <= 0.0f && Activo)
         {
             Text.text = textoAMostrar;
             mesh.materials = materialesResaltados;
             IVisual = true;
             OGMaterial = false;
         }
+    }
+
+    public void reactivar()
+    {
+        Activo = true;
     }
 }

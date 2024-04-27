@@ -58,6 +58,7 @@ public class Abrir_Cerrar : MonoBehaviour
             Puerta.reiniciarCamino();
             abierto = false;
             PuertaI.Reutilizable = true;
+            PuertaI.Activo = true;
         }
     }
 }
