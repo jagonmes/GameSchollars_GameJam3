@@ -1843,7 +1843,7 @@ Transform:
   m_GameObject: {fileID: 2463213440491876249}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 0.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2730,11 +2730,10 @@ GameObject:
   - component: {fileID: 111718120497143979}
   - component: {fileID: 829437189270398348}
   - component: {fileID: 4875123043092294643}
-  - component: {fileID: 2219425946125972467}
   - component: {fileID: 6288532240979443982}
   m_Layer: 0
   m_Name: PlayerVR
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2808,29 +2807,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2219425946125972467
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4587600192675525931}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 3.6267836
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.8133934, z: 0}
 --- !u!114 &6288532240979443982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3149,8 +3125,6 @@ GameObject:
   - component: {fileID: 493241767156526534}
   - component: {fileID: 741720820005512259}
   - component: {fileID: 7140598854516931962}
-  - component: {fileID: 4545333395775406461}
-  - component: {fileID: 2431964527892823986}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -3190,8 +3164,8 @@ MonoBehaviour:
   m_Camera: {fileID: 6620922006491578407}
   m_OriginBaseGameObject: {fileID: 5353966185331729391}
   m_CameraFloorOffsetObject: {fileID: 2463213440491876249}
-  m_RequestedTrackingOriginMode: 2
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 0.9
 --- !u!114 &358093889705326424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3260,51 +3234,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
+  m_Height: 1
   m_Radius: 0.2
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.05
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &4545333395775406461
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5353966185331729391}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.2
-  m_Height: 1.41
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.3, z: 0}
---- !u!114 &2431964527892823986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5353966185331729391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LocomotionProvider: {fileID: 7057790608772849732}
-  m_MinHeight: 0
-  m_MaxHeight: Infinity
 --- !u!1 &5392508830187032525
 GameObject:
   m_ObjectHideFlags: 0
@@ -5080,7 +5016,7 @@ Transform:
   m_GameObject: {fileID: 7945672798067314463}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

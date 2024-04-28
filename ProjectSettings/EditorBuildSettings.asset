@@ -53,6 +53,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VR/MenuCreditos.unity
     guid: 7ae746e7068de2343ad1e347621e6881
+  - enabled: 1
+    path: Assets/Scenes/VR/Dia 1.unity
+    guid: b1c7d35ca6251d54397f5cdc1758d7d9
+  - enabled: 1
+    path: Assets/Scenes/VR/Dia 2.unity
+    guid: 249f2f07cc6c30046bae37c9691c0b0e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ea7191ac97903a44ea8c0816886c8a70,
       type: 2}

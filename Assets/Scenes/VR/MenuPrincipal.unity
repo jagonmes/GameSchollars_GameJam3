@@ -310,6 +310,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sala
       objectReference: {fileID: 0}
+    - target: {fileID: 5907307308523766330, guid: 584bc23669c014d4a925222211111c8d,
+        type: 3}
+      propertyPath: TargetScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739629241489976895, guid: 584bc23669c014d4a925222211111c8d,
+        type: 3}
+      propertyPath: TargetScene
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8877130328067726740, guid: 584bc23669c014d4a925222211111c8d,
+        type: 3}
+      propertyPath: TargetScene
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9063875007282966334, guid: 584bc23669c014d4a925222211111c8d,
         type: 3}
       propertyPath: m_LocalPosition.x

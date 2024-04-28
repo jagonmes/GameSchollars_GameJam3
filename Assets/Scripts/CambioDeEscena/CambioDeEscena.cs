@@ -32,6 +32,8 @@ public class CambioDeEscena : MonoBehaviour
 
         if (indice == -1)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            SceneManager.LoadScene(indice);
             
     }
 

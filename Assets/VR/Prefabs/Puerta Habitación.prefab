@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 5903739256072188499}
   - component: {fileID: 3571580908603063911}
   - component: {fileID: 3921915337957515554}
+  - component: {fileID: 2335211197595884540}
   m_Layer: 0
   m_Name: PuertaV
   m_TagString: Untagged
@@ -415,6 +416,8 @@ MonoBehaviour:
   volume: 0.2
   spatialBlend: 1
   loop: 0
+  manilla: {fileID: 4913576878985481446}
+  manillaCerrado: {fileID: 3141925225428333176}
 --- !u!114 &5903739256072188499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +454,7 @@ MonoBehaviour:
   limiteIzquierda: {fileID: 2018659157557529295}
   limiteDerecha: {fileID: 3141925225428333176}
   _interactuable: {fileID: 605523476796248584}
+  puertab: 0
 --- !u!114 &3921915337957515554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,27 +494,42 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2335211197595884540}
+        m_TargetAssemblyTypeName: OnHoverStay, Assembly-CSharp
+        m_MethodName: Activar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2335211197595884540}
+        m_TargetAssemblyTypeName: OnHoverStay, Assembly-CSharp
+        m_MethodName: Desactivar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3571580908603063911}
-        m_TargetAssemblyTypeName: MoverPuertaVR, Assembly-CSharp
-        m_MethodName: PuertaAgarrada
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_LastSelectExited:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3571580908603063911}
         m_TargetAssemblyTypeName: MoverPuertaVR, Assembly-CSharp
@@ -524,12 +543,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3571580908603063911}
+        m_TargetAssemblyTypeName: MoverPuertaVR, Assembly-CSharp
+        m_MethodName: PuertaAgarrada
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -578,6 +606,33 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2335211197595884540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929916941714870149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6553ba35322b449ccea95466e888a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaccion:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 605523476796248584}
+        m_TargetAssemblyTypeName: Interactuable, Assembly-CSharp
+        m_MethodName: Visual
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5018393426175035520
 GameObject:
   m_ObjectHideFlags: 0

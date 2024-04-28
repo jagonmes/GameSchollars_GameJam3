@@ -20,7 +20,7 @@ public class Interactuable : MonoBehaviour
     private bool InformacionVisual = true;
 
     //Indica el tiempo entre interacciones
-    [SerializeField] private float TiempoDeReutilizacion = 1.0f;
+    [SerializeField] public float TiempoDeReutilizacion = 1.0f;
 
     //Tiempo desde la última interacción
     private float CoolDown = 0.0f;

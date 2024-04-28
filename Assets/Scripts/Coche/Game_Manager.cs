@@ -30,6 +30,8 @@ public class Game_Manager : MonoBehaviour
 
     public AudioSource winSound;
     public AudioSource music;
+    
+    [SerializeField] private TransportarJugadorVR TP;
 
     void Start()
     {
@@ -206,7 +208,11 @@ public class Game_Manager : MonoBehaviour
             musica.Stop();
         }
         car.GetComponent<Car_HP_Manager>().crushSound.Stop();
-        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
-        GameObject.Find("Player").GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
+        Invoke("Teleport", 2);
+    }
+
+    private void Teleport()
+    {
+        TP.IniciarTeletransporte();
     }
 }

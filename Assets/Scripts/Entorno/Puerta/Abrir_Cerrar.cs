@@ -16,6 +16,8 @@ public class Abrir_Cerrar : MonoBehaviour
     [SerializeField] private float volume = 0.2f;
     [SerializeField] private float spatialBlend = 1.0f;
     [SerializeField] private bool loop = false;
+    [SerializeField] private Transform manilla;
+    [SerializeField] private Transform manillaCerrado;
     
     private bool abierto = false;
     private AudioSource aSource;
@@ -59,6 +61,13 @@ public class Abrir_Cerrar : MonoBehaviour
             abierto = false;
             PuertaI.Reutilizable = true;
             PuertaI.Activo = true;
+            Invoke("RestablecerManilla", PuertaI.TiempoDeReutilizacion);
         }
+    }
+
+    private void RestablecerManilla()
+    {
+        manilla.position = manillaCerrado.position;
+        Puerta.transform.position = Cerrar.transform.position;
     }
 }

@@ -40,6 +40,13 @@ public class Car_Movement : MonoBehaviour
                 //Debug.Log(carrilActual);
             }
 
+            if (ControlCoche.izquierda)
+                carrilActual = 0;
+            if (ControlCoche.centro)
+                carrilActual = 1;
+            if (ControlCoche.derecha)
+                carrilActual = 2;
+
             transform.position = new Vector3 (carriles[carrilActual].position.x, transform.position.y, transform.position.z);
         }
     }
