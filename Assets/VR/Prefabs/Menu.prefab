@@ -380,7 +380,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 196.4, y: -26.2}
+  m_AnchoredPosition: {x: 330.9, y: -26.2}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6421202683811969815
@@ -3782,11 +3782,13 @@ MonoBehaviour:
   - {fileID: 4054693223860204888}
   - {fileID: 2678999898875023616}
   - {fileID: 6421202683811969815}
+  Vig: {fileID: 0}
   Movimiento: []
   Giro: []
   Interaccion: []
   Accesibilidad: []
   TPInteractors: []
+  CCD: {fileID: 0}
 --- !u!114 &2050887149946667670
 MonoBehaviour:
   m_ObjectHideFlags: 0

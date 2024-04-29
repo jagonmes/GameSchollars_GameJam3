@@ -1,20 +1,14 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class MenuVR : MonoBehaviour
 {
-    public static bool MContinuo = true;
-    public static bool MTeletransporte = false;
-    public static bool GContinuo = true;
-    public static bool GSnap = false;
-    public static bool IDirecta = true;
-    public static bool IRayo = false;
-    public static bool ASubtitulos = true;
-    public static bool AVig = true;
     public bool CambioPermitido = true;
 
     [SerializeField] private Toggle[] Toggles;
+    [SerializeField] private Toggle Vig;
 
     [SerializeField] private GameObject[] Movimiento;
     [SerializeField] private GameObject[] Giro;
@@ -23,8 +17,21 @@ public class MenuVR : MonoBehaviour
     [SerializeField] private GameObject[] TPInteractors;
     [SerializeField] private CharacterControllerDriver CCD;
 
-    private void Start()
+    private void Awake()
     {
+        
+        if (!OpcionesMenuVr.getInstance().Iniciado)
+        {
+            OpcionesMenuVr.getInstance().MContinuo = true;
+            OpcionesMenuVr.getInstance().MTeletransporte = false;
+            OpcionesMenuVr.getInstance().GContinuo = true;
+            OpcionesMenuVr.getInstance().GSnap = false;
+            OpcionesMenuVr.getInstance().IDirecta = true;
+            OpcionesMenuVr.getInstance().IRayo = false;
+            OpcionesMenuVr.getInstance().ASubtitulos = true;
+            OpcionesMenuVr.getInstance().AVig = true;
+            OpcionesMenuVr.getInstance().Iniciado = true;
+        }
         activarToggles();
         aplicarCambios();
     }
@@ -38,7 +45,7 @@ public class MenuVR : MonoBehaviour
         Toggles[4].isOn = true;
         Toggles[5].isOn = false;
         Toggles[6].isOn = true;
-        Toggles[7].isOn = true;
+        Vig.isOn = true;
     }
 
     public void activarToggles()
@@ -48,14 +55,15 @@ public class MenuVR : MonoBehaviour
             toggle.interactable = CambioPermitido;
         }
 
-        Toggles[0].isOn = MContinuo;
-        Toggles[1].isOn = MTeletransporte;
-        Toggles[2].isOn = GContinuo;
-        Toggles[3].isOn = GSnap;
-        Toggles[4].isOn = IDirecta;
-        Toggles[5].isOn = IRayo;
-        Toggles[6].isOn = ASubtitulos;
-        Toggles[7].isOn = AVig;
+        Toggles[0].isOn = OpcionesMenuVr.getInstance().MContinuo;
+        Toggles[1].isOn = OpcionesMenuVr.getInstance().MTeletransporte;
+        Toggles[2].isOn = OpcionesMenuVr.getInstance().GContinuo;
+        Toggles[3].isOn = OpcionesMenuVr.getInstance().GSnap;
+        Toggles[4].isOn = OpcionesMenuVr.getInstance().IDirecta;
+        Toggles[5].isOn = OpcionesMenuVr.getInstance().IRayo;
+        Toggles[6].isOn = OpcionesMenuVr.getInstance().ASubtitulos;
+        Vig.isOn = OpcionesMenuVr.getInstance().AVig;
+        
     }
 
     public void aplicarCambios()
@@ -71,15 +79,12 @@ public class MenuVR : MonoBehaviour
 
     void asignarMovimiento()
     {
-        Debug.Log("Aplicando Cambios");
-        Movimiento[0].SetActive(MContinuo);
-        Debug.Log(MContinuo);
-        Debug.Log(Movimiento[0].active);
-        Movimiento[1].SetActive(MTeletransporte);
+        Movimiento[0].SetActive(OpcionesMenuVr.getInstance().MContinuo);
+        Movimiento[1].SetActive(OpcionesMenuVr.getInstance().MTeletransporte);
         //CCD.enabled = (MTeletransporte);
-        if (MTeletransporte)
+        if (OpcionesMenuVr.getInstance().MTeletransporte)
         {
-            if (IRayo)
+            if (OpcionesMenuVr.getInstance().IRayo)
             {
                 TPInteractors[0].SetActive(false);
                 TPInteractors[1].SetActive(false);
@@ -108,45 +113,49 @@ public class MenuVR : MonoBehaviour
     
     void asignarInteraccion()
     {
-        Interaccion[0].SetActive(IDirecta);
-        Interaccion[1].SetActive(IDirecta);
-        Interaccion[2].SetActive(IRayo);
-        Interaccion[3].SetActive(IRayo);
+        Interaccion[0].SetActive(OpcionesMenuVr.getInstance().IDirecta);
+        Interaccion[1].SetActive(OpcionesMenuVr.getInstance().IDirecta);
+        Interaccion[2].SetActive(OpcionesMenuVr.getInstance().IRayo);
+        Interaccion[3].SetActive(OpcionesMenuVr.getInstance().IRayo);
     }
     
     void asignarGiro()
     {
-        Giro[0].SetActive(GContinuo);
-        Giro[1].SetActive(GSnap);   
+        Giro[0].SetActive(OpcionesMenuVr.getInstance().GContinuo);
+        Giro[1].SetActive(OpcionesMenuVr.getInstance().GSnap);   
     }
 
     void asignarAccesibilidad()
     {
-        Accesibilidad[0].SetActive(ASubtitulos);
-        Accesibilidad[1].SetActive(AVig);
+        Accesibilidad[0].SetActive(OpcionesMenuVr.getInstance().ASubtitulos);
+        Accesibilidad[1].SetActive(OpcionesMenuVr.getInstance().AVig);
     }
 
     public void cambiarMovimiento()
     {
-        MContinuo = Toggles[0].isOn;
-        MTeletransporte = Toggles[1].isOn;
+        OpcionesMenuVr.getInstance().MContinuo = Toggles[0].isOn;
+        OpcionesMenuVr.getInstance().MTeletransporte = Toggles[1].isOn;
     }
 
     public void cambiarGiro()
     {
-        GContinuo = Toggles[2].isOn;
-        GSnap = Toggles[3].isOn;
+        OpcionesMenuVr.getInstance().GContinuo = Toggles[2].isOn;
+        OpcionesMenuVr.getInstance().GSnap = Toggles[3].isOn;
     }
     
     public void cambiarInteraccion()
     {
-        IDirecta = Toggles[4].isOn;
-        IRayo = Toggles[5].isOn;
+        OpcionesMenuVr.getInstance().IDirecta = Toggles[4].isOn;
+        OpcionesMenuVr.getInstance().IRayo = Toggles[5].isOn;
     }
 
     public void cambiarAccesibilidad()
     {
-        ASubtitulos = Toggles[6].isOn;
-        AVig = Toggles[7].isOn;
+        OpcionesMenuVr.getInstance().ASubtitulos = Toggles[6].isOn;
+    }
+    
+    public void cambiarVig()
+    {
+        OpcionesMenuVr.getInstance().AVig = Vig.isOn;
     }
 }

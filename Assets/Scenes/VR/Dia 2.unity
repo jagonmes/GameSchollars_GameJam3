@@ -139,6 +139,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: TiempoDeReutilizacion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648773158715899791, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: Interaccion.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -304,6 +309,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -314,13 +329,43 @@ PrefabInstance:
       objectReference: {fileID: 215067007}
     - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Interactuar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 215067007}
+    - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Interactuar
       objectReference: {fileID: 0}
     - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Interactuable, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Interactuable, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966218389614300325, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4134134104648302741, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -401,6 +446,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
+        type: 3}
+      propertyPath: indice
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5918139003596131471, guid: af12a653645f4704da4088b09ccea6f5,
         type: 3}
@@ -3850,7 +3900,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 4.55
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
