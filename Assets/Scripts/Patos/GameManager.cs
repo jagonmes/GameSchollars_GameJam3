@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     public Text scoreGUI;
     public Text resultGUI;
     public Text patosLeftGUI;
+    
+    [SerializeField] private TransportarJugadorVR TP;
 
 
     void Start()
@@ -59,7 +61,7 @@ public class GameManager : MonoBehaviour
             player.GetComponent<Movimiento_Mira>().active = false;
         }
         
-        if(instructions.active == true && Input.GetKeyDown("x"))
+        if(instructions.active == true && Input.GetKeyDown("x") || instructions.active == true && Disparar.esconderInstrucciones)
         {
             HideInstructions();
         } 
@@ -166,7 +168,11 @@ public class GameManager : MonoBehaviour
         {
             musica.Stop();
         }
-        GameObject.Find("Player").GetComponent<Movimiento>().JugadorActivo = true;
-        GameObject.Find("Player").GetComponent<DevolverCamaraAlJugador>()?.devolverCamaraAlJugador();
+        Invoke("Teleport", 2);
+    }
+
+    private void Teleport()
+    {
+        TP.IniciarTeletransporte();
     }
 }

@@ -19,6 +19,8 @@ public class Movimiento_Mira : MonoBehaviour
     public AudioSource pumSFX;
     public GameObject blood;
 
+    public static bool intentandoDisparar = false;
+    
     void Update()
     {
         if (active) {
@@ -35,9 +37,10 @@ public class Movimiento_Mira : MonoBehaviour
 
             transform.position = new Vector3(limiteX, limiteY, transform.position.z);
 
-            if (Input.GetKeyDown(KeyCode.Space) && !disparando)
+            if (Input.GetKeyDown(KeyCode.Space) && !disparando || intentandoDisparar && !disparando)
             {
                 Disparar();
+                intentandoDisparar = false;
             }
             else if (disparando)
             {
@@ -58,7 +61,7 @@ public class Movimiento_Mira : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Chocan");
+        //Debug.Log("Chocan");
         if (collision.transform.tag == "Pato" && disparando)
         {
             if(System.Math.Abs(collision.GetComponent<Comportamiento_Patos>().speedX) > 4)

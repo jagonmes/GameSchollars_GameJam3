@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8798983066533591134}
   - component: {fileID: 9023697175002345384}
   - component: {fileID: 8976317069093201044}
+  - component: {fileID: 1413096439760043433}
   m_Layer: 0
   m_Name: RayTPI
   m_TagString: Untagged
@@ -66,10 +67,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1413096439760043433}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Desactivar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1413096439760043433}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Activar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -436,6 +461,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+--- !u!114 &1413096439760043433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130723476255746693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0669756cfa701346b675ede51e81065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &588584426115688910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,6 +2117,7 @@ GameObject:
   - component: {fileID: 9053054343608457356}
   - component: {fileID: 5479774484653060497}
   - component: {fileID: 4355296379402089281}
+  - component: {fileID: 6490691849490136538}
   m_Layer: 0
   m_Name: Ray
   m_TagString: Untagged
@@ -2133,10 +2171,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6490691849490136538}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Desactivar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6490691849490136538}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Activar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -2503,6 +2565,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+--- !u!114 &6490691849490136538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199993709427035571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0669756cfa701346b675ede51e81065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3300691376462389475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,6 +2805,7 @@ GameObject:
   - component: {fileID: 829437189270398348}
   - component: {fileID: 4875123043092294643}
   - component: {fileID: 6288532240979443982}
+  - component: {fileID: 6696619323259686645}
   m_Layer: 0
   m_Name: PlayerVR
   m_TagString: Player
@@ -2822,13 +2897,55 @@ MonoBehaviour:
   activador: {fileID: 6006308248439288477, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   menu: {fileID: 6278498236054669699}
-  menuVR: {fileID: 38498036028614985}
+  menuVR: {fileID: 6696619323259686645}
   posicionMarcador: {fileID: 6798838527106313029}
   posicionCamara: {fileID: 469462458618307195}
   UIInteractors:
   - {fileID: 1538719876765274187}
   - {fileID: 1419141374733026647}
   pausaPermitida: 1
+--- !u!114 &6696619323259686645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587600192675525931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4495b1193557a41992c786c84546a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CambioPermitido: 1
+  Toggles:
+  - {fileID: 1999194134254578835}
+  - {fileID: 5486473813605779046}
+  - {fileID: 2448847499773971549}
+  - {fileID: 9185014751326517657}
+  - {fileID: 966705008025013942}
+  - {fileID: 3887648855586004597}
+  - {fileID: 2925974433660566061}
+  - {fileID: 6100741256941604922}
+  Movimiento:
+  - {fileID: 2766672241830715560}
+  - {fileID: 5392508830187032525}
+  Giro:
+  - {fileID: 8473943774786951425}
+  - {fileID: 6571092083903616168}
+  Interaccion:
+  - {fileID: 1520928120360078405}
+  - {fileID: 5959327119575022909}
+  - {fileID: 3199993709427035571}
+  - {fileID: 6624764748367273581}
+  Accesibilidad:
+  - {fileID: 1127930725081307786}
+  - {fileID: 7776317823512480339}
+  TPInteractors:
+  - {fileID: 6777604838655598213}
+  - {fileID: 9068995274461918714}
+  - {fileID: 6261339749138511639}
+  - {fileID: 130723476255746693}
+  CCD: {fileID: 1446139441380012503}
 --- !u!1 &5324837198030490108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,6 +3242,7 @@ GameObject:
   - component: {fileID: 493241767156526534}
   - component: {fileID: 741720820005512259}
   - component: {fileID: 7140598854516931962}
+  - component: {fileID: 1446139441380012503}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -3165,7 +3283,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 5353966185331729391}
   m_CameraFloorOffsetObject: {fileID: 2463213440491876249}
   m_RequestedTrackingOriginMode: 1
-  m_CameraYOffset: 0.9
+  m_CameraYOffset: 1.1
 --- !u!114 &358093889705326424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3241,6 +3359,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1446139441380012503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5353966185331729391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LocomotionProvider: {fileID: 6589951079246953003}
+  m_MinHeight: 1.1
+  m_MaxHeight: 1.1
 --- !u!1 &5392508830187032525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3508,6 +3641,7 @@ GameObject:
   - component: {fileID: 5441057784127453454}
   - component: {fileID: 5855069599666513997}
   - component: {fileID: 6357753136704374475}
+  - component: {fileID: 7659592080878263036}
   m_Layer: 0
   m_Name: RayTPI
   m_TagString: Untagged
@@ -3561,10 +3695,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7659592080878263036}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Desactivar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7659592080878263036}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Activar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -3931,6 +4089,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+--- !u!114 &7659592080878263036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261339749138511639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0669756cfa701346b675ede51e81065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6377411198353554044
 GameObject:
   m_ObjectHideFlags: 0
@@ -4054,6 +4224,7 @@ GameObject:
   - component: {fileID: 3017874096545027958}
   - component: {fileID: 537430615061090993}
   - component: {fileID: 5307952139225193634}
+  - component: {fileID: 4266564176749769399}
   m_Layer: 0
   m_Name: Ray
   m_TagString: Untagged
@@ -4107,10 +4278,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4266564176749769399}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Desactivar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4266564176749769399}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Activar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -4477,6 +4672,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+--- !u!114 &4266564176749769399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624764748367273581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0669756cfa701346b675ede51e81065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6777604838655598213
 GameObject:
   m_ObjectHideFlags: 0
@@ -4490,6 +4697,7 @@ GameObject:
   - component: {fileID: 8076042343147400461}
   - component: {fileID: 762738681593698983}
   - component: {fileID: 4811951722091141576}
+  - component: {fileID: 3789380936654312929}
   m_Layer: 0
   m_Name: RayTP
   m_TagString: Untagged
@@ -4543,10 +4751,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3789380936654312929}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Desactivar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3789380936654312929}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Activar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -4913,6 +5145,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+--- !u!114 &3789380936654312929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6777604838655598213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0669756cfa701346b675ede51e81065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7845382013085511314
 GameObject:
   m_ObjectHideFlags: 0
@@ -5397,6 +5641,7 @@ GameObject:
   - component: {fileID: 5321574498827026605}
   - component: {fileID: 8171952824726693759}
   - component: {fileID: 1074176875070738165}
+  - component: {fileID: 4521857301534315702}
   m_Layer: 0
   m_Name: RayTP
   m_TagString: Untagged
@@ -5450,10 +5695,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4521857301534315702}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Desactivar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4521857301534315702}
+        m_TargetAssemblyTypeName: DesactivarRayo, Assembly-CSharp
+        m_MethodName: Activar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -5820,6 +6089,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+--- !u!114 &4521857301534315702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068995274461918714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0669756cfa701346b675ede51e81065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &988150927497538349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5828,11 +6109,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 111718120497143979}
     m_Modifications:
+    - target: {fileID: 62191801898542491, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 790090210882774996, guid: 2ddd992476e7182438db2b282935ac16,
         type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 954301098418471524, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: CCD
+      value: 
+      objectReference: {fileID: 1446139441380012503}
     - target: {fileID: 954301098418471524, guid: 2ddd992476e7182438db2b282935ac16,
         type: 3}
       propertyPath: CambioPermitido
@@ -5968,6 +6259,11 @@ PrefabInstance:
       propertyPath: TPInteractors.Array.data[3]
       value: 
       objectReference: {fileID: 130723476255746693}
+    - target: {fileID: 1587534748899559358, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1606537830771485404, guid: 2ddd992476e7182438db2b282935ac16,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6068,6 +6364,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2678999898875023616, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3191525858726061936, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054693223860204888, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725754667844382027, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006954382269499831, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421202683811969815, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6527733365163041454, guid: 2ddd992476e7182438db2b282935ac16,
         type: 3}
       propertyPath: m_Name
@@ -6078,26 +6404,32 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8268930286721209012, guid: 2ddd992476e7182438db2b282935ac16,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 954301098418471524, guid: 2ddd992476e7182438db2b282935ac16, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ddd992476e7182438db2b282935ac16, type: 3}
---- !u!114 &38498036028614985 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 954301098418471524, guid: 2ddd992476e7182438db2b282935ac16,
-    type: 3}
-  m_PrefabInstance: {fileID: 988150927497538349}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278498236054669699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa4495b1193557a41992c786c84546a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &966705008025013942 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 62191801898542491, guid: 2ddd992476e7182438db2b282935ac16,
+    type: 3}
+  m_PrefabInstance: {fileID: 988150927497538349}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1999194134254578835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1587534748899559358, guid: 2ddd992476e7182438db2b282935ac16,
     type: 3}
   m_PrefabInstance: {fileID: 988150927497538349}
   m_PrefabAsset: {fileID: 0}
@@ -6140,6 +6472,18 @@ MonoBehaviour:
 --- !u!114 &3887648855586004597 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4054693223860204888, guid: 2ddd992476e7182438db2b282935ac16,
+    type: 3}
+  m_PrefabInstance: {fileID: 988150927497538349}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5486473813605779046 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4725754667844382027, guid: 2ddd992476e7182438db2b282935ac16,
     type: 3}
   m_PrefabInstance: {fileID: 988150927497538349}
   m_PrefabAsset: {fileID: 0}

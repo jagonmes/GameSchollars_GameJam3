@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class MenuVR : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class MenuVR : MonoBehaviour
     [SerializeField] private GameObject[] Interaccion;
     [SerializeField] private GameObject[] Accesibilidad;
     [SerializeField] private GameObject[] TPInteractors;
+    [SerializeField] private CharacterControllerDriver CCD;
 
     private void Start()
     {
@@ -69,8 +71,12 @@ public class MenuVR : MonoBehaviour
 
     void asignarMovimiento()
     {
+        Debug.Log("Aplicando Cambios");
         Movimiento[0].SetActive(MContinuo);
+        Debug.Log(MContinuo);
+        Debug.Log(Movimiento[0].active);
         Movimiento[1].SetActive(MTeletransporte);
+        //CCD.enabled = (MTeletransporte);
         if (MTeletransporte)
         {
             if (IRayo)
