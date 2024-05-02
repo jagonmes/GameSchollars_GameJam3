@@ -624,7 +624,6 @@ GameObject:
   - component: {fileID: 7889954995654417771}
   - component: {fileID: 7914315723926498437}
   - component: {fileID: 7350083929917806609}
-  - component: {fileID: 8016879111233146258}
   m_Layer: 7
   m_Name: Pared9
   m_TagString: Untagged
@@ -781,30 +780,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.33423156, y: 0.0019954839, z: 0.004797053}
   m_Center: {x: -0.019146098, y: -0.000017512886, z: 0.013089854}
---- !u!167 &8016879111233146258
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127516514302843181}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &230330568755850640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1108,7 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483868160326511685}
   m_Enabled: 1
-  m_MinDistance: 3
+  m_MinDistance: 5
   m_MaxDistance: 5
   m_ReverbPreset: 3
   m_Room: -1000
@@ -1361,7 +1336,6 @@ GameObject:
   - component: {fileID: 191667651970961112}
   - component: {fileID: 5509184089805538253}
   - component: {fileID: 551844985144121689}
-  - component: {fileID: 3088608540866733113}
   m_Layer: 0
   m_Name: Pared5
   m_TagString: Untagged
@@ -1456,30 +1430,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5212204569422381168, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &3088608540866733113
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584843710963755792}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &681219739718020573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,7 +2456,6 @@ GameObject:
   - component: {fileID: 4971694093061856384}
   - component: {fileID: 8400551417272335396}
   - component: {fileID: 8483038006234101997}
-  - component: {fileID: 2227359269392384161}
   m_Layer: 0
   m_Name: Pared13
   m_TagString: Untagged
@@ -2601,30 +2550,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6159515256425222328, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &2227359269392384161
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072946353797738030}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &1095268926318051843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,7 +3075,6 @@ GameObject:
   - component: {fileID: 8170298533088157306}
   - component: {fileID: 125755774478324240}
   - component: {fileID: 5378284283061626254}
-  - component: {fileID: 2615282012827854959}
   m_Layer: 0
   m_Name: Pared12
   m_TagString: Untagged
@@ -3246,30 +3170,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4766777807855040723, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &2615282012827854959
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356108986557990980}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &1400009644643061964
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,7 +4109,6 @@ GameObject:
   - component: {fileID: 2914445354848203111}
   - component: {fileID: 8625949041960853224}
   - component: {fileID: 475633574271409745}
-  - component: {fileID: 1330431677534577911}
   m_Layer: 0
   m_Name: Pared2
   m_TagString: Untagged
@@ -4304,30 +4203,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5571675858485087468, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &1330431677534577911
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873214719788290290}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &1885663235595540042
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,7 +4299,6 @@ GameObject:
   - component: {fileID: 4683418455069769174}
   - component: {fileID: 7621033767509777879}
   - component: {fileID: 3249132597773811809}
-  - component: {fileID: 2354681493201629943}
   m_Layer: 0
   m_Name: ParedH3
   m_TagString: Untagged
@@ -4519,30 +4393,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4444667669813402814, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &2354681493201629943
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897756950500574938}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &1904023536644283241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5373,8 +5223,8 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2491795152069592881}
   m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
+  m_MinDistance: 10
+  m_MaxDistance: 15
   m_ReverbPreset: 13
   m_Room: -1000
   m_RoomHF: -300
@@ -5623,7 +5473,6 @@ GameObject:
   - component: {fileID: 3302180014736476999}
   - component: {fileID: 4087625218618299368}
   - component: {fileID: 4061973167028812540}
-  - component: {fileID: 6155743135232945129}
   m_Layer: 0
   m_Name: ParedH2
   m_TagString: Untagged
@@ -5718,30 +5567,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -964154991029554319, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &6155743135232945129
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2665628164803764749}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &2691294922156548034
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,7 +6289,6 @@ GameObject:
   - component: {fileID: 8322968007144071188}
   - component: {fileID: 7260252730128663930}
   - component: {fileID: 7561568160178196831}
-  - component: {fileID: 814669148205598599}
   m_Layer: 0
   m_Name: Pared3
   m_TagString: Untagged
@@ -6559,30 +6383,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4826140199956621114, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &814669148205598599
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3025735662871877212}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &3080269209952328711
 GameObject:
   m_ObjectHideFlags: 0
@@ -6595,7 +6395,6 @@ GameObject:
   - component: {fileID: 8598176603924455129}
   - component: {fileID: 8994658723726739316}
   - component: {fileID: 5234535440730391953}
-  - component: {fileID: 3609584000668965422}
   m_Layer: 0
   m_Name: Pared10
   m_TagString: Untagged
@@ -6690,30 +6489,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -563507087692901086, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &3609584000668965422
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3080269209952328711}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &3127990789484299426
 GameObject:
   m_ObjectHideFlags: 0
@@ -7045,7 +6820,6 @@ GameObject:
   - component: {fileID: 2496131095757812438}
   - component: {fileID: 5584638755496656140}
   - component: {fileID: 7151487137150159013}
-  - component: {fileID: 716608454316864896}
   m_Layer: 0
   m_Name: Techo2
   m_TagString: Untagged
@@ -7141,30 +6915,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4746464374177655700, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &716608454316864896
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3187440266307644065}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &3194353381432700603
 GameObject:
   m_ObjectHideFlags: 0
@@ -8893,8 +8643,8 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4156744082482963611}
   m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
+  m_MinDistance: 10
+  m_MaxDistance: 15
   m_ReverbPreset: 13
   m_Room: -1000
   m_RoomHF: -300
@@ -8921,7 +8671,6 @@ GameObject:
   - component: {fileID: 5572890231291369300}
   - component: {fileID: 7922315443195580576}
   - component: {fileID: 8856514234597998580}
-  - component: {fileID: 3272609025561858253}
   m_Layer: 0
   m_Name: ParedH1
   m_TagString: Untagged
@@ -9016,30 +8765,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6013157174211880101, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &3272609025561858253
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4261357217988956727}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &4347910555885656596
 GameObject:
   m_ObjectHideFlags: 0
@@ -9597,7 +9322,6 @@ GameObject:
   - component: {fileID: 3812971297920444529}
   - component: {fileID: 3663319134501523419}
   - component: {fileID: 5396287533071474014}
-  - component: {fileID: 2155240285302330773}
   m_Layer: 0
   m_Name: Pared1
   m_TagString: Untagged
@@ -9692,30 +9416,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5550464416824261455, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &2155240285302330773
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4557496372025197777}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &4819639023592970840
 GameObject:
   m_ObjectHideFlags: 0
@@ -10057,7 +9757,6 @@ GameObject:
   - component: {fileID: 8865830556181027585}
   - component: {fileID: 495547099944736911}
   - component: {fileID: 8056009084665530639}
-  - component: {fileID: 267486286802159169}
   m_Layer: 0
   m_Name: Pared4
   m_TagString: Untagged
@@ -10152,30 +9851,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5744584832503644898, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &267486286802159169
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5035330629199142383}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &5087761080819407415
 GameObject:
   m_ObjectHideFlags: 0
@@ -10419,7 +10094,6 @@ GameObject:
   - component: {fileID: 9173432562141618061}
   - component: {fileID: 3662583962026287458}
   - component: {fileID: 8520274446670719855}
-  - component: {fileID: 3684477513125520951}
   m_Layer: 0
   m_Name: Pared7
   m_TagString: Untagged
@@ -10514,30 +10188,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6297941379522589041, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &3684477513125520951
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5196814550584341464}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &5307316960312477604
 GameObject:
   m_ObjectHideFlags: 0
@@ -11615,7 +11265,7 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5867640478073305709}
   m_Enabled: 1
-  m_MinDistance: 3
+  m_MinDistance: 5
   m_MaxDistance: 5
   m_ReverbPreset: 3
   m_Room: -1000
@@ -11748,7 +11398,6 @@ GameObject:
   - component: {fileID: 3296957355726315450}
   - component: {fileID: 2982541320259058419}
   - component: {fileID: 475149353422930735}
-  - component: {fileID: 1158062458453206755}
   m_Layer: 0
   m_Name: ParedH4
   m_TagString: Untagged
@@ -11843,30 +11492,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6656617648967805204, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &1158062458453206755
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6027960176195470840}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &6035032987151330433
 GameObject:
   m_ObjectHideFlags: 0
@@ -13440,7 +13065,6 @@ GameObject:
   - component: {fileID: 1242772537423350793}
   - component: {fileID: 2236605219744703195}
   - component: {fileID: 839731804689154739}
-  - component: {fileID: 7604730580310844542}
   m_Layer: 0
   m_Name: Pared8
   m_TagString: Untagged
@@ -13535,30 +13159,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5221894264780605915, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &7604730580310844542
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6591488448880547975}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &6636254645074179935
 GameObject:
   m_ObjectHideFlags: 0
@@ -15385,7 +14985,6 @@ GameObject:
   - component: {fileID: 178376738111655242}
   - component: {fileID: 7053161840115539771}
   - component: {fileID: 3193863020943621778}
-  - component: {fileID: 2410560341994409530}
   m_Layer: 0
   m_Name: Pared6
   m_TagString: Untagged
@@ -15480,30 +15079,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4437692617319165031, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &2410560341994409530
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7421855606315296528}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &7429172255355085544
 GameObject:
   m_ObjectHideFlags: 0
@@ -17214,7 +16789,6 @@ GameObject:
   - component: {fileID: 1667622791475888725}
   - component: {fileID: 5301158902134205304}
   - component: {fileID: 7968159772644336955}
-  - component: {fileID: 6602894378822623101}
   m_Layer: 0
   m_Name: ParedH5
   m_TagString: Untagged
@@ -17371,30 +16945,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.023750767, y: 0.0010035954, z: 0.0048296927}
   m_Center: {x: 0.002388215, y: -0.0000493386, z: 0.0130070895}
---- !u!167 &6602894378822623101
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447351226059461757}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &8460864106264728610
 GameObject:
   m_ObjectHideFlags: 0
@@ -17505,7 +17055,6 @@ GameObject:
   - component: {fileID: 8156193628880423391}
   - component: {fileID: 3040247573502994518}
   - component: {fileID: 4320254212680699306}
-  - component: {fileID: 5802184783142073934}
   m_Layer: 0
   m_Name: Pared11
   m_TagString: Untagged
@@ -17600,30 +17149,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7239355460407033328, guid: 2e15d8b863af58140a42ba9bf21a1ddd, type: 3}
---- !u!167 &5802184783142073934
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8559702196556343517}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 13
-  m_Room: -1000
-  m_RoomHF: -300
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.59
-  m_Reflections: -1219
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 441
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &8608574772541672518
 GameObject:
   m_ObjectHideFlags: 0
@@ -21577,22 +21102,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3166653947256286541}
-    - targetCorrespondingSourceObject: {fileID: 42905451640200207, guid: 584bc23669c014d4a925222211111c8d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6109776750372910991}
-    - targetCorrespondingSourceObject: {fileID: 5895943350686879304, guid: 584bc23669c014d4a925222211111c8d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7211792940649287794}
-    - targetCorrespondingSourceObject: {fileID: 4787330438864698938, guid: 584bc23669c014d4a925222211111c8d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4869094490747285206}
-    - targetCorrespondingSourceObject: {fileID: 6656028803804409783, guid: 584bc23669c014d4a925222211111c8d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 426828596337211159}
   m_SourcePrefab: {fileID: 100100000, guid: 584bc23669c014d4a925222211111c8d, type: 3}
 --- !u!1 &963868702169064698 stripped
 GameObject:
@@ -21608,38 +21117,8 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963868702169064698}
   m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
---- !u!1 &4445109464317928237 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 42905451640200207, guid: 584bc23669c014d4a925222211111c8d,
-    type: 3}
-  m_PrefabInstance: {fileID: 4406875341903413026}
-  m_PrefabAsset: {fileID: 0}
---- !u!167 &6109776750372910991
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4445109464317928237}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
+  m_MinDistance: 5
+  m_MaxDistance: 7.5
   m_ReverbPreset: 3
   m_Room: -1000
   m_RoomHF: -454
@@ -21660,66 +21139,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4406875341903413026}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7022988860608155797 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6656028803804409783, guid: 584bc23669c014d4a925222211111c8d,
-    type: 3}
-  m_PrefabInstance: {fileID: 4406875341903413026}
-  m_PrefabAsset: {fileID: 0}
---- !u!167 &426828596337211159
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7022988860608155797}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
---- !u!1 &7852805482892767594 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5895943350686879304, guid: 584bc23669c014d4a925222211111c8d,
-    type: 3}
-  m_PrefabInstance: {fileID: 4406875341903413026}
-  m_PrefabAsset: {fileID: 0}
---- !u!167 &7211792940649287794
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7852805482892767594}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1 &8290659407524347523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5631200514951184801, guid: 584bc23669c014d4a925222211111c8d,
@@ -21734,38 +21153,8 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8290659407524347523}
   m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
-  m_ReverbPreset: 3
-  m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
---- !u!1 &9176188063773442328 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4787330438864698938, guid: 584bc23669c014d4a925222211111c8d,
-    type: 3}
-  m_PrefabInstance: {fileID: 4406875341903413026}
-  m_PrefabAsset: {fileID: 0}
---- !u!167 &4869094490747285206
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9176188063773442328}
-  m_Enabled: 1
-  m_MinDistance: 3
-  m_MaxDistance: 5
+  m_MinDistance: 5
+  m_MaxDistance: 7.5
   m_ReverbPreset: 3
   m_Room: -1000
   m_RoomHF: -454
