@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Movimiento_Mira : MonoBehaviour
 {
@@ -21,6 +22,12 @@ public class Movimiento_Mira : MonoBehaviour
 
     public static bool intentandoDisparar = false;
     
+    [SerializeField]private XRBaseControllerInteractor interactorI;
+    [SerializeField]private XRBaseControllerInteractor interactorD;
+
+    public static bool dispararIzquierda = false;
+    public static bool dispararDerecha = false;
+    
     void Update()
     {
         if (active) {
@@ -30,7 +37,7 @@ public class Movimiento_Mira : MonoBehaviour
             float desplazamientoX = movimientoHorizontal * velocidad * Time.deltaTime;
             float desplazamientoY = movimientoVertical * velocidad * Time.deltaTime;
 
-            transform.Translate(new Vector3(desplazamientoX, desplazamientoY, 0f));
+            //transform.Translate(new Vector3(desplazamientoX, desplazamientoY, 0f));
 
             float limiteX = Mathf.Clamp(transform.position.x, -9f, 9f); // L�mites en el eje X
             float limiteY = Mathf.Clamp(transform.position.y, -5f, 5f); // L�mites en el eje Y
@@ -69,13 +76,40 @@ public class Movimiento_Mira : MonoBehaviour
                 pumSFX.Play();
                 GameObject bloodInst = Instantiate(blood, new Vector3(collision.GetComponent<Transform>().position.x, 
                     collision.GetComponent<Transform>().position.y - 0.1f, collision.GetComponent<Transform>().position.z), Quaternion.identity);
+                HapticoFuerte();
             }
             else
             {
                 popSFX.Play();
+                HapticoFlojo();
             }
             score += collision.GetComponent<Comportamiento_Patos>().score;
             Destroy(collision.gameObject);
         }
     }
+
+    void HapticoFlojo()
+    {
+        if (dispararIzquierda)
+        {
+            interactorI.SendHapticImpulse(0.25f, 0.1f);
+        }
+        if (dispararDerecha)
+        {
+            interactorD.SendHapticImpulse(0.25f, 0.1f);
+        }
+    }
+    void HapticoFuerte()
+    {
+        if (dispararIzquierda)
+        {
+            interactorI.SendHapticImpulse(1f, 0.1f);
+        }
+        if (dispararDerecha)
+        {
+            interactorD.SendHapticImpulse(1f, 0.1f);
+        }
+    }
+
+
 }

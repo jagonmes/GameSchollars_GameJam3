@@ -10,6 +10,7 @@ public class ActivarMenuVR : MonoBehaviour
     [SerializeField] private Transform posicionMarcador;
     [SerializeField] private Transform posicionCamara;
     [SerializeField] private GameObject[] UIInteractors;
+    [SerializeField] private GameObject[] Interactores;
     public bool pausaPermitida = true;
     private bool activado = false;
     private float coolDown = 0.0f;
@@ -46,6 +47,7 @@ public class ActivarMenuVR : MonoBehaviour
         {
             interactor.SetActive(true);
         }
+        desactivarInteractores();
         activado = true;
     }
 
@@ -58,5 +60,13 @@ public class ActivarMenuVR : MonoBehaviour
             interactor.SetActive(false);
         }
         activado = false;
+    }
+    
+    void desactivarInteractores()
+    {
+        foreach (var interactor in Interactores)
+        {
+            interactor.SetActive(false);
+        }
     }
 }
