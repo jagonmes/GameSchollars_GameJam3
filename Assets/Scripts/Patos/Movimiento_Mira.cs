@@ -64,6 +64,7 @@ public class Movimiento_Mira : MonoBehaviour
     {
         disparando = true;
         tiempoDesdeInicioDisparo = Time.time;
+        HapticoFlojo();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -71,11 +72,12 @@ public class Movimiento_Mira : MonoBehaviour
         //Debug.Log("Chocan");
         if (collision.transform.tag == "Pato" && disparando)
         {
-            if(System.Math.Abs(collision.GetComponent<Comportamiento_Patos>().speedX) > 4)
+            if (System.Math.Abs(collision.GetComponent<Comportamiento_Patos>().speedX) > 4)
             {
                 pumSFX.Play();
-                GameObject bloodInst = Instantiate(blood, new Vector3(collision.GetComponent<Transform>().position.x, 
-                    collision.GetComponent<Transform>().position.y - 0.1f, collision.GetComponent<Transform>().position.z), Quaternion.identity);
+                GameObject bloodInst = Instantiate(blood, new Vector3(collision.GetComponent<Transform>().position.x,
+                    collision.GetComponent<Transform>().position.y - 0.1f,
+                    collision.GetComponent<Transform>().position.z), Quaternion.identity);
                 HapticoFuerte();
             }
             else
@@ -83,6 +85,7 @@ public class Movimiento_Mira : MonoBehaviour
                 popSFX.Play();
                 HapticoFlojo();
             }
+
             score += collision.GetComponent<Comportamiento_Patos>().score;
             Destroy(collision.gameObject);
         }
