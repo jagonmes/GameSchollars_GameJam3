@@ -20956,6 +20956,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1318233933554052073}
     m_Modifications:
+    - target: {fileID: 1426443556860430460, guid: 584bc23669c014d4a925222211111c8d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4073255518556946000, guid: 584bc23669c014d4a925222211111c8d,
         type: 3}
       propertyPath: m_Name
@@ -21038,17 +21043,17 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963868702169064698}
   m_Enabled: 1
-  m_MinDistance: 5
-  m_MaxDistance: 7.5
-  m_ReverbPreset: 3
+  m_MinDistance: 0
+  m_MaxDistance: 5
+  m_ReverbPreset: 27
   m_Room: -1000
-  m_RoomHF: -454
-  m_DecayTime: 0.4
-  m_DecayHFRatio: 0.83
-  m_Reflections: -1646
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 53
-  m_ReverbDelay: 0.003
+  m_RoomHF: -476
+  m_DecayTime: 4.32
+  m_DecayHFRatio: 0.59
+  m_Reflections: -789
+  m_ReflectionsDelay: 0.02
+  m_Reverb: 1000
+  m_ReverbDelay: 0.03
   m_HFReference: 5000
   m_Diffusion: 100
   m_Density: 100

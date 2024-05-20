@@ -2523,6 +2523,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3413875686341199913, guid: 13b76b3f5a19a5d4d999dc9c24459277,
+        type: 3}
+      propertyPath: m_text
+      value: "Tel\xE9fono sonando"
+      objectReference: {fileID: 0}
     - target: {fileID: 4284221469104520228, guid: 13b76b3f5a19a5d4d999dc9c24459277,
         type: 3}
       propertyPath: MContinuo
